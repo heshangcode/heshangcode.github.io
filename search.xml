@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hero+Github搭建个人博客（加优化设置）]]></title>
+    <url>%2F2018%2F07%2F21%2FHero-Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BC%98%E5%8C%96%E8%AE%BE%E7%BD%AE%EF%BC%89%2F</url>
+    <content type="text"><![CDATA[哈哈哈哈，自己的博客终于搭好了！！还是写个博客记录一下自己如何搭建的吧 &emsp;&emsp;其实自己很久之前就想搭个博客，自己写点东西，但是可能就认为搭个博客很难，自己也懒，就没有搭建，结果今天周六，想给自己休息休息，然后找了教程，用Github+hero搭建了这个博客，一个小时就可以完成的，其实并没有那么难，傻瓜式操作，搭建完之后，发现一些优缺点： 重点是免费的，只需要你注册一个GitHub账号，自己一台电脑，然后就ojbk的事。 自带免费的域名，如果自己有其他需求，也可以购买其他的域名。 但是由于Github是国外的，搭建的博客服务器是在Github上，所有没有VPN访问，是很慢的 搭建的教程B站视频教程&emsp;&emsp;&emsp;&emsp;知乎文字教程&emsp;&emsp;&emsp;&emsp;简书文字教程 搭建成功后主题优化教程B站视频教程&emsp;&emsp;&emsp;&emsp;next主题官方文档&emsp;&emsp;&emsp;&emsp;CSDN个性化设置 写博客markdown语法简书markdown文字教程 自己总结的一些点&emsp;&emsp;头像设置旋转：找到本地博客目录下themes\next\source\css\common\components\sidebar\sidebar-author.styl加入：1234567891011121314.site-author-image &#123; display: block; margin: 0 auto; padding: $site-author-image-padding; max-width: $site-author-image-width; height: $site-author-image-height; border: $site-author-image-border-width solid $site-author-image-border-color; opacity: hexo-config('avatar.opacity') is a 'unit' ? hexo-config('avatar.opacity') : 1; border-radius: 50%; transition: 2s all;&#125;.site-author-image：hover &#123; transform: rotate(360deg);&#125; &emsp;&emsp;next6.0以上版本，动画背景无效果： https://github.com/theme-next/theme-next-canvas-nest https://github.com/theme-next/theme-next-three在主题样式里有注释说明 大概就写这些吧，只希望自己博客搭建起来，自己要写东西，不要又成为一个半灌水响叮当！！！]]></content>
+      <categories>
+        <category>hero</category>
+      </categories>
+      <tags>
+        <tag>hero</tag>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+</search>

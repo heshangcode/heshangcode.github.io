@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2018-07-21T06:17:10.260Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://heshang.com/"/>
+  <updated>2018-07-21T13:51:40.378Z</updated>
+  <id>http://heshang.com/</id>
   
   <author>
     <name>和尚</name>
@@ -17,23 +17,26 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2018/07/21/hello-world/"/>
-    <id>http://yoursite.com/2018/07/21/hello-world/</id>
-    <published>2018-07-21T06:06:20.361Z</published>
-    <updated>2018-07-21T06:17:10.260Z</updated>
+    <title>Hero+Github搭建个人博客（加优化设置）</title>
+    <link href="http://heshang.com/2018/07/21/Hero-Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%BC%98%E5%8C%96%E8%AE%BE%E7%BD%AE%EF%BC%89/"/>
+    <id>http://heshang.com/2018/07/21/Hero-Github搭建个人博客（优化设置）/</id>
+    <published>2018-07-21T12:56:08.000Z</published>
+    <updated>2018-07-21T13:51:40.378Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="hello-和尚"><a href="#hello-和尚" class="headerlink" title="hello 和尚"></a>hello 和尚</h2><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="哈哈哈哈，自己的博客终于搭好了！！"><a href="#哈哈哈哈，自己的博客终于搭好了！！" class="headerlink" title="哈哈哈哈，自己的博客终于搭好了！！"></a>哈哈哈哈，自己的博客终于搭好了！！</h1><h4 id="还是写个博客记录一下自己如何搭建的吧"><a href="#还是写个博客记录一下自己如何搭建的吧" class="headerlink" title="还是写个博客记录一下自己如何搭建的吧"></a>还是写个博客记录一下自己如何搭建的吧</h4><a id="more"></a> <p>&emsp;&emsp;其实自己很久之前就想搭个博客，自己写点东西，但是可能就认为搭个博客很难，自己也懒，就没有搭建，结果今天周六，想给自己休息休息，然后找了教程，用Github+hero搭建了这个博客，一个小时就可以完成的，其实并没有那么难，傻瓜式操作，搭建完之后，发现一些优缺点：</p><ul><li>重点是免费的，只需要你注册一个GitHub账号，自己一台电脑，然后就ojbk的事。</li><li>自带免费的域名，如果自己有其他需求，也可以购买其他的域名。</li><li>但是由于Github是国外的，搭建的博客服务器是在Github上，所有没有VPN访问，是很慢的</li></ul><hr><h4 id="搭建的教程"><a href="#搭建的教程" class="headerlink" title="搭建的教程"></a>搭建的教程</h4><p><a href="https://www.bilibili.com/video/av24897960/" target="_blank" rel="noopener">B站视频教程</a>&emsp;&emsp;&emsp;&emsp;<a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">知乎文字教程</a>&emsp;&emsp;&emsp;&emsp;<a href="https://www.jianshu.com/p/834d7cc0668d" target="_blank" rel="noopener">简书文字教程</a></p><h4 id="搭建成功后主题优化教程"><a href="#搭建成功后主题优化教程" class="headerlink" title="搭建成功后主题优化教程"></a>搭建成功后主题优化教程</h4><p><a href="https://www.bilibili.com/video/av17653359/" target="_blank" rel="noopener">B站视频教程</a>&emsp;&emsp;&emsp;&emsp;<a href="http://theme-next.iissnan.com/" target="_blank" rel="noopener">next主题官方文档</a>&emsp;&emsp;&emsp;&emsp;<a href="https://blog.csdn.net/qq_33699981/article/details/72716951" target="_blank" rel="noopener">CSDN个性化设置</a></p><h4 id="写博客markdown语法"><a href="#写博客markdown语法" class="headerlink" title="写博客markdown语法"></a>写博客markdown语法</h4><p><a href="https://www.jianshu.com/p/468f111d8fd3" target="_blank" rel="noopener">简书markdown文字教程</a></p><h4 id="自己总结的一些点"><a href="#自己总结的一些点" class="headerlink" title="自己总结的一些点"></a>自己总结的一些点</h4><p>&emsp;&emsp;头像设置旋转：找到本地博客目录下themes\next\source\css\common\components\sidebar\sidebar-author.styl加入：<br><figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">.site-author-image &#123;</span><br><span class="line">  <span class="symbol">display:</span> block;</span><br><span class="line">  <span class="symbol">margin:</span> <span class="number">0</span> auto;</span><br><span class="line">  <span class="symbol">padding:</span> $site-author-image-padding;</span><br><span class="line">  max-<span class="symbol">width:</span> $site-author-image-width;</span><br><span class="line">  <span class="symbol">height:</span> $site-author-image-height;</span><br><span class="line">  <span class="symbol">border:</span> $site-author-image-border-width solid $site-author-image-border-color;</span><br><span class="line">  <span class="symbol">opacity:</span> hexo-config(<span class="string">'avatar.opacity'</span>) is a <span class="string">'unit'</span> ? hexo-config(<span class="string">'avatar.opacity'</span>) : <span class="number">1</span>;</span><br><span class="line">  border-<span class="symbol">radius:</span> <span class="number">50</span>%;</span><br><span class="line">  <span class="symbol">transition:</span> <span class="number">2</span>s all;</span><br><span class="line">&#125;</span><br><span class="line">.site-author-image：hover &#123;</span><br><span class="line">  <span class="symbol">transform:</span> rotate(<span class="number">360</span>deg);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>&emsp;&emsp;next6.0以上版本，动画背景无效果：</p><ol><li><a href="https://github.com/theme-next/theme-next-canvas-nest" target="_blank" rel="noopener">https://github.com/theme-next/theme-next-canvas-nest</a></li><li><a href="https://github.com/theme-next/theme-next-three" target="_blank" rel="noopener">https://github.com/theme-next/theme-next-three</a><br>在主题样式里有注释说明</li></ol><hr><p>大概就写这些吧，只希望自己博客搭建起来，自己要写东西，不要又成为一个半灌水响叮当！！！</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
+      &lt;h1 id=&quot;哈哈哈哈，自己的博客终于搭好了！！&quot;&gt;&lt;a href=&quot;#哈哈哈哈，自己的博客终于搭好了！！&quot; class=&quot;headerlink&quot; title=&quot;哈哈哈哈，自己的博客终于搭好了！！&quot;&gt;&lt;/a&gt;哈哈哈哈，自己的博客终于搭好了！！&lt;/h1&gt;&lt;h4 id=&quot;还是写个博客记录一下自己如何搭建的吧&quot;&gt;&lt;a href=&quot;#还是写个博客记录一下自己如何搭建的吧&quot; class=&quot;headerlink&quot; title=&quot;还是写个博客记录一下自己如何搭建的吧&quot;&gt;&lt;/a&gt;还是写个博客记录一下自己如何搭建的吧&lt;/h4&gt;
     
     </summary>
     
+      <category term="hero" scheme="http://heshang.com/categories/hero/"/>
+    
+    
+      <category term="hero" scheme="http://heshang.com/tags/hero/"/>
+    
+      <category term="博客" scheme="http://heshang.com/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   

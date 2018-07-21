@@ -1224,6 +1224,13 @@ pre .javascript .function {
     word-break: break-word;
   }
 }
+.post-body p a {
+  color: #345;
+  border-bottom: none;
+}
+.post-body p a:hover {
+  color: #800080;
+}
 .post-body .fancybox img {
   display: block !important;
   margin: 0 auto;
@@ -1864,6 +1871,15 @@ pre .javascript .function {
   height: auto;
   border: 1px solid #eee;
   opacity: 1;
+  border-radius: 50%;
+  transition: 2s all;
+}
+.site-author-image：hover {
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 img:hover {
   -webkit-transform: rotateZ(360deg);
@@ -1957,7 +1973,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff38c2;
+  background: #472fff;
 }
 .links-of-blogroll {
   font-size: 13px;
