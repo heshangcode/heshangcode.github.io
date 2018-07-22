@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://heshang.com/"/>
-  <updated>2018-07-22T10:30:25.967Z</updated>
+  <updated>2018-07-22T12:22:04.387Z</updated>
   <id>http://heshang.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>idea初体验和设置</title>
+    <link href="http://heshang.com/2018/07/22/idea%E5%88%9D%E4%BD%93%E9%AA%8C%E5%92%8C%E8%AE%BE%E7%BD%AE/"/>
+    <id>http://heshang.com/2018/07/22/idea初体验和设置/</id>
+    <published>2018-07-22T12:13:03.000Z</published>
+    <updated>2018-07-22T12:22:04.387Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="换了电脑，idea也能跑起来了，软件也需要设置很多地方"><a href="#换了电脑，idea也能跑起来了，软件也需要设置很多地方" class="headerlink" title="换了电脑，idea也能跑起来了，软件也需要设置很多地方"></a>换了电脑，idea也能跑起来了，软件也需要设置很多地方</h3><a id="more"></a><p>设置有很多啊，比如字体，UTF-8，jdk，maven，git，javaweb<br><a href="https://www.bilibili.com/video/av21735428/" target="_blank" rel="noopener">B站视频教程</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;换了电脑，idea也能跑起来了，软件也需要设置很多地方&quot;&gt;&lt;a href=&quot;#换了电脑，idea也能跑起来了，软件也需要设置很多地方&quot; class=&quot;headerlink&quot; title=&quot;换了电脑，idea也能跑起来了，软件也需要设置很多地方&quot;&gt;&lt;/a&gt;换了电脑，idea也能跑起来了，软件也需要设置很多地方&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="编程软件" scheme="http://heshang.com/categories/%E7%BC%96%E7%A8%8B%E8%BD%AF%E4%BB%B6/"/>
+    
+      <category term="idea" scheme="http://heshang.com/categories/%E7%BC%96%E7%A8%8B%E8%BD%AF%E4%BB%B6/idea/"/>
+    
+    
+      <category term="idea" scheme="http://heshang.com/tags/idea/"/>
+    
+  </entry>
   
   <entry>
     <title>Hero+Github搭建个人博客（加优化设置）</title>
