@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://heshang.com/"/>
-  <updated>2018-07-22T12:22:04.387Z</updated>
+  <updated>2018-07-25T02:43:58.564Z</updated>
   <id>http://heshang.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>mysql忘记账号密码</title>
+    <link href="http://heshang.com/2018/07/24/mysql%E5%BF%98%E8%AE%B0%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81/"/>
+    <id>http://heshang.com/2018/07/24/mysql忘记账号密码/</id>
+    <published>2018-07-24T14:41:12.000Z</published>
+    <updated>2018-07-25T02:43:58.564Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="如果突然忘记了mysql的账号密码，或者拿着别人的电脑忘记了mysql的账号密码该咋办？？？"><a href="#如果突然忘记了mysql的账号密码，或者拿着别人的电脑忘记了mysql的账号密码该咋办？？？" class="headerlink" title="如果突然忘记了mysql的账号密码，或者拿着别人的电脑忘记了mysql的账号密码该咋办？？？"></a>如果突然忘记了mysql的账号密码，或者拿着别人的电脑忘记了mysql的账号密码该咋办？？？</h3><a id="more"></a><ol><li><p>打开mysql.exe和mysqld.exe所在的文件夹,复制路径地址; <img src="\images\1.png" alt=""></p></li><li><p>打开cmd命令提示符，进入上一步mysql.exe所在的文件夹; <img src="\images\2.png" alt=""></p></li><li><p>输入命令  mysqld –skip-grant-tables  回车，此时就跳过了mysql的用户验证。注意输入此命令之后<a href="https://www.baidu.com/s?wd=%E5%91%BD%E4%BB%A4%E8%A1%8C&amp;tn=SE_PcZhidaonwhc_ngpagmjz&amp;rsv_dl=gh_pc_zhidao" target="_blank" rel="noopener">命令行</a>就无法操作了，此时可以再打开一个新的<a href="https://www.baidu.com/s?wd=%E5%91%BD%E4%BB%A4%E8%A1%8C&amp;tn=SE_PcZhidaonwhc_ngpagmjz&amp;rsv_dl=gh_pc_zhidao" target="_blank" rel="noopener">命令行</a>。</p><p><font color="red" size="3">注意：</font>在输入此命令之前先在<a href="https://www.baidu.com/s?wd=%E4%BB%BB%E5%8A%A1%E7%AE%A1%E7%90%86%E5%99%A8&amp;tn=SE_PcZhidaonwhc_ngpagmjz&amp;rsv_dl=gh_pc_zhidao" target="_blank" rel="noopener">任务管理器</a>中结束mysqld.exe进程，确保mysql服务器端已结束运行;  <img src="\images\3.png" alt=""></p></li><li><p>同样也在步骤2之后，然后直接输入mysql，不需要带任何登录参数直接回车就可以登陆上数据库; <img src="\images\4.png" alt=""></p></li><li><p>输入show databases;   可以看到所有数据库说明成功登陆; <img src="\images\5.png" alt=""></p></li><li><p>其中mysql库就是保存用户名的地方。输入 use mysql;   选择mysql数据库; <img src="\images\6.png" alt=""></p></li><li><p>输入show tables;查看所有表，会发现有个user表，这里存放的就是用户名，密码，权限等等账户信息; <img src="\images\7.png" alt=""></p></li><li><p>输入select user,host,password from user;   来查看账户信息; <img src="\images\8.png" alt=""></p></li><li><p>更改root密码，输入update user set password=password(‘root’)  where user=’root’ and host=’localhost’; <img src="\images\9.png" alt=""></p></li><li><p>再次查看账户信息，select user,host,password from user;   可以看到密码已被修改。 <img src="\images\10.png" alt=""></p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;如果突然忘记了mysql的账号密码，或者拿着别人的电脑忘记了mysql的账号密码该咋办？？？&quot;&gt;&lt;a href=&quot;#如果突然忘记了mysql的账号密码，或者拿着别人的电脑忘记了mysql的账号密码该咋办？？？&quot; class=&quot;headerlink&quot; title=&quot;如果突然忘记了mysql的账号密码，或者拿着别人的电脑忘记了mysql的账号密码该咋办？？？&quot;&gt;&lt;/a&gt;如果突然忘记了mysql的账号密码，或者拿着别人的电脑忘记了mysql的账号密码该咋办？？？&lt;/h3&gt;
+    
+    </summary>
+    
+      <category term="mysql" scheme="http://heshang.com/categories/mysql/"/>
+    
+    
+      <category term="mysql" scheme="http://heshang.com/tags/mysql/"/>
+    
+  </entry>
   
   <entry>
     <title>idea初体验和设置</title>
