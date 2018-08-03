@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[MyBatis学习笔记（一）mybatis介绍、环境搭建]]></title>
+    <url>%2F2018%2F08%2F03%2FMyBatis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89mybatis%E4%BB%8B%E7%BB%8D%E3%80%81%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%2F</url>
+    <content type="text"></content>
+      <categories>
+        <category>MyBatis</category>
+      </categories>
+      <tags>
+        <tag>MyBatis学习总结</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[mysql忘记账号密码]]></title>
     <url>%2F2018%2F07%2F24%2Fmysql%E5%BF%98%E8%AE%B0%E8%B4%A6%E5%8F%B7%E5%AF%86%E7%A0%81%2F</url>
     <content type="text"><![CDATA[如果突然忘记了mysql的账号密码，或者拿着别人的电脑忘记了mysql的账号密码该咋办？？？ 打开mysql.exe和mysqld.exe所在的文件夹,复制路径地址; 打开cmd命令提示符，进入上一步mysql.exe所在的文件夹; 输入命令 mysqld –skip-grant-tables 回车，此时就跳过了mysql的用户验证。注意输入此命令之后命令行就无法操作了，此时可以再打开一个新的命令行。 注意：在输入此命令之前先在任务管理器中结束mysqld.exe进程，确保mysql服务器端已结束运行; 同样也在步骤2之后，然后直接输入mysql，不需要带任何登录参数直接回车就可以登陆上数据库; 输入show databases; 可以看到所有数据库说明成功登陆; 其中mysql库就是保存用户名的地方。输入 use mysql; 选择mysql数据库; 输入show tables;查看所有表，会发现有个user表，这里存放的就是用户名，密码，权限等等账户信息; 输入select user,host,password from user; 来查看账户信息; 更改root密码，输入update user set password=password(‘root’) where user=’root’ and host=’localhost’; 再次查看账户信息，select user,host,password from user; 可以看到密码已被修改。]]></content>
