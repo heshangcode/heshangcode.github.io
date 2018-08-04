@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[MyBatis学习笔记（一）mybatis介绍、环境搭建]]></title>
     <url>%2F2018%2F08%2F03%2FMyBatis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89mybatis%E4%BB%8B%E7%BB%8D%E3%80%81%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[本文主要讲什么是框架、mybatis介绍、如何学习框架、如何用idea搭建mybatis的环境(非maven)]]></content>
       <categories>
         <category>MyBatis</category>
       </categories>
