@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[idea导入/移除jar包方式（三种）]]></title>
+    <url>%2F2018%2F08%2F04%2Fidea%E5%AF%BC%E5%85%A5-%E7%A7%BB%E9%99%A4jar%E5%8C%85%E6%96%B9%E5%BC%8F%EF%BC%88%E4%B8%89%E7%A7%8D%EF%BC%89%2F</url>
+    <content type="text"><![CDATA[eclipse导入jar只需要简单的右键addxxx就可以，本篇关于idea导入jar的3种方式，用GIF展示 1.添加jar包 方法一：添加lib目录下的所有jar包 方法二：右键jar，选择addxxx 方法三：在方法一的基础上，点击lib下面的相应的jar包 2.删除jar包]]></content>
+      <categories>
+        <category>idea</category>
+      </categories>
+      <tags>
+        <tag>idea的jar添加和删除</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[MyBatis学习笔记（一）mybatis介绍、环境搭建]]></title>
     <url>%2F2018%2F08%2F03%2FMyBatis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89mybatis%E4%BB%8B%E7%BB%8D%E3%80%81%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%2F</url>
-    <content type="text"><![CDATA[本文主要讲什么是框架、mybatis介绍、如何学习框架、如何用idea搭建mybatis的环境(非maven)]]></content>
+    <content type="text"><![CDATA[本文主要讲什么是框架、如何学习框架、mybatis介绍、如何用idea搭建mybatis的环境(非maven) 1.什么是框架？你可以理解为就是别人写好的工具类，为我们提供一种解决方案，最后为了提高开发效率 2.为什么学习框架？个人：对你底层开发无任何帮助意义，但是如果看源码，可以学到如何设计的 公司：效益，提高了开发效率 3.怎么去学习框架？需要遵循框架规则： 找到jar包 class文件（java文件） 入口：核心配置文件 通过官方给定的帮助文档，使用其提供API接口 测试 在这段时间里，我将学习ssm框架：MyBatis + SpringMvc + Spring 把它在我学jsp，servlet那段时间学的mvc模式，和我将要学的ssm框架，做一个小小的改动： 4.MyBatis框架是一个什么框架？MyBatis是一个持久层框架 什么是持久化： 狭义：把数据永久性的保存到数据库或者存储器都是持久化 广义：针对于数据库所有的操作，都是持久化操作 Create：增加 Read：读取查询 Update：更新 Delete：删除 MyBatis是一个ORM框架： Object：对象 java对象 Relationship：关系（关系型数据库） Mapping：映射 5.什么是MyBatis？MyBatis 是支持定制化 SQL、存储过程以及高级映射的优秀的持久层框架。 MyBatis避免了几乎所有的JDBC代码(1.加载驱动2.获取连接3.执行语句对象4.处理结果集5.关闭资源)和手动设置参数以及获取结果集(ResultSet). 就是之前学习的时候，自己封装的数据Dao，需要自己处理数据转换成自己想要的对象 MyBatis可以对配置和原生Map使用简单的XML或注解，将接口和Java的POJOs(Plain Old Java Objects,普通的 Java对象)映射成数据库中的记录。 6.idea搭建MyBatis环境（非maven）1).所需要的jar包: mybatis-3.4.6.jar mybatis的包 mysql-connector-java-5.1.45-bin.jar 数据库访问 log4j-1.2.17.jar 日志框架包(在控制台显示sql语句信息等) junit-4.12.jar 单元测试框架 hamcrest-core-1.3.jar junit-4.12所依赖的包 2).创建一个javase project3).在项目目录下创建一个lib放jar包，然后导入jar包]]></content>
       <categories>
         <category>MyBatis</category>
       </categories>

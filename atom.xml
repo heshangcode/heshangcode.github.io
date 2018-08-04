@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://heshangcode.coding.me/"/>
-  <updated>2018-08-03T13:09:53.535Z</updated>
+  <updated>2018-08-04T11:02:08.265Z</updated>
   <id>http://heshangcode.coding.me/</id>
   
   <author>
@@ -17,20 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>idea导入/移除jar包方式（三种）</title>
+    <link href="http://heshangcode.coding.me/2018/08/04/idea%E5%AF%BC%E5%85%A5-%E7%A7%BB%E9%99%A4jar%E5%8C%85%E6%96%B9%E5%BC%8F%EF%BC%88%E4%B8%89%E7%A7%8D%EF%BC%89/"/>
+    <id>http://heshangcode.coding.me/2018/08/04/idea导入-移除jar包方式（三种）/</id>
+    <published>2018-08-04T10:02:48.000Z</published>
+    <updated>2018-08-04T11:02:08.265Z</updated>
+    
+    <content type="html"><![CDATA[<p>eclipse导入jar只需要简单的右键addxxx就可以，本篇关于idea导入jar的3种方式，用GIF展示</p><a id="more"></a><h3 id="1-添加jar包"><a href="#1-添加jar包" class="headerlink" title="1.添加jar包"></a>1.添加jar包</h3><ul><li><p>方法一：添加lib目录下的所有jar包</p><p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1ftxv86n1e8g20qb0hs4qp.gif" alt=""></p></li><li><p>方法二：右键jar，选择addxxx<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1ftxvbzzsmbg20g00lzwm4.gif" alt=""></p></li><li><p>方法三：在方法一的基础上，点击lib下面的相应的jar包</p></li></ul><h3 id="2-删除jar包"><a href="#2-删除jar包" class="headerlink" title="2.删除jar包"></a>2.删除jar包</h3><p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1ftxvc2g7r7g20px0hyn2x.gif" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;eclipse导入jar只需要简单的右键addxxx就可以，本篇关于idea导入jar的3种方式，用GIF展示&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="idea" scheme="http://heshangcode.coding.me/categories/idea/"/>
+    
+    
+      <category term="idea的jar添加和删除" scheme="http://heshangcode.coding.me/tags/idea%E7%9A%84jar%E6%B7%BB%E5%8A%A0%E5%92%8C%E5%88%A0%E9%99%A4/"/>
+    
+  </entry>
+  
+  <entry>
     <title>MyBatis学习笔记（一）mybatis介绍、环境搭建</title>
     <link href="http://heshangcode.coding.me/2018/08/03/MyBatis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89mybatis%E4%BB%8B%E7%BB%8D%E3%80%81%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
     <id>http://heshangcode.coding.me/2018/08/03/MyBatis学习笔记（一）mybatis介绍、环境搭建/</id>
     <published>2018-08-03T06:54:10.000Z</published>
-    <updated>2018-08-03T13:09:53.535Z</updated>
+    <updated>2018-08-04T11:00:14.335Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="本文主要讲什么是框架、mybatis介绍、如何学习框架、如何用idea搭建mybatis的环境-非maven"><a href="#本文主要讲什么是框架、mybatis介绍、如何学习框架、如何用idea搭建mybatis的环境-非maven" class="headerlink" title="本文主要讲什么是框架、mybatis介绍、如何学习框架、如何用idea搭建mybatis的环境(非maven)"></a>本文主要讲什么是框架、mybatis介绍、如何学习框架、如何用idea搭建mybatis的环境(非maven)</h3>]]></content>
+    <content type="html"><![CDATA[<p>本文主要讲什么是框架、如何学习框架、mybatis介绍、如何用idea搭建mybatis的环境(非maven)</p><a id="more"></a> <h1 id="1-什么是框架？"><a href="#1-什么是框架？" class="headerlink" title="1.什么是框架？"></a>1.什么是框架？</h1><p>你可以理解为就是别人写好的工具类，为我们提供一种解决方案，最后为了提高开发效率</p><h1 id="2-为什么学习框架？"><a href="#2-为什么学习框架？" class="headerlink" title="2.为什么学习框架？"></a>2.为什么学习框架？</h1><p>个人：对你底层开发无任何帮助意义，但是如果看源码，可以学到如何设计的</p><p>公司：效益，提高了开发效率</p><h1 id="3-怎么去学习框架？"><a href="#3-怎么去学习框架？" class="headerlink" title="3.怎么去学习框架？"></a>3.怎么去学习框架？</h1><p>需要遵循框架<font color="red"><strong>规则：</strong></font></p><ol><li>找到jar包 class文件（java文件）</li><li>入口：核心配置文件</li><li>通过官方给定的帮助文档，使用其提供API接口</li><li>测试</li></ol><p>在这段时间里，我将学习ssm框架：MyBatis + SpringMvc + Spring</p><p>把它在我学jsp，servlet那段时间学的mvc模式，和我将要学的ssm框架，做一个小小的改动：</p><p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1ftxjez0k6jj211308iq68.jpg" alt=""></p><h1 id="4-MyBatis框架是一个什么框架？"><a href="#4-MyBatis框架是一个什么框架？" class="headerlink" title="4.MyBatis框架是一个什么框架？"></a>4.MyBatis框架是一个什么框架？</h1><p>MyBatis是一个持久层框架</p><ul><li>什么是持久化：<ul><li>狭义：把数据永久性的保存到数据库或者存储器都是持久化</li><li>广义：针对于数据库所有的操作，都是持久化操作<ul><li>Create：增加</li><li>Read：读取查询</li><li>Update：更新</li><li>Delete：删除</li></ul></li></ul></li></ul><p>MyBatis是一个ORM框架：</p><ul><li>Object：对象 java对象</li><li>Relationship：关系（关系型数据库）</li><li>Mapping：映射</li></ul><p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1ftxjoa2ln4j20pm0c5gn8.jpg" alt=""></p><h1 id="5-什么是MyBatis？"><a href="#5-什么是MyBatis？" class="headerlink" title="5.什么是MyBatis？"></a>5.什么是MyBatis？</h1><p>MyBatis 是支持<font color="red">定制化 SQL</font>、存储过程以及<font color="red">高级映射</font>的优秀的<font color="red">持久层框架。</font></p><p>MyBatis避免了几乎所有的<font color="red">JDBC代码(1.加载驱动2.获取连接3.执行语句对象4.处理结果集5.关闭资源)</font>和手动设置参数以及<font color="red">获取结果集(ResultSet).</font></p><ul><li>就是之前学习的时候，自己封装的数据Dao，需要自己处理数据转换成自己想要的对象</li></ul><p>MyBatis可以对配置和<font color="red">原生Map使用简单的XML</font>或注解，将<font color="red">接口</font>和<font color="red">Java的POJOs</font>(Plain Old Java Objects,普通的 Java对象)<font color="red">映射成数据库中的记录。</font></p><h1 id="6-idea搭建MyBatis环境（非maven）"><a href="#6-idea搭建MyBatis环境（非maven）" class="headerlink" title="6.idea搭建MyBatis环境（非maven）"></a>6.idea搭建MyBatis环境（非maven）</h1><h4 id="1-所需要的jar包"><a href="#1-所需要的jar包" class="headerlink" title="1).所需要的jar包:"></a>1).所需要的jar包:</h4><ul><li>mybatis-3.4.6.jar        mybatis的包<br>   mysql-connector-java-5.1.45-bin.jar        数据库访问<br>   log4j-1.2.17.jar        日志框架包(在控制台显示sql语句信息等)<br>   junit-4.12.jar        单元测试框架<br>   hamcrest-core-1.3.jar        junit-4.12所依赖的包</li></ul><h4 id="2-创建一个javase-project"><a href="#2-创建一个javase-project" class="headerlink" title="2).创建一个javase project"></a>2).创建一个javase project</h4><h4 id="3-在项目目录下创建一个lib放jar包，然后导入jar包"><a href="#3-在项目目录下创建一个lib放jar包，然后导入jar包" class="headerlink" title="3).在项目目录下创建一个lib放jar包，然后导入jar包"></a>3).在项目目录下创建一个lib放jar包，然后导入jar包</h4>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h3 id=&quot;本文主要讲什么是框架、mybatis介绍、如何学习框架、如何用idea搭建mybatis的环境-非maven&quot;&gt;&lt;a href=&quot;#本文主要讲什么是框架、mybatis介绍、如何学习框架、如何用idea搭建mybatis的环境-非maven&quot; class=&quot;hea
-      
+      &lt;p&gt;本文主要讲什么是框架、如何学习框架、mybatis介绍、如何用idea搭建mybatis的环境(非maven)&lt;/p&gt;
     
     </summary>
     
