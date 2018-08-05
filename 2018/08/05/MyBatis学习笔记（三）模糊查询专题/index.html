@@ -152,20 +152,20 @@
 
 
 
-  <meta name="description" content="本文讲解，用接口代理模式实现mybatis的模糊查询，讲解#{}和${}两个的区别，XML文件中五个特殊字符串不允许使用。">
+  <meta name="description" content="本文讲解，用接口代理模式实现mybatis的模糊查询，讲解#{}和${}两个的区别，XML文件中五个特殊字符串不允许使用，小于号的解决问题。">
 <meta name="keywords" content="MyBatis学习总结">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MyBatis学习笔记（三）模糊查询专题">
 <meta property="og:url" content="http://heshangcode.coding.me/2018/08/05/MyBatis学习笔记（三）模糊查询专题/index.html">
 <meta property="og:site_name" content="heshang">
-<meta property="og:description" content="本文讲解，用接口代理模式实现mybatis的模糊查询，讲解#{}和${}两个的区别，XML文件中五个特殊字符串不允许使用。">
+<meta property="og:description" content="本文讲解，用接口代理模式实现mybatis的模糊查询，讲解#{}和${}两个的区别，XML文件中五个特殊字符串不允许使用，小于号的解决问题。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1ftywra5q0bj20p606emxa.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1ftyyubmyd5j20eg0e8441.jpg">
-<meta property="og:updated_time" content="2018-08-05T09:58:55.856Z">
+<meta property="og:updated_time" content="2018-08-05T10:17:00.317Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MyBatis学习笔记（三）模糊查询专题">
-<meta name="twitter:description" content="本文讲解，用接口代理模式实现mybatis的模糊查询，讲解#{}和${}两个的区别，XML文件中五个特殊字符串不允许使用。">
+<meta name="twitter:description" content="本文讲解，用接口代理模式实现mybatis的模糊查询，讲解#{}和${}两个的区别，XML文件中五个特殊字符串不允许使用，小于号的解决问题。">
 <meta name="twitter:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1ftywra5q0bj20p606emxa.jpg">
 
 
@@ -238,7 +238,7 @@
 
 
 
-    <a href="https://your-url" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+    <a href="https://github.com/heshangcode" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
 
 
@@ -419,7 +419,7 @@
                 
               
 
-              <time title="创建时间：2018-08-05 13:33:40 / 修改时间：17:58:55" itemprop="dateCreated datePublished" datetime="2018-08-05T13:33:40+08:00">2018-08-05</time>
+              <time title="创建时间：2018-08-05 13:33:40 / 修改时间：18:17:00" itemprop="dateCreated datePublished" datetime="2018-08-05T13:33:40+08:00">2018-08-05</time>
             
 
             
@@ -511,7 +511,7 @@
       
 
       
-        <p>本文讲解，用接口代理模式实现mybatis的模糊查询，讲解#{}和${}两个的区别，XML文件中五个特殊字符串不允许使用。</p>
+        <p>本文讲解，用接口代理模式实现mybatis的模糊查询，讲解#{}和${}两个的区别，XML文件中五个特殊字符串不允许使用，小于号的解决问题。</p>
 <a id="more"></a>
 <h3 id="1-关于接口代理模式和传统模式的区别"><a href="#1-关于接口代理模式和传统模式的区别" class="headerlink" title="1.关于接口代理模式和传统模式的区别"></a>1.关于接口代理模式和传统模式的区别</h3><ul>
 <li><p>传统模式：在笔记（二）就是采用的这个模式：</p>
@@ -672,7 +672,7 @@
   <p><span>本文标题:</span><a href="/2018/08/05/MyBatis学习笔记（三）模糊查询专题/">MyBatis学习笔记（三）模糊查询专题</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 和尚 的个人博客">和尚</a></p>
   <!-- <p><span>发布时间:</span>2018年08月05日 - 13:08</p>
-  <p><span>最后更新:</span>2018年08月05日 - 17:08</p> -->
+  <p><span>最后更新:</span>2018年08月05日 - 18:08</p> -->
   <p><span>本文链接:</span><a href="/2018/08/05/MyBatis学习笔记（三）模糊查询专题/" title="MyBatis学习笔记（三）模糊查询专题">http://heshangcode.coding.me/2018/08/05/MyBatis学习笔记（三）模糊查询专题/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://heshangcode.coding.me/2018/08/05/MyBatis学习笔记（三）模糊查询专题/"  aria-label="复制成功！"></i></span>
   </p>
@@ -761,6 +761,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2018/08/05/MyBatis学习笔记（四）动态SQLCRUD语句专题/" rel="prev" title="MyBatis学习笔记（四）动态SQLCRUD语句专题">
+                MyBatis学习笔记（四）动态SQLCRUD语句专题 <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -842,7 +846,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">7</span>
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1014,7 +1018,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">38k</span>
+    <span title="站点总字数">58k</span>
   
 
   
@@ -1023,7 +1027,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">1:15</span>
+    <span title="站点阅读时长">1:56</span>
   
 </div>
 
