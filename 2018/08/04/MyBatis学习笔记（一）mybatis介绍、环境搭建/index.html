@@ -163,7 +163,7 @@
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1ftxjez0k6jj211308iq68.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1ftxjoa2ln4j20pm0c5gn8.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1ftxvvt9m0aj20ac0fxdk7.jpg">
-<meta property="og:updated_time" content="2018-08-04T12:35:07.888Z">
+<meta property="og:updated_time" content="2018-08-05T04:53:04.867Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MyBatis学习笔记（一）mybatis介绍、环境搭建">
 <meta name="twitter:description" content="本文主要讲什么是框架、如何学习框架、mybatis介绍、如何用idea搭建mybatis的环境(非maven)">
@@ -420,12 +420,24 @@
                 
               
 
-              <time title="创建时间：2018-08-04 20:00:10 / 修改时间：20:35:07" itemprop="dateCreated datePublished" datetime="2018-08-04T20:00:10+08:00">2018-08-04</time>
+              <time title="创建时间：2018-08-04 20:00:10" itemprop="dateCreated datePublished" datetime="2018-08-04T20:00:10+08:00">2018-08-04</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-08-05 12:53:04" itemprop="dateModified" datetime="2018-08-05T12:53:04+08:00">2018-08-05</time>
               
             
           </span>
@@ -478,7 +490,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">9.7k</span>
+                <span title="本文字数">9.8k</span>
               
 
               
@@ -492,7 +504,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">19 分钟</span>
+                <span title="阅读时长">20 分钟</span>
               
             </div>
           
@@ -571,8 +583,13 @@
 </ol>
 <h4 id="5-代码内容"><a href="#5-代码内容" class="headerlink" title="5).代码内容"></a>5).代码内容</h4><h5 id="1-创建数据库-含后几篇文章的数据表"><a href="#1-创建数据库-含后几篇文章的数据表" class="headerlink" title="1.创建数据库(含后几篇文章的数据表)"></a>1.创建数据库(含后几篇文章的数据表)</h5><p>cy42_mss.sql</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line">DROP TABLE IF EXISTS `oa_user`;</span><br><span class="line">CREATE TABLE `oa_user` (</span><br><span class="line">  `user_id` int(11) NOT NULL AUTO_INCREMENT,</span><br><span class="line">  `user_name` varchar(255) DEFAULT NULL,</span><br><span class="line">  `sex` varchar(255) DEFAULT NULL,</span><br><span class="line">  `money` decimal(7,2) DEFAULT NULL,</span><br><span class="line">  `birthday` date DEFAULT NULL,</span><br><span class="line">  PRIMARY KEY (`user_id`)</span><br><span class="line">) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4;</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Records of oa_user</span><br><span class="line">-- ----------------------------</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;1&apos;, &apos;悟空&apos;, &apos;男&apos;, &apos;888.00&apos;, null);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;2&apos;, &apos;八戒&apos;, &apos;男&apos;, &apos;999.00&apos;, null);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;3&apos;, &apos;天蓬元帅&apos;, &apos;女&apos;, &apos;1000.00&apos;, null);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;4&apos;, &apos;悟能&apos;, &apos;男&apos;, &apos;666.00&apos;, null);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;5&apos;, &apos;法悟法&apos;, &apos;女&apos;, &apos;544.00&apos;, null);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;6&apos;, &apos;悟&apos;, &apos;女&apos;, &apos;562.00&apos;, null);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;7&apos;, &apos;悟&apos;, &apos;女&apos;, &apos;562.00&apos;, null);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;14&apos;, &apos;嫦娥&apos;, &apos;女&apos;, &apos;1213.00&apos;, null);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;15&apos;, &apos;月兔&apos;, &apos;女&apos;, &apos;2113.00&apos;, null);</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Table structure for skill</span><br><span class="line">-- ----------------------------</span><br><span class="line">DROP TABLE IF EXISTS `skill`;</span><br><span class="line">CREATE TABLE `skill` (</span><br><span class="line">  `skill_id` int(11) NOT NULL AUTO_INCREMENT,</span><br><span class="line">  `skill_name` varchar(255) DEFAULT NULL,</span><br><span class="line">  `num` int(11) DEFAULT NULL,</span><br><span class="line">  `fk_teacher_id` int(11) DEFAULT NULL,</span><br><span class="line">  PRIMARY KEY (`skill_id`)</span><br><span class="line">) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4;</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Records of skill</span><br><span class="line">-- ----------------------------</span><br><span class="line">INSERT INTO `skill` VALUES (&apos;2&apos;, &apos;JS&apos;, &apos;75&apos;, null);</span><br><span class="line">INSERT INTO `skill` VALUES (&apos;7&apos;, &apos;CSS&apos;, &apos;66&apos;, null);</span><br><span class="line">INSERT INTO `skill` VALUES (&apos;8&apos;, &apos;java&apos;, &apos;66&apos;, null);</span><br><span class="line">INSERT INTO `skill` VALUES (&apos;9&apos;, &apos;vue&apos;, &apos;56&apos;, &apos;9999&apos;);</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Table structure for sys_role</span><br><span class="line">-- ----------------------------</span><br><span class="line">DROP TABLE IF EXISTS `sys_role`;</span><br><span class="line">CREATE TABLE `sys_role` (</span><br><span class="line">  `role_id` int(11) NOT NULL AUTO_INCREMENT,</span><br><span class="line">  `role_name` varchar(32) DEFAULT NULL,</span><br><span class="line">  `role_key` varchar(32) DEFAULT NULL,</span><br><span class="line">  `status` int(1) DEFAULT &apos;1&apos; COMMENT &apos;1可用 -1禁用&apos;,</span><br><span class="line">  PRIMARY KEY (`role_id`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Records of sys_role</span><br><span class="line">-- ----------------------------</span><br><span class="line">INSERT INTO `sys_role` VALUES (&apos;-100&apos;, &apos;超级管理员&apos;, &apos;ADMIN&apos;, &apos;1&apos;);</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Table structure for sys_user</span><br><span class="line">-- ----------------------------</span><br><span class="line">DROP TABLE IF EXISTS `sys_user`;</span><br><span class="line">CREATE TABLE `sys_user` (</span><br><span class="line">  `user_id` int(11) NOT NULL AUTO_INCREMENT,</span><br><span class="line">  `account` varchar(32) NOT NULL,</span><br><span class="line">  `password` varchar(128) NOT NULL,</span><br><span class="line">  `user_name` varchar(32) DEFAULT &apos;&apos;,</span><br><span class="line">  `status` int(1) NOT NULL DEFAULT &apos;1&apos; COMMENT &apos;1可用 -1删除  2禁用&apos;,</span><br><span class="line">  `login_time` datetime DEFAULT CURRENT_TIMESTAMP,</span><br><span class="line">  `ip` varchar(128) DEFAULT NULL,</span><br><span class="line">  `fk_role_id` int(11) DEFAULT NULL,</span><br><span class="line">  PRIMARY KEY (`user_id`),</span><br><span class="line">  KEY `fk_role_id` (`fk_role_id`),</span><br><span class="line">  CONSTRAINT `sys_user_ibfk_1` FOREIGN KEY (`fk_role_id`) REFERENCES `sys_role` (`role_id`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;</span><br><span class="line"></span><br><span class="line">-- ----------------------------</span><br><span class="line">-- Records of sys_user</span><br><span class="line">-- ----------------------------</span><br><span class="line">INSERT INTO `sys_user` VALUES (&apos;-999&apos;, &apos;super&apos;, &apos;super&apos;, &apos;唐僧&apos;, &apos;1&apos;, &apos;2018-07-28 18:47:39&apos;, null, &apos;-100&apos;);</span><br><span class="line">INSERT INTO `sys_user` VALUES (&apos;-888&apos;, &apos;admin&apos;, &apos;admin&apos;, &apos;悟空&apos;, &apos;1&apos;, &apos;2018-07-03 18:48:21&apos;, null, &apos;-100&apos;);</span><br></pre></td></tr></table></figure>
-<h5 id="2-数据库属性文件"><a href="#2-数据库属性文件" class="headerlink" title="2.数据库属性文件"></a>2.数据库属性文件</h5><p>jdbc.properties</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">jdbc.mysql.driver=com.mysql.jdbc.Driver</span><br><span class="line">jdbc.mysql.url=jdbc:mysql://localhost:3306/cy42_mss</span><br><span class="line">jdbc.mysql.username=root</span><br><span class="line">jdbc.mysql.password=root</span><br></pre></td></tr></table></figure>
+<h5 id="2-数据库属性文件"><a href="#2-数据库属性文件" class="headerlink" title="2.数据库属性文件"></a>2.数据库属性文件</h5><p>为了解决中文乱码问题：</p>
+<ol>
+<li>自己的mysql编码要设置成utf-8或utf8mb4</li>
+<li>如果mysql编码没有设置以上的，需要再url后面加?useUnicode=true&amp;characterEncoding=UTF-8 </li>
+</ol>
+<p>jdbc.properties</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">jdbc.mysql.driver=com.mysql.jdbc.Driver</span><br><span class="line">jdbc.mysql.url=jdbc:mysql://localhost:3306/cy42_mss?useUnicode=true&amp;characterEncoding=UTF-8</span><br><span class="line">jdbc.mysql.username=root</span><br><span class="line">jdbc.mysql.password=root</span><br></pre></td></tr></table></figure>
 <h5 id="3-核心配置文件"><a href="#3-核心配置文件" class="headerlink" title="3.核心配置文件"></a>3.核心配置文件</h5><p>mybatis-config.xml</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</span><br><span class="line"><span class="meta">&lt;!DOCTYPE configuration</span></span><br><span class="line"><span class="meta">		PUBLIC "-//mybatis.org//DTD Config 3.0//EN"</span></span><br><span class="line"><span class="meta">		"http://mybatis.org/dtd/mybatis-3-config.dtd"&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--加载属性文件 --&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">properties</span> <span class="attr">resource</span>=<span class="string">"jdbc.properties"</span>/&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--自定义设置类型的别名，也就是resultMap里的type，避免包名已修改，在映射文件里修改多处地方--&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">typeAliases</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 方式一、com.hs.model.Skill这个类设置了别名hs，之后要用这个的话，直接写hs --&gt;</span></span><br><span class="line">		<span class="comment">&lt;!--&lt;typeAlias type="com.hs.model.Skill" alias="hs"/&gt; --&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 方式二、com.hs.model这个包下的类，要用的时候直接写类名，比如用com.hs.model.Skill，直接写Skill --&gt;</span></span><br><span class="line"> 		<span class="tag">&lt;<span class="name">package</span> <span class="attr">name</span>=<span class="string">"com.hs.model"</span>/&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">typeAliases</span>&gt;</span></span><br><span class="line">	<span class="comment">&lt;!--配置数据库的环境--&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">environments</span> <span class="attr">default</span>=<span class="string">"development"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">environment</span> <span class="attr">id</span>=<span class="string">"development"</span>&gt;</span></span><br><span class="line">			<span class="comment">&lt;!--事务管理器:保证数据的完整性和一致性   关键信息  --&gt;</span></span><br><span class="line">			<span class="comment">&lt;!--框架：默认情况下CUD操作需要  手动提交事务</span></span><br><span class="line"><span class="comment">			（如同在Navicat中表中输入了数据，没有点那个小√，就是没有提交事务，</span></span><br><span class="line"><span class="comment">			但是输入insert语句，就自动提交事务了）  --&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">transactionManager</span> <span class="attr">type</span>=<span class="string">"JDBC"</span> /&gt;</span></span><br><span class="line">			<span class="comment">&lt;!--使用的是连接池：百度java如何实行连接池的原理？  --&gt;</span></span><br><span class="line">			<span class="tag">&lt;<span class="name">dataSource</span> <span class="attr">type</span>=<span class="string">"POOLED"</span>&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"driver"</span> <span class="attr">value</span>=<span class="string">"$&#123;jdbc.mysql.driver&#125;"</span> /&gt;</span>  <span class="comment">&lt;!--获取值，$&#123;属性文件里的变量名&#125;，也可以直接写值--&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"url"</span> <span class="attr">value</span>=<span class="string">"$&#123;jdbc.mysql.url&#125;"</span> /&gt;</span>  <span class="comment">&lt;!--获取值，$&#123;属性文件里的变量名&#125;，也可以直接写值--&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"username"</span> <span class="attr">value</span>=<span class="string">"$&#123;jdbc.mysql.username&#125;"</span> /&gt;</span> <span class="comment">&lt;!--获取值，$&#123;属性文件里的变量名&#125;，也可以直接写值--&gt;</span></span><br><span class="line">				<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"password"</span> <span class="attr">value</span>=<span class="string">"$&#123;jdbc.mysql.password&#125;"</span> /&gt;</span> <span class="comment">&lt;!--获取值，$&#123;属性文件里的变量名&#125;，也可以直接写值--&gt;</span></span><br><span class="line">			<span class="tag">&lt;/<span class="name">dataSource</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;/<span class="name">environment</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">environments</span>&gt;</span></span><br><span class="line"></span><br><span class="line">	<span class="comment">&lt;!--加载映射文件 ，也就是含sql语句的文件--&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">		 <span class="comment">&lt;!--告知映射文件方式1，一个一个的配置--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mapper</span> <span class="attr">resource</span>=<span class="string">"com/hs/model/SkillMapper.xml"</span>/&gt;</span></span><br><span class="line">		<span class="comment">&lt;!-- 告知映射文件方式2，自动扫描包内的Mapper接口与配置文件 --&gt;</span></span><br><span class="line">		<span class="comment">&lt;!--&lt;package name="com.hs.model"/&gt;--&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h5 id="4-dao层"><a href="#4-dao层" class="headerlink" title="4.dao层"></a>4.dao层</h5><p>SkillDao.java</p>
@@ -677,7 +694,7 @@
   <p><span>本文标题:</span><a href="/2018/08/04/MyBatis学习笔记（一）mybatis介绍、环境搭建/">MyBatis学习笔记（一）mybatis介绍、环境搭建</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 和尚 的个人博客">和尚</a></p>
   <!-- <p><span>发布时间:</span>2018年08月04日 - 20:08</p>
-  <p><span>最后更新:</span>2018年08月04日 - 20:08</p> -->
+  <p><span>最后更新:</span>2018年08月05日 - 12:08</p> -->
   <p><span>本文链接:</span><a href="/2018/08/04/MyBatis学习笔记（一）mybatis介绍、环境搭建/" title="MyBatis学习笔记（一）mybatis介绍、环境搭建">http://heshangcode.coding.me/2018/08/04/MyBatis学习笔记（一）mybatis介绍、环境搭建/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://heshangcode.coding.me/2018/08/04/MyBatis学习笔记（一）mybatis介绍、环境搭建/"  aria-label="复制成功！"></i></span>
   </p>
@@ -766,6 +783,10 @@
 
           <div class="post-nav-prev post-nav-item">
             
+              <a href="/2018/08/05/MyBatis学习笔记（二）CRUD操作（查询操作基础）/" rel="prev" title="MyBatis学习笔记（二）CRUD操作（查询操作基础）">
+                MyBatis学习笔记（二）CRUD操作（查询操作基础） <i class="fa fa-chevron-right"></i>
+              </a>
+            
           </div>
         </div>
       
@@ -847,7 +868,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">5</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1019,7 +1040,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">13k</span>
+    <span title="站点总字数">27k</span>
   
 
   
@@ -1028,7 +1049,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">25 分钟</span>
+    <span title="站点阅读时长">54 分钟</span>
   
 </div>
 
