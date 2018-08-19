@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[idea配置github并上传项目]]></title>
+    <url>%2F2018%2F08%2F19%2Fidea%E9%85%8D%E7%BD%AEgithub%E5%B9%B6%E4%B8%8A%E4%BC%A0%E9%A1%B9%E7%9B%AE%2F</url>
+    <content type="text"><![CDATA[感觉自己之前写的学习笔记，根本不叫笔记，只是为了把代码放上去而已，然后自己也学习了其他的很多学习博客的写法，写少量的代码进去，再配上相应的文字说明，然后把全部源码放在github上，我觉得我自己也借鉴这样写学习博客，然后今天学习了idea配置github，然后上传项目，自己也百度了许多教程，但是各种都不一样，自己就捅咕了一番，有了属于自己的教程，做个记录吧。 1.什么是git学习教程：廖雪峰的git教程—-https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000 2.下载安装git下载链接：https://git-scm.com/ 3.注册一个githubgithub官网：https://github.com/ 4.github创建一个仓库 5.idea配置github 打开自己的项目 在setting里找到git安装的文件，然后点test，出现成功，注意是bin下的git.exe 设置自己的github账号密码， 6.idea上传项目到github 创建本地git仓库，然后选择你要上传的项目在控制台可以看见相应的git指令此时你选择的项目的内容名字全部变色 选择不上传到github的文件或者文件夹，第一个为文件，第二个为文件夹或者在commit的时候选择需要上传的东西或者不上传的东西 commit到本地仓库 这里就是commit选择控制台出现相应的git指令 push到远程仓库github上然后url输入刚才复制的github仓库地址，name是啥我也不知道这里箭头所指的是上床到哪个分支的名字，点击它，可以直接修改分支的名字，然后就push到相应的分支，控制台出现相应的git指令 push成功 github页面上显示 7.如果代码修改了再提交重复上面的第3步开始， 然后github页面就是这样的 8.自己在网上看的一些不错教程 https://www.cnblogs.com/jinjiyese153/p/6796668.html https://www.cnblogs.com/jinjiyese153/p/6796668.html https://my.oschina.net/u/2608182/blog/745178]]></content>
+      <categories>
+        <category>idea</category>
+      </categories>
+      <tags>
+        <tag>idea配置github</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[MyBatis学习笔记（七）遇见的坑]]></title>
     <url>%2F2018%2F08%2F06%2FMyBatis%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%83%EF%BC%89%E9%81%87%E8%A7%81%E7%9A%84%E5%9D%91%2F</url>
     <content type="text"><![CDATA[在学习过程中，遇见数据库中中文乱码，mybatis常见的异常和如何调试，idea不知道如何创建xml文件，idea中project和module的关系，如何把一个module复制成另外一个module，每次一个新的mybatis项目，有很多地方记得要修改 1.解决数据库中文乱码问题 方法一(推荐)：把数据库的配置文件编码设置成UTF-8或utf8mb4，两者区别就是UTF-8最大三字节，后者最大四字节 操作： 之前自己在网上找了一些教程说在mysql的安装目录下一个配置文件里修改，结果自己找了半天了，都没有找到，然后用everything搜索，找到了配置文件，结果不是安装目录下…… 找到如下文件，如果没有找到，用everything搜索 在最后添加下面代码 若要设置成utf-8，把utf8mb4修改成utf-8即可 123456789[client] default-character-set = utf8mb4 [mysql] default-character-set = utf8mb4 [mysqld] character-set-client-handshake = FALSE character-set-server = utf8mb4 collation-server = utf8mb4_unicode_ci init_connect=&apos;SET NAMES utf8mb4&apos; 保存文件，重启mysql服务 方法二：在每次连接数据库的url最后面加入 1?useUnicode=true&amp;characterEncoding=UTF-8 2.mybatis常见的异常 控制台或者其他位置报MyBatisUtils工具类的异常 95%以上：是映射文件你写错了 5%：是核心配置文件写错了 因为mybatis-config.xml是入口，会加载很多的映射文件，把他们融合在一起，如果其中有任何一个映射文件出错，所有的定制的SQL语句都将无法运行 如何调试？ 把自己的，，，这一行代码注释掉，然后再运行看控制台，错误从下往上看，Caused byxx 3.idea如何创建xml文件 1&lt;?xml version="1.0" encoding="UTF-8"?&gt; 4.idea中project和module的关系之前刚用idea，以为一个project，就是一个项目，结果并不是 5.如何把一个module复制成另外一个module直接像eclipse那样复制一个module，图标只会这样： 这不是一个module，要让他变成module，如下操作： 6.一个新的mybatis项目重点一些地方需要修改或者添加 核心配置文件的映射文件里 日志框架里写上你的命名空间 到此，目前的MyBatis小结到此结束，下一个学习SpringMvc，只希望自己能坚持下去，世界诱惑很多，只希望自己能一路走下去，加油！！！]]></content>

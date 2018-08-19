@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://heshangcode.coding.me/"/>
-  <updated>2018-08-06T09:31:02.215Z</updated>
+  <updated>2018-08-19T16:12:14.223Z</updated>
   <id>http://heshangcode.coding.me/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>idea配置github并上传项目</title>
+    <link href="http://heshangcode.coding.me/2018/08/19/idea%E9%85%8D%E7%BD%AEgithub%E5%B9%B6%E4%B8%8A%E4%BC%A0%E9%A1%B9%E7%9B%AE/"/>
+    <id>http://heshangcode.coding.me/2018/08/19/idea配置github并上传项目/</id>
+    <published>2018-08-19T14:52:48.000Z</published>
+    <updated>2018-08-19T16:12:14.223Z</updated>
+    
+    <content type="html"><![CDATA[<p>感觉自己之前写的学习笔记，根本不叫笔记，只是为了把代码放上去而已，然后自己也学习了其他的很多学习博客的写法，写少量的代码进去，再配上相应的文字说明，然后把全部源码放在github上，我觉得我自己也借鉴这样写学习博客，然后今天学习了idea配置github，然后上传项目，自己也百度了许多教程，但是各种都不一样，自己就捅咕了一番，有了属于自己的教程，做个记录吧。</p><a id="more"></a><h3 id="1-什么是git"><a href="#1-什么是git" class="headerlink" title="1.什么是git"></a>1.什么是git</h3><p>学习教程：廖雪峰的git教程—-<a href="https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000" target="_blank" rel="noopener">https://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000</a></p><h3 id="2-下载安装git"><a href="#2-下载安装git" class="headerlink" title="2.下载安装git"></a>2.下载安装git</h3><p>下载链接：<a href="https://git-scm.com/" target="_blank" rel="noopener">https://git-scm.com/</a></p><h3 id="3-注册一个github"><a href="#3-注册一个github" class="headerlink" title="3.注册一个github"></a>3.注册一个github</h3><p>github官网：<a href="https://github.com/" target="_blank" rel="noopener">https://github.com/</a></p><h3 id="4-github创建一个仓库"><a href="#4-github创建一个仓库" class="headerlink" title="4.github创建一个仓库"></a>4.github创建一个仓库</h3><p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuffdgjj1tj20x00kq40c.jpg" alt=""></p><p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuffiayytbj211e0nwmzm.jpg" alt=""></p><h3 id="5-idea配置github"><a href="#5-idea配置github" class="headerlink" title="5.idea配置github"></a>5.idea配置github</h3><ol><li>打开自己的项目</li><li><p>在setting里找到git安装的文件，然后点test，出现成功，注意是bin下的git.exe<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuffk4clrnj20zs0nvabu.jpg" alt=""></p></li><li><p>设置自己的github账号密码，<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuffm3zksgj20zt0o6myk.jpg" alt=""></p></li></ol><h3 id="6-idea上传项目到github"><a href="#6-idea上传项目到github" class="headerlink" title="6.idea上传项目到github"></a>6.idea上传项目到github</h3><ol><li>创建本地git仓库，然后选择你要上传的项目<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuffonzhqzj20ss0csmy7.jpg" alt="">在控制台可以看见相应的git指令<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuffqolsdcj20x00aumxm.jpg" alt="">此时你选择的项目的内容名字全部变色<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuffsfsw7ij20sz0fxmyp.jpg" alt=""></li><li>选择不上传到github的文件或者文件夹，第一个为文件，第二个为文件夹<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuffvyr5hqj20zs0nx0uc.jpg" alt="">或者在commit的时候选择需要上传的东西或者不上传的东西</li><li>commit到本地仓库<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuffypefwsj20j40fct9j.jpg" alt="">               这里就是commit选择<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fufg2debobj20qn0rujtl.jpg" alt="">控制台出现相应的git指令<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fufg5m1gg7j216j09w3zf.jpg" alt=""></li><li>push到远程仓库github上<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fufg7488qvj20xd0r0jtx.jpg" alt="">然后url输入刚才复制的github仓库地址，name是啥我也不知道<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fufg8jzkvtj20m20jfjrw.jpg" alt="">这里箭头所指的是上床到哪个分支的名字，点击它，可以直接修改分支的名字，然后就push到相应的分支，<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fufgaam5r4j20m10jmwez.jpg" alt="">控制台出现相应的git指令<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fufgel07v8j217f0a03zb.jpg" alt=""></li><li>push成功<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fufgdg023sj214l0jw74x.jpg" alt=""></li><li>github页面上显示<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fufgh1bnz8j212t0jm76c.jpg" alt=""></li></ol><h3 id="7-如果代码修改了再提交"><a href="#7-如果代码修改了再提交" class="headerlink" title="7.如果代码修改了再提交"></a>7.如果代码修改了再提交</h3><p>重复上面的第3步开始，<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fufgkhgudoj20wv0shq5z.jpg" alt=""></p><p>然后github页面就是这样的<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fufgm9sc7tj212p0k2wgk.jpg" alt=""></p><h3 id="8-自己在网上看的一些不错教程"><a href="#8-自己在网上看的一些不错教程" class="headerlink" title="8.自己在网上看的一些不错教程"></a>8.自己在网上看的一些不错教程</h3><ul><li><a href="https://www.cnblogs.com/jinjiyese153/p/6796668.html" target="_blank" rel="noopener">https://www.cnblogs.com/jinjiyese153/p/6796668.html</a></li><li><a href="https://www.cnblogs.com/jinjiyese153/p/6796668.html" target="_blank" rel="noopener">https://www.cnblogs.com/jinjiyese153/p/6796668.html</a></li><li><a href="https://my.oschina.net/u/2608182/blog/745178" target="_blank" rel="noopener">https://my.oschina.net/u/2608182/blog/745178</a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;感觉自己之前写的学习笔记，根本不叫笔记，只是为了把代码放上去而已，然后自己也学习了其他的很多学习博客的写法，写少量的代码进去，再配上相应的文字说明，然后把全部源码放在github上，我觉得我自己也借鉴这样写学习博客，然后今天学习了idea配置github，然后上传项目，自己也百度了许多教程，但是各种都不一样，自己就捅咕了一番，有了属于自己的教程，做个记录吧。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="idea" scheme="http://heshangcode.coding.me/categories/idea/"/>
+    
+    
+      <category term="idea配置github" scheme="http://heshangcode.coding.me/tags/idea%E9%85%8D%E7%BD%AEgithub/"/>
+    
+  </entry>
   
   <entry>
     <title>MyBatis学习笔记（七）遇见的坑</title>
