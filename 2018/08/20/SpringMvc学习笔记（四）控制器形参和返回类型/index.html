@@ -162,7 +162,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fug88t2k2xj20cy0lrwfs.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fug89tqwp1j20zk0gz771.jpg">
-<meta property="og:updated_time" content="2018-08-20T16:10:08.002Z">
+<meta property="og:updated_time" content="2018-08-21T05:14:13.216Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SpringMvc学习笔记（四）控制器形参和返回类型">
 <meta name="twitter:description" content="控制器里形参的说明：类可以被实例化。关于返回值类型说明：ModelAndView 官方使用方式(传值，跳转页面)，void类型(直接输出页面)，String类型(也可以跳转页面)，任意数据类型(主要JSON数据处理)">
@@ -436,7 +436,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-08-21 00:10:08" itemprop="dateModified" datetime="2018-08-21T00:10:08+08:00">2018-08-21</time>
+                <time title="修改时间：2018-08-21 13:14:13" itemprop="dateModified" datetime="2018-08-21T13:14:13+08:00">2018-08-21</time>
               
             
           </span>
@@ -525,6 +525,7 @@
       
         <p>控制器里形参的说明：类可以被实例化。关于返回值类型说明：ModelAndView 官方使用方式(传值，跳转页面)，void类型(直接输出页面)，String类型(也可以跳转页面)，任意数据类型(主要JSON数据处理)</p>
 <a id="more"></a>
+<p>源码获取<a href="https://github.com/heshangcode/Learn" target="_blank" rel="noopener">github</a></p>
 <h3 id="1-项目结构"><a href="#1-项目结构" class="headerlink" title="1.项目结构"></a>1.项目结构</h3><p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fug88t2k2xj20cy0lrwfs.jpg" alt=""></p>
 <p>需要添加tomcat的依赖，要不然没有HttpServletRequest等类，eclipse不用<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fug89tqwp1j20zk0gz771.jpg" alt=""></p>
 <h3 id="2-User-java"><a href="#2-User-java" class="headerlink" title="2.User.java"></a>2.User.java</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hs.model;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">private</span> Integer role_id;</span><br><span class="line">   <span class="keyword">private</span> String name;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> Integer <span class="title">getRole_id</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> role_id;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setRole_id</span><span class="params">(Integer role_id)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">this</span>.role_id = role_id;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> String <span class="title">getName</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> name;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setName</span><span class="params">(String name)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">this</span>.name = name;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="meta">@Override</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="string">"User&#123;"</span> +</span><br><span class="line">            <span class="string">"role_id="</span> + role_id +</span><br><span class="line">            <span class="string">", name='"</span> + name + <span class="string">'\''</span> +</span><br><span class="line">            <span class="string">'&#125;'</span>;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -635,7 +636,7 @@
   <p><span>本文标题:</span><a href="/2018/08/20/SpringMvc学习笔记（四）控制器形参和返回类型/">SpringMvc学习笔记（四）控制器形参和返回类型</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 和尚 的个人博客">和尚</a></p>
   <!-- <p><span>发布时间:</span>2018年08月20日 - 15:08</p>
-  <p><span>最后更新:</span>2018年08月21日 - 00:08</p> -->
+  <p><span>最后更新:</span>2018年08月21日 - 13:08</p> -->
   <p><span>本文链接:</span><a href="/2018/08/20/SpringMvc学习笔记（四）控制器形参和返回类型/" title="SpringMvc学习笔记（四）控制器形参和返回类型">http://heshangcode.coding.me/2018/08/20/SpringMvc学习笔记（四）控制器形参和返回类型/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://heshangcode.coding.me/2018/08/20/SpringMvc学习笔记（四）控制器形参和返回类型/"  aria-label="复制成功！"></i></span>
   </p>
@@ -809,7 +810,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">23</span>
+                    <span class="site-state-item-count">24</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -1001,7 +1002,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">6:13</span>
+    <span title="站点阅读时长">6:15</span>
   
 </div>
 

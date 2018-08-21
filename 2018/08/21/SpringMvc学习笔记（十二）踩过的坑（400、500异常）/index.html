@@ -152,20 +152,30 @@
 
 
 
-  <meta name="description" content="外面诱惑很多，希望自己能一直走下去">
-<meta property="og:type" content="website">
-<meta property="og:title" content="分类">
-<meta property="og:url" content="http://heshangcode.coding.me/categories/index.html">
+  <meta name="description" content="一些经常遇见的报400、500的错误，如果要用到HttpServletRequest这些包的，idea中springmvc文件上传的文件会在out里路径有，修改项目名字，运行报错">
+<meta name="keywords" content="SpringMvc学习总结">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SpringMvc学习笔记（十二）踩过的坑（400、500异常）">
+<meta property="og:url" content="http://heshangcode.coding.me/2018/08/21/SpringMvc学习笔记（十二）踩过的坑（400、500异常）/index.html">
 <meta property="og:site_name" content="heshang">
-<meta property="og:description" content="外面诱惑很多，希望自己能一直走下去">
+<meta property="og:description" content="一些经常遇见的报400、500的错误，如果要用到HttpServletRequest这些包的，idea中springmvc文件上传的文件会在out里路径有，修改项目名字，运行报错">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-21T10:33:07.727Z">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuhahscjoyj20w708l0td.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuhao0krh3j21cy07jaal.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuhap4su4gj21cm0q8to0.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuhadnnqzfj20oa032t90.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuh9oatk2oj20ii022747.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuh9pitbuzj20fe0cv0ve.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuh9t42am8j20fe0adwey.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuh9tituf6j20fe096q47.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuh9v0iuqoj20fe090jtv.jpg">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuhasej40uj20aq01kmx9.jpg">
+<meta property="og:updated_time" content="2018-08-21T06:19:02.019Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="分类">
-<meta name="twitter:description" content="外面诱惑很多，希望自己能一直走下去">
+<meta name="twitter:title" content="SpringMvc学习笔记（十二）踩过的坑（400、500异常）">
+<meta name="twitter:description" content="一些经常遇见的报400、500的错误，如果要用到HttpServletRequest这些包的，idea中springmvc文件上传的文件会在out里路径有，修改项目名字，运行报错">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuhahscjoyj20w708l0td.jpg">
 
-
-  
 
 
   <link rel="alternate" href="/atom.xml" title="heshang" type="application/atom+xml" />
@@ -173,7 +183,7 @@
 
 
 
-  <link rel="canonical" href="http://heshangcode.coding.me/categories/"/>
+  <link rel="canonical" href="http://heshangcode.coding.me/2018/08/21/SpringMvc学习笔记（十二）踩过的坑（400、500异常）/"/>
 
 
 
@@ -183,7 +193,7 @@
   };
 </script>
 
-  <title>分类 | heshang</title>
+  <title>SpringMvc学习笔记（十二）踩过的坑（400、500异常） | heshang</title>
   
 
 
@@ -355,102 +365,372 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://heshangcode.coding.me/2018/08/21/SpringMvc学习笔记（十二）踩过的坑（400、500异常）/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="和尚">
+      <meta itemprop="description" content="外面诱惑很多，希望自己能一直走下去">
+      <meta itemprop="image" content="/uploads/avatar.png#/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="heshang">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h1 class="post-title" itemprop="name headline">分类</h1>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
+          <h1 class="post-title" itemprop="name headline">SpringMvc学习笔记（十二）踩过的坑（400、500异常）
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-08-21 13:58:15 / 修改时间：14:19:02" itemprop="dateCreated datePublished" datetime="2018-08-21T13:58:15+08:00">2018-08-21</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/SpringMvc/" itemprop="url" rel="index"><span itemprop="name">SpringMvc</span></a></span>
+
                 
                 
-                  
-                    
-                  
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
                 
-                  
-                    
-                  
+                  <span class="post-meta-item-text">本文字数：</span>
                 
-                  
-                    
-                  
+                <span title="本文字数">601</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
                 
-                  
-                    
-                  
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                  
-                    
-                  
-                
-                  
-                    
-                  
-                
-                  
-                    
-                  
-                
-                目前共计 7 个分类
+                <span title="阅读时长">1 分钟</span>
+              
             </div>
-            <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/MyBatis/">MyBatis</a><span class="category-list-count">7</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/SpringMvc/">SpringMvc</a><span class="category-list-count">12</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/hero/">hero</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/idea/">idea</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/mysql/">mysql</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/编程软件/">编程软件</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/编程软件/idea/">idea</a><span class="category-list-count">1</span></li></ul></li></ul>
-            </div>
-          </div>
-        
-      </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>一些经常遇见的报400、500的错误，如果要用到HttpServletRequest这些包的，idea中springmvc文件上传的文件会在out里路径有，修改项目名字，运行报错</p>
+<a id="more"></a>
+<h3 id="1-400异常"><a href="#1-400异常" class="headerlink" title="1.400异常"></a>1.400异常</h3><h4 id="1-当你不传递要去数据的时候-那么会报400错误，没有传递hs-tomcat的数据"><a href="#1-当你不传递要去数据的时候-那么会报400错误，没有传递hs-tomcat的数据" class="headerlink" title="1.当你不传递要去数据的时候,那么会报400错误，没有传递hs=tomcat的数据"></a>1.当你不传递要去数据的时候,那么会报400错误，没有传递hs=tomcat的数据</h4><p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuhahscjoyj20w708l0td.jpg" alt=""></p>
+<h4 id="2-后台接收数据，数据类型转换失败"><a href="#2-后台接收数据，数据类型转换失败" class="headerlink" title="2.后台接收数据，数据类型转换失败"></a>2.后台接收数据，数据类型转换失败</h4><p>接收的数据类型是Integer，但是传过去的是字符串</p>
+<p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuhao0krh3j21cy07jaal.jpg" alt=""></p>
+<h3 id="2-500异常"><a href="#2-500异常" class="headerlink" title="2.500异常"></a>2.500异常</h3><p>当你修改一个项目的名字，然后运行的时候会报这个错误，只需要把out里的缓存删掉，然后从新运行即可</p>
+<p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuhap4su4gj21cm0q8to0.jpg" alt=""></p>
+<h3 id="3-映射路径相同的"><a href="#3-映射路径相同的" class="headerlink" title="3.映射路径相同的"></a>3.映射路径相同的</h3><p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuhadnnqzfj20oa032t90.jpg" alt=""></p>
+<p>模棱两可错误，controller里有两个相同的映射路径，/cy42/test03存在在两个方法里</p>
+<h3 id="4-cannot-resolve-symbol-‘HttpServletRequest’"><a href="#4-cannot-resolve-symbol-‘HttpServletRequest’" class="headerlink" title="4.cannot resolve symbol ‘HttpServletRequest’"></a>4.cannot resolve symbol ‘HttpServletRequest’</h3><p>IDEA异常 cannot resolve symbol ‘HttpServletRequest’,找不到HttpServletRequest这些包，在idea中需要添加tomcat的Libraries，eclipse不需用</p>
+<h3 id="5-tomcat控制台-localhost-log-等意思"><a href="#5-tomcat控制台-localhost-log-等意思" class="headerlink" title="5.tomcat控制台 localhost log 等意思"></a>5.tomcat控制台 localhost log 等意思</h3><p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuh9oatk2oj20ii022747.jpg" alt=""><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuh9pitbuzj20fe0cv0ve.jpg" alt=""></p>
+<h3 id="6-部署项目到tomcat的时候，发现没有你的项目"><a href="#6-部署项目到tomcat的时候，发现没有你的项目" class="headerlink" title="6.部署项目到tomcat的时候，发现没有你的项目"></a>6.部署项目到tomcat的时候，发现没有你的项目</h3><p>复制了一个module，发现部署项目到tomcat，然后没有你的项目，这样解决</p>
+<p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuh9t42am8j20fe0adwey.jpg" alt=""></p>
+<p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuh9tituf6j20fe096q47.jpg" alt=""></p>
+<p>部署项目的区别<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuh9v0iuqoj20fe090jtv.jpg" alt=""></p>
+<h3 id="7-项目命名的时候不能用点"><a href="#7-项目命名的时候不能用点" class="headerlink" title="7.项目命名的时候不能用点"></a>7.项目命名的时候不能用点</h3><p>导入项目的时候会出现这个情况，点代表层级文件</p>
+<p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuhasej40uj20aq01kmx9.jpg" alt=""></p>
+
       
     </div>
+
     
 
 
+    
+    
+    
+
+
+      
+
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------哈哈哈<i class="fa fa-paw"></i>看完了吧！-------------</div>
+    
+</div>
+      
+    </div>
+
+
+      
+        <div>
+          
+            
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <style type="text/css">
+    .my_post_copyright {
+      width: 85%;
+      max-width: 45em;
+      margin: 2.8em auto 0;
+      padding: 0.5em 1.0em;
+      border: 1px solid #d3d3d3;
+      font-size: 0.93rem;
+      line-height: 1.6em;
+      word-break: break-all;
+      background: rgba(255,255,255,0.4);
+    }
+    .my_post_copyright p{margin:0;}
+    .my_post_copyright span {
+      display: inline-block;
+      width: 5.2em;
+      color: #b5b5b5;
+      font-weight: bold;
+    }
+    .my_post_copyright .raw {
+      margin-left: 1em;
+      width: 5em;
+    }
+    .my_post_copyright a {
+      color: #808080;
+      border-bottom:0;
+    }
+    .my_post_copyright a:hover {
+      color: #a3d2a3;
+      text-decoration: underline;
+    }
+    .my_post_copyright:hover .fa-clipboard {
+      color: #000;
+    }
+    .my_post_copyright .post-url:hover {
+      font-weight: normal;
+    }
+    .my_post_copyright .copy-path {
+      margin-left: 1em;
+      width: 1em;
+      +mobile(){display:none;}
+    }
+    .my_post_copyright .copy-path:hover {
+      color: #808080;
+      cursor: pointer;
+    }
+
+  </style>
+
+  <p><span>本文标题:</span><a href="/2018/08/21/SpringMvc学习笔记（十二）踩过的坑（400、500异常）/">SpringMvc学习笔记（十二）踩过的坑（400、500异常）</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 和尚 的个人博客">和尚</a></p>
+  <!-- <p><span>发布时间:</span>2018年08月21日 - 13:08</p>
+  <p><span>最后更新:</span>2018年08月21日 - 14:08</p> -->
+  <p><span>本文链接:</span><a href="/2018/08/21/SpringMvc学习笔记（十二）踩过的坑（400、500异常）/" title="SpringMvc学习笔记（十二）踩过的坑（400、500异常）">http://heshangcode.coding.me/2018/08/21/SpringMvc学习笔记（十二）踩过的坑（400、500异常）/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://heshangcode.coding.me/2018/08/21/SpringMvc学习笔记（十二）踩过的坑（400、500异常）/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+  });
+    });  
+</script>
+
+          
+        </div>
+       
+
+      
+    
 
     
+
     
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>谢谢各位老板的打赏(90°鞠躬)！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
     
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="和尚 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="和尚 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/SpringMvc学习总结/" rel="tag"><i class="fa fa-tag"></i> SpringMvc学习总结</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/08/20/SpringMvc学习笔记（十一）拦截器专题/" rel="next" title="SpringMvc学习笔记（十一）拦截器专题">
+                <i class="fa fa-chevron-left"></i> SpringMvc学习笔记（十一）拦截器专题
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -485,8 +765,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -639,6 +928,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-400异常"><span class="nav-text">1.400异常</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-当你不传递要去数据的时候-那么会报400错误，没有传递hs-tomcat的数据"><span class="nav-text">1.当你不传递要去数据的时候,那么会报400错误，没有传递hs=tomcat的数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-后台接收数据，数据类型转换失败"><span class="nav-text">2.后台接收数据，数据类型转换失败</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-500异常"><span class="nav-text">2.500异常</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-映射路径相同的"><span class="nav-text">3.映射路径相同的</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-cannot-resolve-symbol-‘HttpServletRequest’"><span class="nav-text">4.cannot resolve symbol ‘HttpServletRequest’</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-tomcat控制台-localhost-log-等意思"><span class="nav-text">5.tomcat控制台 localhost log 等意思</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-部署项目到tomcat的时候，发现没有你的项目"><span class="nav-text">6.部署项目到tomcat的时候，发现没有你的项目</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-项目命名的时候不能用点"><span class="nav-text">7.项目命名的时候不能用点</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
