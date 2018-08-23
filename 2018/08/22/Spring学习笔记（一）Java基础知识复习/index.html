@@ -152,18 +152,20 @@
 
 
 
-  <meta name="description" content="外面诱惑很多，希望自己能一直走下去">
-<meta name="keywords" content="Spring学习总结">
+  <meta name="description" content="对象的创建方式、获取对象并且进行比较、==和equals的区别、单例模式(饿汉和懒汉)、对象的初始化数据操作、数组的数据初始化操作有几种、各个类型的初始值是什么，User u1 = new User();这句话包含的知识点、无参构造函数和有参构造函数">
+<meta name="keywords" content="SSM,框架,Spring">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Spring学习笔记（一）Java基础知识复习">
 <meta property="og:url" content="http://heshangcode.coding.me/2018/08/22/Spring学习笔记（一）Java基础知识复习/index.html">
 <meta property="og:site_name" content="heshang">
-<meta property="og:description" content="外面诱惑很多，希望自己能一直走下去">
+<meta property="og:description" content="对象的创建方式、获取对象并且进行比较、==和equals的区别、单例模式(饿汉和懒汉)、对象的初始化数据操作、数组的数据初始化操作有几种、各个类型的初始值是什么，User u1 = new User();这句话包含的知识点、无参构造函数和有参构造函数">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-22T11:29:39.659Z">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuitw4f66gj209q0a8tbv.jpg">
+<meta property="og:updated_time" content="2018-08-23T05:44:31.666Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Spring学习笔记（一）Java基础知识复习">
-<meta name="twitter:description" content="外面诱惑很多，希望自己能一直走下去">
+<meta name="twitter:description" content="对象的创建方式、获取对象并且进行比较、==和equals的区别、单例模式(饿汉和懒汉)、对象的初始化数据操作、数组的数据初始化操作有几种、各个类型的初始值是什么，User u1 = new User();这句话包含的知识点、无参构造函数和有参构造函数">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuitw4f66gj209q0a8tbv.jpg">
 
 
 
@@ -416,12 +418,24 @@
                 
               
 
-              <time title="创建时间：2018-08-22 19:27:38 / 修改时间：19:29:39" itemprop="dateCreated datePublished" datetime="2018-08-22T19:27:38+08:00">2018-08-22</time>
+              <time title="创建时间：2018-08-22 19:27:38" itemprop="dateCreated datePublished" datetime="2018-08-22T19:27:38+08:00">2018-08-22</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2018-08-23 13:44:31" itemprop="dateModified" datetime="2018-08-23T13:44:31+08:00">2018-08-23</time>
               
             
           </span>
@@ -438,7 +452,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Spring/" itemprop="url" rel="index"><span itemprop="name">Spring</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Spring学习总结/" itemprop="url" rel="index"><span itemprop="name">Spring学习总结</span></a></span>
 
                 
                 
@@ -474,7 +488,7 @@
                 
                   <span class="post-meta-item-text">本文字数：</span>
                 
-                <span title="本文字数">0</span>
+                <span title="本文字数">5.2k</span>
               
 
               
@@ -488,7 +502,7 @@
                 
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
-                <span title="阅读时长">1 分钟</span>
+                <span title="阅读时长">10 分钟</span>
               
             </div>
           
@@ -508,7 +522,121 @@
       
 
       
-        
+        <p>对象的创建方式、获取对象并且进行比较、==和equals的区别、单例模式(饿汉和懒汉)、对象的初始化数据操作、数组的数据初始化操作有几种、各个类型的初始值是什么，User u1 = new User();这句话包含的知识点、无参构造函数和有参构造函数</p>
+<a id="more"></a>
+<p>源码获取<a href="https://github.com/heshangcode/Learn" target="_blank" rel="noopener">github</a></p>
+<p>学习spring的时候，都是用的maven项目学习，idea如何创建maven项目教程，<a href="http://heshangcode.coding.me/2018/08/22/idea%E5%88%9B%E5%BB%BAmaven%E9%A1%B9%E7%9B%AE/">传送门</a></p>
+<p>[TOC]</p>
+<h3 id="1-项目结构"><a href="#1-项目结构" class="headerlink" title="1.项目结构"></a>1.项目结构</h3><p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuitw4f66gj209q0a8tbv.jpg" alt=""></p>
+<h3 id="2-需要的jar包"><a href="#2-需要的jar包" class="headerlink" title="2.需要的jar包"></a>2.需要的jar包</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.11<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">scope</span>&gt;</span>test<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="3-对象的创建方式"><a href="#3-对象的创建方式" class="headerlink" title="3.对象的创建方式"></a>3.对象的创建方式</h3><ul>
+<li><p>使用new关键字实例化对象</p>
+</li>
+<li><p>使用Class_forName实例化对象</p>
+<p>User.java</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hs.model;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">private</span> String user_name;</span><br><span class="line">   <span class="keyword">private</span> Integer user_id;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> String <span class="title">getUser_name</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> user_name;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setUser_name</span><span class="params">(String user_name)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">this</span>.user_name = user_name;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> Integer <span class="title">getUser_id</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> user_id;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setUser_id</span><span class="params">(Integer user_id)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">this</span>.user_id = user_id;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>CreateObject.java</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hs.test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.hs.model.User;</span><br><span class="line"><span class="keyword">import</span> org.junit.Test;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 对象的创建方式</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CreateObject</span> </span>&#123;</span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 使用new关键字实例化对象</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="meta">@Test</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test01</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      User u = <span class="keyword">new</span> User();</span><br><span class="line">      System.out.println(u);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 使用Class_forName实例化对象</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@throws</span> ClassNotFoundException</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@throws</span> IllegalAccessException</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@throws</span> InstantiationException</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="meta">@Test</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test02</span><span class="params">()</span> <span class="keyword">throws</span> ClassNotFoundException, IllegalAccessException, InstantiationException </span>&#123;</span><br><span class="line">      User u = (User) Class.forName(<span class="string">"com.hs.model.User"</span>).newInstance();   <span class="comment">//com.hs.model.User为类的全路径，newInstance()实例化对象</span></span><br><span class="line">      System.out.println(u);</span><br><span class="line">      u.setUser_name(<span class="string">"悟空"</span>);</span><br><span class="line">      System.out.println(u.getUser_name());</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="4-获取对象并且进行比较"><a href="#4-获取对象并且进行比较" class="headerlink" title="4.获取对象并且进行比较"></a>4.获取对象并且进行比较</h3><ul>
+<li>new 一次，就产生一个新的对象，两个对象都是不一样的，都是新的</li>
+<li>对象每次都可以是一样的、同一个实例</li>
+</ul>
+<p>GetObject.java</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hs.test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.hs.model.User;</span><br><span class="line"><span class="keyword">import</span> org.junit.Test;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 获取对象并且进行比较</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">GetObject</span> </span>&#123;</span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 考查知识点，对象每次都可以是新的</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="meta">@Test</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test01</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      User u1 = <span class="keyword">this</span>.getUser();</span><br><span class="line">      User u2 = <span class="keyword">this</span>.getUser();</span><br><span class="line">      System.out.println(u1);</span><br><span class="line">      System.out.println(u2);</span><br><span class="line">      System.out.println(u1 == u2);   <span class="comment">//结果是false</span></span><br><span class="line">      System.out.println(u1.equals(u2));  <span class="comment">//结果是false</span></span><br><span class="line">      <span class="comment">//百度==和equals比较的是什么？是内存地址，如果对象(都是继承了object(里面有equals方法))里重写equals，又是什么结果，</span></span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> User <span class="title">getUser</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="comment">//new 一次，就产生一个新的对象(内存地址不一样)，两个对象都是不一样的，都是新的</span></span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">new</span> User();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 考查知识点，对象每次都可以是一样的、同一个实例</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="meta">@Test</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test02</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      User u1 = <span class="keyword">this</span>.getUser02();</span><br><span class="line">      User u2 = <span class="keyword">this</span>.getUser02();</span><br><span class="line">      System.out.println(u1);</span><br><span class="line">      System.out.println(u2);</span><br><span class="line">      System.out.println(u1 == u2);   <span class="comment">//结果是true</span></span><br><span class="line">      System.out.println(u1.equals(u2));  <span class="comment">//结果是true</span></span><br><span class="line">      <span class="comment">//百度==和equals比较的是什么？是内存地址，如果对象(都是继承了object(里面有equals方法))里重写equals，又是什么结果，</span></span><br><span class="line">      u1.setUser_name(<span class="string">"悟空"</span>);</span><br><span class="line"></span><br><span class="line">      System.out.println(u2.getUser_name());  <span class="comment">//输出悟空，为什么会这样？设计到一个叫引用传递的</span></span><br><span class="line"></span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">static</span> User u1 = <span class="keyword">new</span> User();    <span class="comment">//设计模式-单例的设计 饿汉(不管你用不用，我都先创建好),加了一个static，表示这是一个共享数据</span></span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> User <span class="title">getUser02</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.u1;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">//懒汉(你用我才创建)---线程不安全</span></span><br><span class="line">   <span class="comment">/*private static User u2;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">   public User getUser002() &#123;</span></span><br><span class="line"><span class="comment">      if (u2 == null) &#123;</span></span><br><span class="line"><span class="comment">         u2 = new User();</span></span><br><span class="line"><span class="comment">      &#125;</span></span><br><span class="line"><span class="comment">      return this.u2;</span></span><br><span class="line"><span class="comment">   &#125;*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="5-和equals的区别"><a href="#5-和equals的区别" class="headerlink" title="5.==和equals的区别"></a>5.==和equals的区别</h3><ol>
+<li><p>==是判断两个变量或实例是不是指向同一个内存空间<br>   equals是判断两个变量或实例所指向的内存空间的值是不是相同 </p>
+</li>
+<li><p>==是指对内存地址进行比较<br>   equals()是对字符串的内容进行比较</p>
+</li>
+<li><p>==指引用是否相同<br>   equals()指的是值是否相同</p>
+</li>
+<li><p>如果对象(都是继承了object(里面有equals方法))里重写equals了，又是不同结果</p>
+</li>
+</ol>
+<h3 id="6-单例模式-设计模式"><a href="#6-单例模式-设计模式" class="headerlink" title="6.单例模式-设计模式"></a>6.单例模式-设计模式</h3><ul>
+<li><p>饿汉:不管你用不用，我都先创建好</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> User u1 = <span class="keyword">new</span> User();    <span class="comment">//加了一个static，表示这是一个共享数据</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>懒汉：你用我才创建，线程不安全</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> User u2;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> User <span class="title">getUser002</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">if</span> (u2 == <span class="keyword">null</span>) &#123;</span><br><span class="line">         u2 = <span class="keyword">new</span> User();</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.u2;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="7-对象的初始化数据操作"><a href="#7-对象的初始化数据操作" class="headerlink" title="7.对象的初始化数据操作"></a>7.对象的初始化数据操作</h3><ol>
+<li>构造函数—初始化数据</li>
+<li>Setter方法</li>
+<li>如果对象的属性不是private，可以实例化对象.属性=xx赋值</li>
+</ol>
+<p>InitObject.java</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 构造函数—初始化数据</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test01</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   User u1 = <span class="keyword">new</span> User();</span><br><span class="line">   <span class="comment">/*这一句话设计到的知识点：</span></span><br><span class="line"><span class="comment">   new 开辟一块堆内存空间</span></span><br><span class="line"><span class="comment">   User(); 构造函数</span></span><br><span class="line"><span class="comment">         1.创建对象</span></span><br><span class="line"><span class="comment">         2.对数据进行初始化操作</span></span><br><span class="line"><span class="comment">   u1: 在栈内存中定义了一个变量指向了堆内存空间</span></span><br><span class="line"><span class="comment">   * */</span></span><br><span class="line">   <span class="comment">/*构造函数知识点：</span></span><br><span class="line"><span class="comment">   1.默认有一个无参构造函数</span></span><br><span class="line"><span class="comment">   2.若写了一个有参构造函数，覆盖了默认的无参，直接new User()报错</span></span><br><span class="line"><span class="comment">   3.第2点解决办法就是，再写一次无参构造函数</span></span><br><span class="line"><span class="comment">   4.每个构造函数默认一个super(),不写也有，并且得在首行</span></span><br><span class="line"><span class="comment">   * */</span></span><br><span class="line">   System.out.println(u1.getUser_name());  <span class="comment">//初始化的数据为空</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * setter方法初始化数据，其实如果属性不private，可以直接对象的变量.属性赋值</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test02</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   User u1 = <span class="keyword">new</span> User();</span><br><span class="line">   u1.setUser_id(<span class="number">200</span>);</span><br><span class="line">   u1.setUser_name(<span class="string">"八戒"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="8-数组的初始化操作有几种"><a href="#8-数组的初始化操作有几种" class="headerlink" title="8.数组的初始化操作有几种"></a>8.数组的初始化操作有几种</h3><ol>
+<li>动态初始化</li>
+<li>静态初始化</li>
+</ol>
+<p>InitObject.java</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Test</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test03</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   <span class="comment">//动态初始化</span></span><br><span class="line">   <span class="keyword">int</span>[] arr = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>];</span><br><span class="line">   <span class="comment">//char[] arr = new char[3];</span></span><br><span class="line">   System.out.println(arr[<span class="number">2</span>]);</span><br><span class="line">   <span class="comment">//静态初始化</span></span><br><span class="line">   <span class="keyword">boolean</span>[] arr2 = &#123;<span class="keyword">false</span>, <span class="keyword">true</span>, <span class="keyword">true</span>&#125;;   <span class="comment">//下面的那种简写</span></span><br><span class="line">   <span class="keyword">boolean</span>[] arr3 = <span class="keyword">new</span> <span class="keyword">boolean</span>[]&#123;<span class="keyword">false</span>, <span class="keyword">true</span>, <span class="keyword">true</span>&#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="9-数组各个类型的初始值-默认值"><a href="#9-数组各个类型的初始值-默认值" class="headerlink" title="9.数组各个类型的初始值(默认值)"></a>9.数组各个类型的初始值(默认值)</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">int</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">short</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">byte</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">float</td>
+<td style="text-align:center">0.0f</td>
+</tr>
+<tr>
+<td style="text-align:center">double</td>
+<td style="text-align:center">0.0d</td>
+</tr>
+<tr>
+<td style="text-align:center">long</td>
+<td style="text-align:center">0L</td>
+</tr>
+<tr>
+<td style="text-align:center">boolean</td>
+<td style="text-align:center">false</td>
+</tr>
+<tr>
+<td style="text-align:center">char</td>
+<td style="text-align:center">‘/uoooo’(就是一个空白的)</td>
+</tr>
+<tr>
+<td style="text-align:center">String</td>
+<td style="text-align:center">null</td>
+</tr>
+</tbody>
+</table>
+<p>10.User u1 = new User();这句话包含的知识点</p>
+<ol>
+<li>new 开辟一块堆内存空间</li>
+<li>User(); 构造函数<pre><code>1.创建对象
+2.对数据进行初始化操作
+</code></pre></li>
+<li>u1: 在栈内存中定义了一个变量指向了堆内存空间</li>
+</ol>
+<h3 id="11-无参构造函数和有参构造函数"><a href="#11-无参构造函数和有参构造函数" class="headerlink" title="11.无参构造函数和有参构造函数"></a>11.无参构造函数和有参构造函数</h3><ol>
+<li>默认有一个无参构造函数</li>
+<li>若写了一个有参构造函数，覆盖了默认的无参，直接new User()报错</li>
+<li>第2点解决办法就是，再写一次无参构造函数</li>
+<li>每个构造函数默认一个super(),不写也有，并且得在首行</li>
+</ol>
+
       
     </div>
 
@@ -596,7 +724,7 @@
   <p><span>本文标题:</span><a href="/2018/08/22/Spring学习笔记（一）Java基础知识复习/">Spring学习笔记（一）Java基础知识复习</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 和尚 的个人博客">和尚</a></p>
   <!-- <p><span>发布时间:</span>2018年08月22日 - 19:08</p>
-  <p><span>最后更新:</span>2018年08月22日 - 19:08</p> -->
+  <p><span>最后更新:</span>2018年08月23日 - 13:08</p> -->
   <p><span>本文链接:</span><a href="/2018/08/22/Spring学习笔记（一）Java基础知识复习/" title="Spring学习笔记（一）Java基础知识复习">http://heshangcode.coding.me/2018/08/22/Spring学习笔记（一）Java基础知识复习/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://heshangcode.coding.me/2018/08/22/Spring学习笔记（一）Java基础知识复习/"  aria-label="复制成功！"></i></span>
   </p>
@@ -662,7 +790,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Spring学习总结/" rel="tag"><i class="fa fa-tag"></i> Spring学习总结</a>
+            <a href="/tags/SSM/" rel="tag"><i class="fa fa-tag"></i> SSM</a>
+          
+            <a href="/tags/框架/" rel="tag"><i class="fa fa-tag"></i> 框架</a>
+          
+            <a href="/tags/Spring/" rel="tag"><i class="fa fa-tag"></i> Spring</a>
           
         </div>
       
@@ -741,8 +873,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -761,7 +902,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-count">29</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -786,11 +927,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -823,7 +960,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">10</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -902,6 +1043,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-项目结构"><span class="nav-text">1.项目结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-需要的jar包"><span class="nav-text">2.需要的jar包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-对象的创建方式"><span class="nav-text">3.对象的创建方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-获取对象并且进行比较"><span class="nav-text">4.获取对象并且进行比较</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-和equals的区别"><span class="nav-text">5.==和equals的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-单例模式-设计模式"><span class="nav-text">6.单例模式-设计模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-对象的初始化数据操作"><span class="nav-text">7.对象的初始化数据操作</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#8-数组的初始化操作有几种"><span class="nav-text">8.数组的初始化操作有几种</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#9-数组各个类型的初始值-默认值"><span class="nav-text">9.数组各个类型的初始值(默认值)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-无参构造函数和有参构造函数"><span class="nav-text">11.无参构造函数和有参构造函数</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 <div id="music163player">
@@ -934,7 +1091,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">189k</span>
+    <span title="站点总字数">217k</span>
   
 
   
@@ -943,7 +1100,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">6:17</span>
+    <span title="站点阅读时长">7:13</span>
   
 </div>
 

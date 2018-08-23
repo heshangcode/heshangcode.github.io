@@ -153,7 +153,7 @@
 
 
   <meta name="description" content="本文讲解动态的SQL操作，CRUD中，CUD都需要自己手动提交事务，动态的添加语句，批量删除的三种处理方式，提取公共的sql代码，if标签，where标签，trim标签，set标签，choose标签，foreach标签，批量添加">
-<meta name="keywords" content="MyBatis学习总结">
+<meta name="keywords" content="MyBatis,SSM,框架">
 <meta property="og:type" content="article">
 <meta property="og:title" content="MyBatis学习笔记（四）动态SQL语句专题">
 <meta property="og:url" content="http://heshangcode.coding.me/2018/08/05/MyBatis学习笔记（四）动态SQL语句专题/index.html">
@@ -161,7 +161,7 @@
 <meta property="og:description" content="本文讲解动态的SQL操作，CRUD中，CUD都需要自己手动提交事务，动态的添加语句，批量删除的三种处理方式，提取公共的sql代码，if标签，where标签，trim标签，set标签，choose标签，foreach标签，批量添加">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1ftz0m4gfqpj20b80fb78x.jpg">
-<meta property="og:updated_time" content="2018-08-21T03:32:15.459Z">
+<meta property="og:updated_time" content="2018-08-23T05:56:12.774Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MyBatis学习笔记（四）动态SQL语句专题">
 <meta name="twitter:description" content="本文讲解动态的SQL操作，CRUD中，CUD都需要自己手动提交事务，动态的添加语句，批量删除的三种处理方式，提取公共的sql代码，if标签，where标签，trim标签，set标签，choose标签，foreach标签，批量添加">
@@ -435,7 +435,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-08-21 11:32:15" itemprop="dateModified" datetime="2018-08-21T11:32:15+08:00">2018-08-21</time>
+                <time title="修改时间：2018-08-23 13:56:12" itemprop="dateModified" datetime="2018-08-23T13:56:12+08:00">2018-08-23</time>
               
             
           </span>
@@ -452,7 +452,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/MyBatis/" itemprop="url" rel="index"><span itemprop="name">MyBatis</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/MyBatis学习总结/" itemprop="url" rel="index"><span itemprop="name">MyBatis学习总结</span></a></span>
 
                 
                 
@@ -639,7 +639,7 @@
   <p><span>本文标题:</span><a href="/2018/08/05/MyBatis学习笔记（四）动态SQL语句专题/">MyBatis学习笔记（四）动态SQL语句专题</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 和尚 的个人博客">和尚</a></p>
   <!-- <p><span>发布时间:</span>2018年08月05日 - 18:08</p>
-  <p><span>最后更新:</span>2018年08月21日 - 11:08</p> -->
+  <p><span>最后更新:</span>2018年08月23日 - 13:08</p> -->
   <p><span>本文链接:</span><a href="/2018/08/05/MyBatis学习笔记（四）动态SQL语句专题/" title="MyBatis学习笔记（四）动态SQL语句专题">http://heshangcode.coding.me/2018/08/05/MyBatis学习笔记（四）动态SQL语句专题/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://heshangcode.coding.me/2018/08/05/MyBatis学习笔记（四）动态SQL语句专题/"  aria-label="复制成功！"></i></span>
   </p>
@@ -705,7 +705,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/MyBatis学习总结/" rel="tag"><i class="fa fa-tag"></i> MyBatis学习总结</a>
+            <a href="/tags/MyBatis/" rel="tag"><i class="fa fa-tag"></i> MyBatis</a>
+          
+            <a href="/tags/SSM/" rel="tag"><i class="fa fa-tag"></i> SSM</a>
+          
+            <a href="/tags/框架/" rel="tag"><i class="fa fa-tag"></i> 框架</a>
           
         </div>
       
@@ -813,7 +817,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">26</span>
+                    <span class="site-state-item-count">29</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -838,11 +842,7 @@
                     
                       
                     
-                      
-                    
-                      
-                    
-                    <span class="site-state-item-count">8</span>
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -875,7 +875,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">10</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
@@ -1002,7 +1006,7 @@
       <i class="fa fa-area-chart"></i>
     </span>
     
-    <span title="站点总字数">189k</span>
+    <span title="站点总字数">217k</span>
   
 
   
@@ -1011,7 +1015,7 @@
       <i class="fa fa-coffee"></i>
     </span>
     
-    <span title="站点阅读时长">6:17</span>
+    <span title="站点阅读时长">7:13</span>
   
 </div>
 
