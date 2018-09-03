@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Lobster Two:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=6.3.0" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png?v=6.3.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png?v=6.3.0">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=6.3.0" color="#222">
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '6.3.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="JdbcTemplate就是Spring框架给我们封装好的简单对数据库操作的工具类，返回Map数据，返回List_Map数据，返回一个值，返回一个对象，返回一个List&amp;lt;对象&amp;gt;，添加修改删除">
+<meta name="keywords" content="SSM,框架,Spring">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Spring学习笔记（十三）JdbcTemplate工具类的使用">
+<meta property="og:url" content="http://heshangcode.coding.me/2018/09/03/Spring学习笔记（十三）JdbcTemplate工具类的使用/index.html">
+<meta property="og:site_name" content="heshang">
+<meta property="og:description" content="JdbcTemplate就是Spring框架给我们封装好的简单对数据库操作的工具类，返回Map数据，返回List_Map数据，返回一个值，返回一个对象，返回一个List&amp;lt;对象&amp;gt;，添加修改删除">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuweenpogzj20ue0lodqy.jpg">
+<meta property="og:updated_time" content="2018-09-03T08:05:48.406Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Spring学习笔记（十三）JdbcTemplate工具类的使用">
+<meta name="twitter:description" content="JdbcTemplate就是Spring框架给我们封装好的简单对数据库操作的工具类，返回Map数据，返回List_Map数据，返回一个值，返回一个对象，返回一个List&amp;lt;对象&amp;gt;，添加修改删除">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuweenpogzj20ue0lodqy.jpg">
+
+
+
+  <link rel="alternate" href="/atom.xml" title="heshang" type="application/atom+xml" />
+
+
+
+
+  <link rel="canonical" href="http://heshangcode.coding.me/2018/09/03/Spring学习笔记（十三）JdbcTemplate工具类的使用/"/>
+
+
+
+<script type="text/javascript" id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Spring学习笔记（十三）JdbcTemplate工具类的使用 | heshang</title>
+  
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style type="text/css">
+    .use-motion .motion-element,
+    .use-motion .brand,
+    .use-motion .menu-item,
+    .sidebar-inner,
+    .use-motion .post-block,
+    .use-motion .pagination,
+    .use-motion .comments,
+    .use-motion .post-header,
+    .use-motion .post-body,
+    .use-motion .collection-title { opacity: initial; }
+
+    .use-motion .logo,
+    .use-motion .site-title,
+    .use-motion .site-subtitle {
+      opacity: initial;
+      top: initial;
+    }
+
+    .use-motion {
+      .logo-line-before i { left: initial; }
+      .logo-line-after i { right: initial; }
+    }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+
+
+
+    <a href="https://github.com/heshangcode" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+
+
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">heshang</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="切换导航栏">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+    <a href="/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+    <a href="/archives/" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />历程</a>
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-tags">
+    <a href="/tags" rel="section">
+      <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />搜索</a>
+        </li>
+      
+    </ul>
+  
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+            
+
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://heshangcode.coding.me/2018/09/03/Spring学习笔记（十三）JdbcTemplate工具类的使用/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="和尚">
+      <meta itemprop="description" content="外面诱惑很多，希望自己能一直走下去">
+      <meta itemprop="image" content="/uploads/avatar.png#/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="heshang">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Spring学习笔记（十三）JdbcTemplate工具类的使用
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-09-03 15:40:10 / 修改时间：16:05:48" itemprop="dateCreated datePublished" datetime="2018-09-03T15:40:10+08:00">2018-09-03</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Spring学习总结/" itemprop="url" rel="index"><span itemprop="name">Spring学习总结</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon"
+            >
+            <i class="fa fa-eye"></i>
+             阅读次数： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+          
+
+          
+            <div class="post-symbolscount">
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">本文字数：</span>
+                
+                <span title="本文字数">11k</span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">22 分钟</span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>JdbcTemplate就是Spring框架给我们封装好的简单对数据库操作的工具类，返回Map数据，返回List_Map数据，返回一个值，返回一个对象，返回一个List&lt;对象&gt;，添加修改删除</p>
+<a id="more"></a>
+<p>源码获取<a href="https://github.com/heshangcode/Learn" target="_blank" rel="noopener">github</a></p>
+<p>[TOC]</p>
+<h3 id="1-介绍JdbcTemplate工具类"><a href="#1-介绍JdbcTemplate工具类" class="headerlink" title="1.介绍JdbcTemplate工具类"></a>1.介绍JdbcTemplate工具类</h3><p>Spring是一个IoC和AOP的容器框架，并且它是一站式开源框架<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuweenpogzj20ue0lodqy.jpg" alt="">ORM是我们学过的MyBatis，JdbcTemplate就是Spring框架给我们封装好的简单对数据库操作的工具类，需要这个spring-jdbc.jar</p>
+<h3 id="2-sql文件"><a href="#2-sql文件" class="headerlink" title="2.sql文件"></a>2.sql文件</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br></pre></td><td class="code"><pre><span class="line">SET FOREIGN_KEY_CHECKS=0;</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">-- Table structure for oa_user</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">DROP TABLE IF EXISTS `oa_user`;</span><br><span class="line">CREATE TABLE `oa_user` (</span><br><span class="line">  `user_id` int(11) NOT NULL AUTO_INCREMENT,</span><br><span class="line">  `user_name` varchar(255) DEFAULT NULL,</span><br><span class="line">  `sex` varchar(255) DEFAULT NULL,</span><br><span class="line">  `money` decimal(7,2) DEFAULT NULL,</span><br><span class="line">  `birthday` date DEFAULT NULL,</span><br><span class="line">  PRIMARY KEY (`user_id`)</span><br><span class="line">) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4;</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">-- Records of oa_user</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;1&apos;, &apos;悟空&apos;, &apos;男&apos;, &apos;888.00&apos;, null);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;2&apos;, &apos;八戒&apos;, &apos;男&apos;, &apos;999.00&apos;, null);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;3&apos;, &apos;天蓬元帅&apos;, &apos;女&apos;, &apos;1000.00&apos;, null);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;4&apos;, &apos;悟能&apos;, &apos;男&apos;, &apos;666.00&apos;, null);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;5&apos;, &apos;法悟法&apos;, &apos;女&apos;, &apos;544.00&apos;, null);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;6&apos;, &apos;悟&apos;, &apos;女&apos;, &apos;562.00&apos;, null);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;7&apos;, &apos;悟&apos;, &apos;女&apos;, &apos;562.00&apos;, null);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;14&apos;, &apos;嫦娥&apos;, &apos;女&apos;, &apos;1213.00&apos;, null);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;15&apos;, &apos;月兔&apos;, &apos;女&apos;, &apos;2113.00&apos;, null);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;16&apos;, &apos;和尚&apos;, &apos;男&apos;, &apos;455.00&apos;, &apos;2018-08-05&apos;);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;18&apos;, &apos;沙僧&apos;, &apos;男&apos;, &apos;455.00&apos;, &apos;2018-08-05&apos;);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;19&apos;, &apos;唐僧&apos;, &apos;男&apos;, &apos;220.00&apos;, &apos;2018-08-09&apos;);</span><br><span class="line">INSERT INTO `oa_user` VALUES (&apos;20&apos;, &apos;唐僧&apos;, &apos;男&apos;, &apos;220.00&apos;, &apos;2018-08-09&apos;);</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">-- Table structure for skill</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">DROP TABLE IF EXISTS `skill`;</span><br><span class="line">CREATE TABLE `skill` (</span><br><span class="line">  `skill_id` int(11) NOT NULL AUTO_INCREMENT,</span><br><span class="line">  `skill_name` varchar(255) DEFAULT NULL,</span><br><span class="line">  `num` int(11) DEFAULT NULL,</span><br><span class="line">  `fk_teacher_id` int(11) DEFAULT NULL,</span><br><span class="line">  PRIMARY KEY (`skill_id`)</span><br><span class="line">) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4;</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">-- Records of skill</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">INSERT INTO `skill` VALUES (&apos;2&apos;, &apos;JS&apos;, &apos;75&apos;, null);</span><br><span class="line">INSERT INTO `skill` VALUES (&apos;7&apos;, &apos;CSS&apos;, &apos;66&apos;, null);</span><br><span class="line">INSERT INTO `skill` VALUES (&apos;8&apos;, &apos;java&apos;, &apos;66&apos;, null);</span><br><span class="line">INSERT INTO `skill` VALUES (&apos;9&apos;, &apos;vue&apos;, &apos;56&apos;, &apos;9999&apos;);</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">-- Table structure for sys_role</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">DROP TABLE IF EXISTS `sys_role`;</span><br><span class="line">CREATE TABLE `sys_role` (</span><br><span class="line">  `role_id` int(11) NOT NULL AUTO_INCREMENT,</span><br><span class="line">  `role_name` varchar(32) DEFAULT NULL,</span><br><span class="line">  `role_key` varchar(32) DEFAULT NULL,</span><br><span class="line">  `status` int(1) DEFAULT &apos;1&apos; COMMENT &apos;1可用 -1禁用&apos;,</span><br><span class="line">  PRIMARY KEY (`role_id`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">-- Records of sys_role</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">INSERT INTO `sys_role` VALUES (&apos;-100&apos;, &apos;超级管理员&apos;, &apos;ADMIN&apos;, &apos;1&apos;);</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">-- Table structure for sys_user</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">DROP TABLE IF EXISTS `sys_user`;</span><br><span class="line">CREATE TABLE `sys_user` (</span><br><span class="line">  `user_id` int(11) NOT NULL AUTO_INCREMENT,</span><br><span class="line">  `account` varchar(32) NOT NULL,</span><br><span class="line">  `password` varchar(128) NOT NULL,</span><br><span class="line">  `user_name` varchar(32) DEFAULT &apos;&apos;,</span><br><span class="line">  `status` int(1) NOT NULL DEFAULT &apos;1&apos; COMMENT &apos;1可用 -1删除  2禁用&apos;,</span><br><span class="line">  `login_time` datetime DEFAULT CURRENT_TIMESTAMP,</span><br><span class="line">  `ip` varchar(128) DEFAULT NULL,</span><br><span class="line">  `fk_role_id` int(11) DEFAULT NULL,</span><br><span class="line">  PRIMARY KEY (`user_id`),</span><br><span class="line">  KEY `fk_role_id` (`fk_role_id`),</span><br><span class="line">  CONSTRAINT `sys_user_ibfk_1` FOREIGN KEY (`fk_role_id`) REFERENCES `sys_role` (`role_id`)</span><br><span class="line">) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">-- Records of sys_user</span><br><span class="line"></span><br><span class="line">------</span><br><span class="line"></span><br><span class="line">INSERT INTO `sys_user` VALUES (&apos;-999&apos;, &apos;super&apos;, &apos;super&apos;, &apos;唐僧&apos;, &apos;1&apos;, &apos;2018-07-28 18:47:39&apos;, null, &apos;-100&apos;);</span><br><span class="line">INSERT INTO `sys_user` VALUES (&apos;-888&apos;, &apos;admin&apos;, &apos;admin&apos;, &apos;悟空&apos;, &apos;1&apos;, &apos;2018-07-03 18:48:21&apos;, null, &apos;-100&apos;);</span><br></pre></td></tr></table></figure>
+<h3 id="3-实例化该工具类"><a href="#3-实例化该工具类" class="headerlink" title="3.实例化该工具类"></a>3.实例化该工具类</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">class</span>=<span class="string">"org.springframework.jdbc.core.JdbcTemplate"</span> &gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"dataSource"</span> 赋值/&gt;</span></span><br><span class="line">    ------</span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="4-配置数据源"><a href="#4-配置数据源" class="headerlink" title="4.配置数据源"></a>4.配置数据源</h3><p>数据源就是连接数据，而以后工作当中我们推荐使用“连接池”，</p>
+<h4 id="什么是连接池？"><a href="#什么是连接池？" class="headerlink" title="什么是连接池？"></a>什么是连接池？</h4><p>我的理解为预先建立好一堆Connection，使用时候从池中获取，不适应不是销毁而是把连接再次放回到池中</p>
+<h4 id="连接池的工作原理？"><a href="#连接池的工作原理？" class="headerlink" title="连接池的工作原理？"></a>连接池的工作原理？</h4><p>Java代码如何实现–&gt;Map/List 存Connection</p>
+<h4 id="开源的连接池有哪些？"><a href="#开源的连接池有哪些？" class="headerlink" title="开源的连接池有哪些？"></a>开源的连接池有哪些？</h4><p>C3p0、dbcp、德鲁伊druid(阿里巴巴的)</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- destroy-method="close"销毁的方法--&gt;</span></span><br><span class="line"><span class="comment">&lt;!--4.配置数据源--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"druidDataSource"</span> <span class="attr">class</span>=<span class="string">"com.alibaba.druid.pool.DruidDataSource"</span> <span class="attr">destroy-method</span>=<span class="string">"close"</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"driverClassName"</span> <span class="attr">value</span>=<span class="string">"com.mysql.jdbc.Driver"</span>/&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"url"</span> <span class="attr">value</span>=<span class="string">"jdbc:mysql://localhost:3306/cy42_mss"</span>/&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"username"</span> <span class="attr">value</span>=<span class="string">"root"</span>/&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"password"</span> <span class="attr">value</span>=<span class="string">"root"</span>/&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!--5.配置工具类JdbcTemplate--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">"jdbcTemplate"</span> <span class="attr">class</span>=<span class="string">"org.springframework.jdbc.core.JdbcTemplate"</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!--setter注入方式--&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">"dataSource"</span> <span class="attr">ref</span>=<span class="string">"druidDataSource"</span>/&gt;</span></span><br><span class="line">   <span class="comment">&lt;!--构造函数赋值--&gt;</span></span><br><span class="line">   <span class="comment">&lt;!--&lt;constructor-arg name="dataSource" ref="druidDataSource"/&gt;--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="5-User-java"><a href="#5-User-java" class="headerlink" title="5.User.java"></a>5.User.java</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hs.model;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.math.BigDecimal;</span><br><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">private</span> Integer user_id;</span><br><span class="line">   <span class="keyword">private</span> String user_name;</span><br><span class="line">   <span class="keyword">private</span> String sex;</span><br><span class="line">   <span class="comment">//钱用BigDecimal</span></span><br><span class="line">   <span class="keyword">private</span> BigDecimal money;</span><br><span class="line">   <span class="keyword">private</span> Date birthday;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> BigDecimal <span class="title">getMoney</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> money;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setMoney</span><span class="params">(BigDecimal money)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">this</span>.money = money;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> Date <span class="title">getBirthday</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> birthday;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setBirthday</span><span class="params">(Date birthday)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">this</span>.birthday = birthday;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> Integer <span class="title">getUser_id</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> user_id;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setUser_id</span><span class="params">(Integer user_id)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">this</span>.user_id = user_id;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> String <span class="title">getUser_name</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> user_name;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setUser_name</span><span class="params">(String user_name)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">this</span>.user_name = user_name;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> String <span class="title">getSex</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> sex;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setSex</span><span class="params">(String sex)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">this</span>.sex = sex;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="meta">@Override</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="string">"User&#123;"</span> +</span><br><span class="line">            <span class="string">"user_id="</span> + user_id +</span><br><span class="line">            <span class="string">", user_name='"</span> + user_name + <span class="string">'\''</span> +</span><br><span class="line">            <span class="string">", sex='"</span> + sex + <span class="string">'\''</span> +</span><br><span class="line">            <span class="string">", money="</span> + money +</span><br><span class="line">            <span class="string">", birthday="</span> + birthday +</span><br><span class="line">            <span class="string">'&#125;'</span>;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="6-查询操作-预处理"><a href="#6-查询操作-预处理" class="headerlink" title="6.查询操作(预处理)"></a>6.查询操作(预处理)</h3><h4 id="1-返回Map数据"><a href="#1-返回Map数据" class="headerlink" title="1.返回Map数据"></a>1.返回Map数据</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hs.test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.hs.model.User;</span><br><span class="line"><span class="keyword">import</span> org.junit.Before;</span><br><span class="line"><span class="keyword">import</span> org.junit.Test;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.ApplicationContext;</span><br><span class="line"><span class="keyword">import</span> org.springframework.context.support.ClassPathXmlApplicationContext;</span><br><span class="line"><span class="keyword">import</span> org.springframework.jdbc.core.BeanPropertyRowMapper;</span><br><span class="line"><span class="keyword">import</span> org.springframework.jdbc.core.JdbcTemplate;</span><br><span class="line"><span class="keyword">import</span> org.springframework.jdbc.core.RowMapper;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.sql.ResultSet;</span><br><span class="line"><span class="keyword">import</span> java.sql.SQLException;</span><br><span class="line"><span class="keyword">import</span> java.util.Date;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">JdbcTemplateTest</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">private</span> ApplicationContext ac;</span><br><span class="line">   <span class="keyword">private</span> JdbcTemplate jdbcTemplate;</span><br><span class="line"></span><br><span class="line">   <span class="meta">@Before</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">init</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      ac = <span class="keyword">new</span> ClassPathXmlApplicationContext(<span class="string">"beans.xml"</span>);</span><br><span class="line">      jdbcTemplate = ac.getBean(<span class="string">"jdbcTemplate"</span>, JdbcTemplate.class);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 返回Map数据</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="meta">@Test</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test01</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="comment">/*String sql = "select * from oa_user where user_id = 3";</span></span><br><span class="line"><span class="comment">      Map&lt;String, Object&gt; map = this.jdbcTemplate.queryForMap(sql);*/</span></span><br><span class="line">      String sql = <span class="string">"select * from oa_user where user_id = ?"</span>;</span><br><span class="line">      Map&lt;String, Object&gt; map = jdbcTemplate.queryForMap(sql, <span class="number">2</span>);</span><br><span class="line">      System.out.println(map);</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="2-返回List-Map数据"><a href="#2-返回List-Map数据" class="headerlink" title="2.返回List_Map数据"></a>2.返回List_Map数据</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 返回List_Map数据</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test02</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   String sql = <span class="string">"select * from oa_user"</span>;</span><br><span class="line">   System.out.println(jdbcTemplate.queryForList(sql));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="3-返回一个值"><a href="#3-返回一个值" class="headerlink" title="3.返回一个值"></a>3.返回一个值</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 返回一个值</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test03</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   String sql = <span class="string">"select count(*) from oa_user"</span>;</span><br><span class="line">   System.out.println(jdbcTemplate.queryForObject(sql, Integer.class));</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="4-返回一个对象"><a href="#4-返回一个对象" class="headerlink" title="4.返回一个对象"></a>4.返回一个对象</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 返回一个对象</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test04</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   String sql = <span class="string">"select * from oa_user where user_id = ?"</span>;</span><br><span class="line">   User user = jdbcTemplate.queryForObject(sql, <span class="comment">/*匿名内部类*/</span><span class="keyword">new</span> RowMapper&lt;User&gt;() &#123;</span><br><span class="line"></span><br><span class="line">      <span class="meta">@Override</span></span><br><span class="line">      <span class="function"><span class="keyword">public</span> User <span class="title">mapRow</span><span class="params">(ResultSet rs, <span class="keyword">int</span> rowNum)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line"></span><br><span class="line">         User user = <span class="keyword">new</span> User();</span><br><span class="line">         user.setUser_id(rs.getInt(<span class="string">"user_id"</span>));</span><br><span class="line">         user.setUser_name(rs.getString(<span class="string">"User_name"</span>));</span><br><span class="line">         user.setSex(rs.getString(<span class="string">"sex"</span>));</span><br><span class="line">         user.setMoney(rs.getBigDecimal(<span class="string">"money"</span>));</span><br><span class="line">         user.setBirthday((Date) rs.getObject(<span class="string">"birthday"</span>));</span><br><span class="line">         <span class="keyword">return</span> user;</span><br><span class="line">      &#125;</span><br><span class="line">   &#125;, <span class="number">2</span>);</span><br><span class="line">   System.out.println(user);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="5-返回一个List-lt-对象-gt"><a href="#5-返回一个List-lt-对象-gt" class="headerlink" title="5.返回一个List&lt;对象&gt;"></a>5.返回一个List&lt;对象&gt;</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 返回一个List&lt;对象&gt;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test05</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   String sql = <span class="string">"select * from oa_user where user_name like concat('%',?,'%')"</span>;</span><br><span class="line">   List&lt;User&gt; userList = jdbcTemplate.query(sql,<span class="comment">/*处理一条一条的数据*/</span><span class="keyword">new</span> UserRowMapper(), <span class="string">"沙僧"</span>);</span><br><span class="line">   System.out.println(userList);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>把匿名内部类提出来</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 对于外面那个类来说，这是一个内部类，外面那个类对于这个类来说，是外部类</span></span><br><span class="line"><span class="comment"> * 百度什么是内部类和特种？</span></span><br><span class="line"><span class="comment"> * private使这个类只能被这个类使用</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">private</span> <span class="class"><span class="keyword">class</span> <span class="title">UserRowMapper</span> <span class="keyword">implements</span> <span class="title">RowMapper</span>&lt;<span class="title">User</span>&gt; </span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="meta">@Override</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> User <span class="title">mapRow</span><span class="params">(ResultSet rs, <span class="keyword">int</span> rowNum)</span> <span class="keyword">throws</span> SQLException </span>&#123;</span><br><span class="line">      System.out.println(<span class="string">"---------"</span>);</span><br><span class="line">      User user = <span class="keyword">new</span> User();</span><br><span class="line">      user.setUser_id(rs.getInt(<span class="string">"user_id"</span>));</span><br><span class="line">      user.setUser_name(rs.getString(<span class="string">"User_name"</span>));</span><br><span class="line">      user.setSex(rs.getString(<span class="string">"sex"</span>));</span><br><span class="line">      user.setMoney(rs.getBigDecimal(<span class="string">"money"</span>));</span><br><span class="line">      user.setBirthday((Date) rs.getObject(<span class="string">"birthday"</span>));</span><br><span class="line">      <span class="keyword">return</span> user;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="6-返回一个List-lt-对象-gt-——自动映射，类属性和查询的字段名字一样"><a href="#6-返回一个List-lt-对象-gt-——自动映射，类属性和查询的字段名字一样" class="headerlink" title="6.返回一个List&lt;对象&gt;——自动映射，类属性和查询的字段名字一样"></a>6.返回一个List&lt;对象&gt;——自动映射，类属性和查询的字段名字一样</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 返回一个List&lt;对象&gt;——自动映射，类属性和查询的字段名字一样</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test06</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   String sql = <span class="string">"select * from oa_user where user_name like concat('%',?,'%')"</span>;</span><br><span class="line">   List&lt;User&gt; userList = jdbcTemplate.query(sql,<span class="comment">/*处理一条一条的数据，，，&lt;User&gt;可以不用写*/</span><span class="keyword">new</span> BeanPropertyRowMapper&lt;User&gt;(User.class), <span class="string">"沙僧"</span>);</span><br><span class="line">   System.out.println(userList);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="7-添加修改删除"><a href="#7-添加修改删除" class="headerlink" title="7.添加修改删除"></a>7.添加修改删除</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 添加修改删除</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test07</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   String sql1 = <span class="string">"insert into oa_user(user_name,sex,money,birthday) values(?,?,?,?)"</span>;</span><br><span class="line">   String sql2 = <span class="string">"update oa_user set user_name=?,sex=? where user_id = ?"</span>;</span><br><span class="line">   String sql3 = <span class="string">"delete from oa_user where user_id = ?"</span>;</span><br><span class="line">   <span class="keyword">int</span> num1 = jdbcTemplate.update(sql1, <span class="string">"唐僧"</span>, <span class="string">"男"</span>, <span class="number">220.00</span>, <span class="string">"2018-8-9"</span>);</span><br><span class="line">   <span class="keyword">int</span> num2 = jdbcTemplate.update(sql2, <span class="string">"和尚"</span>, <span class="string">"男"</span>, <span class="number">16</span>);</span><br><span class="line">   <span class="keyword">int</span> num3 = jdbcTemplate.update(sql3, <span class="number">17</span>);</span><br><span class="line">   System.out.println(num1+<span class="string">"--"</span>+num2+<span class="string">"---"</span>+num3);</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+
+
+    
+    
+    
+
+
+      
+
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------哈哈哈<i class="fa fa-paw"></i>看完了吧！-------------</div>
+    
+</div>
+      
+    </div>
+
+
+      
+        <div>
+          
+            
+<div class="my_post_copyright">
+  <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+  
+  <!-- JS库 sweetalert 可修改路径 -->
+  <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <style type="text/css">
+    .my_post_copyright {
+      width: 85%;
+      max-width: 45em;
+      margin: 2.8em auto 0;
+      padding: 0.5em 1.0em;
+      border: 1px solid #d3d3d3;
+      font-size: 0.93rem;
+      line-height: 1.6em;
+      word-break: break-all;
+      background: rgba(255,255,255,0.4);
+    }
+    .my_post_copyright p{margin:0;}
+    .my_post_copyright span {
+      display: inline-block;
+      width: 5.2em;
+      color: #b5b5b5;
+      font-weight: bold;
+    }
+    .my_post_copyright .raw {
+      margin-left: 1em;
+      width: 5em;
+    }
+    .my_post_copyright a {
+      color: #808080;
+      border-bottom:0;
+    }
+    .my_post_copyright a:hover {
+      color: #a3d2a3;
+      text-decoration: underline;
+    }
+    .my_post_copyright:hover .fa-clipboard {
+      color: #000;
+    }
+    .my_post_copyright .post-url:hover {
+      font-weight: normal;
+    }
+    .my_post_copyright .copy-path {
+      margin-left: 1em;
+      width: 1em;
+      +mobile(){display:none;}
+    }
+    .my_post_copyright .copy-path:hover {
+      color: #808080;
+      cursor: pointer;
+    }
+
+  </style>
+
+  <p><span>本文标题:</span><a href="/2018/09/03/Spring学习笔记（十三）JdbcTemplate工具类的使用/">Spring学习笔记（十三）JdbcTemplate工具类的使用</a></p>
+  <p><span>文章作者:</span><a href="/" title="访问 和尚 的个人博客">和尚</a></p>
+  <!-- <p><span>发布时间:</span>2018年09月03日 - 15:09</p>
+  <p><span>最后更新:</span>2018年09月03日 - 16:09</p> -->
+  <p><span>本文链接:</span><a href="/2018/09/03/Spring学习笔记（十三）JdbcTemplate工具类的使用/" title="Spring学习笔记（十三）JdbcTemplate工具类的使用">http://heshangcode.coding.me/2018/09/03/Spring学习笔记（十三）JdbcTemplate工具类的使用/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://heshangcode.coding.me/2018/09/03/Spring学习笔记（十三）JdbcTemplate工具类的使用/"  aria-label="复制成功！"></i></span>
+  </p>
+  <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
+</div>
+<script> 
+    var clipboard = new Clipboard('.fa-clipboard');
+    $(".fa-clipboard").click(function(){
+      clipboard.on('success', function(){
+        swal({   
+          title: "",   
+          text: '复制成功',
+          icon: "success", 
+          showConfirmButton: true
+          });
+  });
+    });  
+</script>
+
+          
+        </div>
+       
+
+      
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>谢谢各位老板的打赏(90°鞠躬)！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>打赏</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="和尚 微信支付"/>
+        <p>微信支付</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpg" alt="和尚 支付宝"/>
+        <p>支付宝</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/SSM/" rel="tag"><i class="fa fa-tag"></i> SSM</a>
+          
+            <a href="/tags/框架/" rel="tag"><i class="fa fa-tag"></i> 框架</a>
+          
+            <a href="/tags/Spring/" rel="tag"><i class="fa fa-tag"></i> Spring</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/03/Spring学习笔记（十二）AOP的XML方式cglib代理-重点掌握/" rel="next" title="Spring学习笔记（十二）AOP的XML方式cglib代理-重点掌握">
+                <i class="fa fa-chevron-left"></i> Spring学习笔记（十二）AOP的XML方式cglib代理-重点掌握
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/09/03/Spring学习笔记（十四）Spring事务/" rel="prev" title="Spring学习笔记（十四）Spring事务">
+                Spring学习笔记（十四）Spring事务 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zODI2My8xNDc5MQ"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/uploads/avatar.png#/images/avatar.gif"
+                alt="和尚" />
+            
+              <p class="site-author-name" itemprop="name">和尚</p>
+              <p class="site-description motion-element" itemprop="description">外面诱惑很多，希望自己能一直走下去</p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/archives/">
+                
+                    <span class="site-state-item-count">40</span>
+                    <span class="site-state-item-name">日志</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-categories">
+                  <a href="/categories/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
+                    <span class="site-state-item-name">分类</span>
+                  </a>
+                </div>
+              
+
+              
+                
+                
+                <div class="site-state-item site-state-tags">
+                  <a href="/tags/index.html">
+                    
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">12</span>
+                    <span class="site-state-item-name">标签</span>
+                  </a>
+                </div>
+              
+            </nav>
+          
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  <a href="https://github.com/heshangcode" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="mailto:914727235@qq.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  
+                </span>
+              
+                <span class="links-of-author-item">
+                  <a href="https://blog.csdn.net/qq_39707130" target="_blank" title="CSDN"><i class="fa fa-fw fa-copyright"></i>CSDN</a>
+                  
+                </span>
+              
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-globe"></i>
+                PY大军
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://ltitan.github.io/" title="Ltitan" target="_blank">Ltitan</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://crazyeric.top/" title="Eric" target="_blank">Eric</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://coding.net/" title="Hosted by Coding Pages" target="_blank">Hosted by Coding Pages</a>
+                  </li>
+                
+              </ul>
+            </div>
+          
+
+
+    
+
+
+          
+            
+          
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-介绍JdbcTemplate工具类"><span class="nav-text">1.介绍JdbcTemplate工具类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-sql文件"><span class="nav-text">2.sql文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-实例化该工具类"><span class="nav-text">3.实例化该工具类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-配置数据源"><span class="nav-text">4.配置数据源</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#什么是连接池？"><span class="nav-text">什么是连接池？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#连接池的工作原理？"><span class="nav-text">连接池的工作原理？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#开源的连接池有哪些？"><span class="nav-text">开源的连接池有哪些？</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-User-java"><span class="nav-text">5.User.java</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#6-查询操作-预处理"><span class="nav-text">6.查询操作(预处理)</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-返回Map数据"><span class="nav-text">1.返回Map数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-返回List-Map数据"><span class="nav-text">2.返回List_Map数据</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-返回一个值"><span class="nav-text">3.返回一个值</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-返回一个对象"><span class="nav-text">4.返回一个对象</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-返回一个List-lt-对象-gt"><span class="nav-text">5.返回一个List&lt;对象&gt;</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-返回一个List-lt-对象-gt-——自动映射，类属性和查询的字段名字一样"><span class="nav-text">6.返回一个List&lt;对象&gt;——自动映射，类属性和查询的字段名字一样</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#7-添加修改删除"><span class="nav-text">7.添加修改删除</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+<div id="music163player">
+         <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=280 height=106 src="//music.163.com/outchain/player?type=2&id=395434&auto=0&height=66"></iframe>
+    </div>
+    
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+
+
+<div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">和尚</span>
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-area-chart"></i>
+    </span>
+    
+    <span title="站点总字数">281k</span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    
+    <span title="站点阅读时长">9:22</span>
+  
+</div>
+
+
+
+
+
+
+<!--
+<div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动 v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+<div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/theme-next/hexo-theme-next">NexT.Pisces</a> v6.3.0</div>
+-->
+
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv" title="总访客量">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="site-pv" title="总访问量">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//tajs.qq.com/stats?sId=65941702";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=6.3.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=6.3.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=6.3.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=6.3.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=6.3.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=6.3.0"></script>
+
+
+
+  
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+<!-- 页面点击小红心 -->
+<script type="text/javascript" src="/js/src/love.js"></script>
+</html>
