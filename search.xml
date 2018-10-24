@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[win10重装恢复手册]]></title>
+    <url>%2F2018%2F10%2F23%2Fwin10%E9%87%8D%E8%A3%85%E6%81%A2%E5%A4%8D%E6%89%8B%E5%86%8C%2F</url>
+    <content type="text"><![CDATA[每一次重装系统之后，就要把各种软件重新装一遍，然后自己的软件还多，不知道到底有哪些，所以就有了这个文章，一直持续更新中 首先还是献上自己的桌面布局 一、环境： java的环境 mysql maven的配置 tomcat 博客用的node.js git 我的博客恢复 二、软件工具 idea：java开发工具、idea的各种配置 eclipse：java开发工具 Navicat Premium：管理各种数据库 notepad++：神器般的打开各种文件 everything：快速的搜索各种软件 sublime text3：可以用来写各种HTML啊 Snipaste：一个非常牛逼的截图和贴图软件 Office：办公全套 https://account.microsoft.com/services/ OneNote：用来做笔记的 好压 VM：虚拟机 Visio：可以来换流程图，UMl图，各种图 谷歌浏览器、360极速浏览器 SupportAssist：戴尔官方的清理软件 https://www.dell.com/support/contents/cn/zh/cnbsd1/article/product-support/self-support-knowledgebase/software-and-downloads/supportassist Xmind 8 和Xmind Zen：画思维导图 LICEcap：录制电脑的gif PicGo：保存图片到各大图床 Typora：一个强大的markdown编辑器 百度云下载工具： 速盘 pandownload 爱奇艺万能播放器 翻墙： 蓝灯 Lantern 赛风 psiphon3 MaxxAudioPro：电脑调各种音效的软件 http://del.ly/6528DC6l4 Sticky Notes：win10自带的小便签 搜狗输入法 微信、QQ EV录屏 三、各种设置 关闭了打开一个软件的提示框 https://jingyan.baidu.com/article/a681b0de5abddc3b18434681.html]]></content>
+      <categories>
+        <category>工具软件</category>
+      </categories>
+      <tags>
+        <tag>系统重装恢复</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[maven项目找不到resources下的资源文件]]></title>
     <url>%2F2018%2F09%2F14%2Fmaven%E9%A1%B9%E7%9B%AE%E6%89%BE%E4%B8%8D%E5%88%B0resources%E4%B8%8B%E7%9A%84%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%2F</url>
     <content type="text"><![CDATA[今天在写SSM整合，测试的时候，发现resources下的SpringMvc.xml没有扫描到。 首先在web.xml中springmvc.xml的路径如下 12345678910111213141516&lt;servlet&gt; &lt;servlet-name&gt;springmvc&lt;/servlet-name&gt; &lt;servlet-class&gt;org.springframework.web.servlet.DispatcherServlet&lt;/servlet-class&gt; &lt;init-param&gt; &lt;param-name&gt;contextConfigLocation&lt;/param-name&gt; &lt;!--核心配置文件的位置和名称--&gt; &lt;param-value&gt;/WEB-INF/springmvc.xml&lt;/param-value&gt; &lt;!--&lt;param-value&gt;classpath:springmvc.xml&lt;/param-value&gt;--&gt; &lt;/init-param&gt; &lt;!--启动服务器的时候就对DispatcherServlet进行实例化操作--&gt; &lt;load-on-startup&gt;2&lt;/load-on-startup&gt;&lt;/servlet&gt;&lt;servlet-mapping&gt; &lt;servlet-name&gt;springmvc&lt;/servlet-name&gt; &lt;url-pattern&gt;/&lt;/url-pattern&gt;&lt;/servlet-mapping&gt; 我写的/WEB-INF/springmvc.xml，把springmvc.xml放在WEB-INF下，也依然不能访问，报的错误也很奇怪， 1Handler processing failed; nested exception is java.lang.NoClassDefFoundError: javax/servlet/jsp/jstl/core/Config 自己百度了，都说是少了jstl的包，但是我pom.xml依赖里加了jstl的依赖的，太奇怪了，最后一个解决办法，在pom.xml中加入 123456789101112131415161718192021&lt;build&gt; &lt;!--扫描到resources下的xml等资源文件--&gt; &lt;resources&gt; &lt;resource&gt; &lt;directory&gt;src/main/java&lt;/directory&gt; &lt;includes&gt; &lt;include&gt;**/*.properties&lt;/include&gt; &lt;include&gt;**/*.xml&lt;/include&gt; &lt;/includes&gt; &lt;filtering&gt;true&lt;/filtering&gt; &lt;/resource&gt; &lt;resource&gt; &lt;directory&gt;src/main/resources&lt;/directory&gt; &lt;includes&gt; &lt;include&gt;**/*.properties&lt;/include&gt; &lt;include&gt;**/*.xml&lt;/include&gt; &lt;/includes&gt; &lt;filtering&gt;true&lt;/filtering&gt; &lt;/resource&gt; &lt;/resources&gt;&lt;/build&gt; 加入这个代码，不管xml文件放在resources下还是WEB-INF下，都能扫描到。 但是还是比较纠结报错的问题，为什么报那个错误！？？？？]]></content>
