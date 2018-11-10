@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://heshangcode.coding.me/"/>
+  <link href="http://heshang.ink/"/>
   <updated>2018-10-24T06:16:48.142Z</updated>
-  <id>http://heshangcode.coding.me/</id>
+  <id>http://heshang.ink/</id>
   
   <author>
     <name>和尚</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>win10重装恢复手册</title>
-    <link href="http://heshangcode.coding.me/2018/10/23/win10%E9%87%8D%E8%A3%85%E6%81%A2%E5%A4%8D%E6%89%8B%E5%86%8C/"/>
-    <id>http://heshangcode.coding.me/2018/10/23/win10重装恢复手册/</id>
+    <link href="http://heshang.ink/2018/10/23/win10%E9%87%8D%E8%A3%85%E6%81%A2%E5%A4%8D%E6%89%8B%E5%86%8C/"/>
+    <id>http://heshang.ink/2018/10/23/win10重装恢复手册/</id>
     <published>2018-10-23T15:03:47.000Z</published>
     <updated>2018-10-24T06:16:48.142Z</updated>
     
@@ -31,17 +31,17 @@
     
     </summary>
     
-      <category term="工具软件" scheme="http://heshangcode.coding.me/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/"/>
+      <category term="工具软件" scheme="http://heshang.ink/categories/%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6/"/>
     
     
-      <category term="系统重装恢复" scheme="http://heshangcode.coding.me/tags/%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%81%A2%E5%A4%8D/"/>
+      <category term="系统重装恢复" scheme="http://heshang.ink/tags/%E7%B3%BB%E7%BB%9F%E9%87%8D%E8%A3%85%E6%81%A2%E5%A4%8D/"/>
     
   </entry>
   
   <entry>
     <title>maven项目找不到resources下的资源文件</title>
-    <link href="http://heshangcode.coding.me/2018/09/14/maven%E9%A1%B9%E7%9B%AE%E6%89%BE%E4%B8%8D%E5%88%B0resources%E4%B8%8B%E7%9A%84%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6/"/>
-    <id>http://heshangcode.coding.me/2018/09/14/maven项目找不到resources下的资源文件/</id>
+    <link href="http://heshang.ink/2018/09/14/maven%E9%A1%B9%E7%9B%AE%E6%89%BE%E4%B8%8D%E5%88%B0resources%E4%B8%8B%E7%9A%84%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6/"/>
+    <id>http://heshang.ink/2018/09/14/maven项目找不到resources下的资源文件/</id>
     <published>2018-09-14T09:05:52.000Z</published>
     <updated>2018-09-14T09:55:44.003Z</updated>
     
@@ -53,23 +53,23 @@
     
     </summary>
     
-      <category term="maven" scheme="http://heshangcode.coding.me/categories/maven/"/>
+      <category term="maven" scheme="http://heshang.ink/categories/maven/"/>
     
     
-      <category term="MyBatis" scheme="http://heshangcode.coding.me/tags/MyBatis/"/>
+      <category term="MyBatis" scheme="http://heshang.ink/tags/MyBatis/"/>
     
-      <category term="SSM" scheme="http://heshangcode.coding.me/tags/SSM/"/>
+      <category term="SSM" scheme="http://heshang.ink/tags/SSM/"/>
     
-      <category term="SpringMvc" scheme="http://heshangcode.coding.me/tags/SpringMvc/"/>
+      <category term="SpringMvc" scheme="http://heshang.ink/tags/SpringMvc/"/>
     
-      <category term="Spring" scheme="http://heshangcode.coding.me/tags/Spring/"/>
+      <category term="Spring" scheme="http://heshang.ink/tags/Spring/"/>
     
   </entry>
   
   <entry>
     <title>VM安装、Ubuntu的安装、Ubuntu设置为中文</title>
-    <link href="http://heshangcode.coding.me/2018/09/14/VM%E5%AE%89%E8%A3%85%E3%80%81Ubuntu%E7%9A%84%E5%AE%89%E8%A3%85%E3%80%81Ubuntu%E8%AE%BE%E7%BD%AE%E4%B8%BA%E4%B8%AD%E6%96%87/"/>
-    <id>http://heshangcode.coding.me/2018/09/14/VM安装、Ubuntu的安装、Ubuntu设置为中文/</id>
+    <link href="http://heshang.ink/2018/09/14/VM%E5%AE%89%E8%A3%85%E3%80%81Ubuntu%E7%9A%84%E5%AE%89%E8%A3%85%E3%80%81Ubuntu%E8%AE%BE%E7%BD%AE%E4%B8%BA%E4%B8%AD%E6%96%87/"/>
+    <id>http://heshang.ink/2018/09/14/VM安装、Ubuntu的安装、Ubuntu设置为中文/</id>
     <published>2018-09-14T08:58:30.000Z</published>
     <updated>2018-09-14T09:02:53.800Z</updated>
     
@@ -82,19 +82,19 @@
     
     </summary>
     
-      <category term="Linux" scheme="http://heshangcode.coding.me/categories/Linux/"/>
+      <category term="Linux" scheme="http://heshang.ink/categories/Linux/"/>
     
     
-      <category term="Ubuntu安装" scheme="http://heshangcode.coding.me/tags/Ubuntu%E5%AE%89%E8%A3%85/"/>
+      <category term="Ubuntu安装" scheme="http://heshang.ink/tags/Ubuntu%E5%AE%89%E8%A3%85/"/>
     
-      <category term="VM安装" scheme="http://heshangcode.coding.me/tags/VM%E5%AE%89%E8%A3%85/"/>
+      <category term="VM安装" scheme="http://heshang.ink/tags/VM%E5%AE%89%E8%A3%85/"/>
     
   </entry>
   
   <entry>
     <title>SSM框架总结—学习路线</title>
-    <link href="http://heshangcode.coding.me/2018/09/04/SSM%E6%A1%86%E6%9E%B6%E6%80%BB%E7%BB%93%E2%80%94%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
-    <id>http://heshangcode.coding.me/2018/09/04/SSM框架总结—学习路线/</id>
+    <link href="http://heshang.ink/2018/09/04/SSM%E6%A1%86%E6%9E%B6%E6%80%BB%E7%BB%93%E2%80%94%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/"/>
+    <id>http://heshang.ink/2018/09/04/SSM框架总结—学习路线/</id>
     <published>2018-09-04T12:50:42.000Z</published>
     <updated>2018-09-04T12:59:58.057Z</updated>
     
@@ -106,23 +106,23 @@
     
     </summary>
     
-      <category term="SSM学习总结" scheme="http://heshangcode.coding.me/categories/SSM%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+      <category term="SSM学习总结" scheme="http://heshang.ink/categories/SSM%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="MyBatis" scheme="http://heshangcode.coding.me/tags/MyBatis/"/>
+      <category term="MyBatis" scheme="http://heshang.ink/tags/MyBatis/"/>
     
-      <category term="框架" scheme="http://heshangcode.coding.me/tags/%E6%A1%86%E6%9E%B6/"/>
+      <category term="框架" scheme="http://heshang.ink/tags/%E6%A1%86%E6%9E%B6/"/>
     
-      <category term="SpringMvc" scheme="http://heshangcode.coding.me/tags/SpringMvc/"/>
+      <category term="SpringMvc" scheme="http://heshang.ink/tags/SpringMvc/"/>
     
-      <category term="Spring" scheme="http://heshangcode.coding.me/tags/Spring/"/>
+      <category term="Spring" scheme="http://heshang.ink/tags/Spring/"/>
     
   </entry>
   
   <entry>
     <title>Spring学习笔记（十五）Spring事务XML版-推荐</title>
-    <link href="http://heshangcode.coding.me/2018/09/03/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%8D%81%E4%BA%94%EF%BC%89Spring%E4%BA%8B%E5%8A%A1XML%E7%89%88-%E6%8E%A8%E8%8D%90/"/>
-    <id>http://heshangcode.coding.me/2018/09/03/Spring学习笔记（十五）Spring事务XML版-推荐/</id>
+    <link href="http://heshang.ink/2018/09/03/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%8D%81%E4%BA%94%EF%BC%89Spring%E4%BA%8B%E5%8A%A1XML%E7%89%88-%E6%8E%A8%E8%8D%90/"/>
+    <id>http://heshang.ink/2018/09/03/Spring学习笔记（十五）Spring事务XML版-推荐/</id>
     <published>2018-09-03T12:30:06.000Z</published>
     <updated>2018-09-03T15:04:18.675Z</updated>
     
@@ -134,21 +134,21 @@
     
     </summary>
     
-      <category term="Spring学习总结" scheme="http://heshangcode.coding.me/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+      <category term="Spring学习总结" scheme="http://heshang.ink/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="SSM" scheme="http://heshangcode.coding.me/tags/SSM/"/>
+      <category term="SSM" scheme="http://heshang.ink/tags/SSM/"/>
     
-      <category term="框架" scheme="http://heshangcode.coding.me/tags/%E6%A1%86%E6%9E%B6/"/>
+      <category term="框架" scheme="http://heshang.ink/tags/%E6%A1%86%E6%9E%B6/"/>
     
-      <category term="Spring" scheme="http://heshangcode.coding.me/tags/Spring/"/>
+      <category term="Spring" scheme="http://heshang.ink/tags/Spring/"/>
     
   </entry>
   
   <entry>
     <title>Spring学习笔记（十四）Spring事务</title>
-    <link href="http://heshangcode.coding.me/2018/09/03/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%8D%81%E5%9B%9B%EF%BC%89Spring%E4%BA%8B%E5%8A%A1/"/>
-    <id>http://heshangcode.coding.me/2018/09/03/Spring学习笔记（十四）Spring事务/</id>
+    <link href="http://heshang.ink/2018/09/03/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%8D%81%E5%9B%9B%EF%BC%89Spring%E4%BA%8B%E5%8A%A1/"/>
+    <id>http://heshang.ink/2018/09/03/Spring学习笔记（十四）Spring事务/</id>
     <published>2018-09-03T08:09:50.000Z</published>
     <updated>2018-09-03T14:55:34.341Z</updated>
     
@@ -160,21 +160,21 @@
     
     </summary>
     
-      <category term="Spring学习总结" scheme="http://heshangcode.coding.me/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+      <category term="Spring学习总结" scheme="http://heshang.ink/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="SSM" scheme="http://heshangcode.coding.me/tags/SSM/"/>
+      <category term="SSM" scheme="http://heshang.ink/tags/SSM/"/>
     
-      <category term="框架" scheme="http://heshangcode.coding.me/tags/%E6%A1%86%E6%9E%B6/"/>
+      <category term="框架" scheme="http://heshang.ink/tags/%E6%A1%86%E6%9E%B6/"/>
     
-      <category term="Spring" scheme="http://heshangcode.coding.me/tags/Spring/"/>
+      <category term="Spring" scheme="http://heshang.ink/tags/Spring/"/>
     
   </entry>
   
   <entry>
     <title>Spring学习笔记（十三）JdbcTemplate工具类的使用</title>
-    <link href="http://heshangcode.coding.me/2018/09/03/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%8D%81%E4%B8%89%EF%BC%89JdbcTemplate%E5%B7%A5%E5%85%B7%E7%B1%BB%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
-    <id>http://heshangcode.coding.me/2018/09/03/Spring学习笔记（十三）JdbcTemplate工具类的使用/</id>
+    <link href="http://heshang.ink/2018/09/03/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%8D%81%E4%B8%89%EF%BC%89JdbcTemplate%E5%B7%A5%E5%85%B7%E7%B1%BB%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+    <id>http://heshang.ink/2018/09/03/Spring学习笔记（十三）JdbcTemplate工具类的使用/</id>
     <published>2018-09-03T07:40:10.000Z</published>
     <updated>2018-09-03T08:05:48.406Z</updated>
     
@@ -186,21 +186,21 @@
     
     </summary>
     
-      <category term="Spring学习总结" scheme="http://heshangcode.coding.me/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+      <category term="Spring学习总结" scheme="http://heshang.ink/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="SSM" scheme="http://heshangcode.coding.me/tags/SSM/"/>
+      <category term="SSM" scheme="http://heshang.ink/tags/SSM/"/>
     
-      <category term="框架" scheme="http://heshangcode.coding.me/tags/%E6%A1%86%E6%9E%B6/"/>
+      <category term="框架" scheme="http://heshang.ink/tags/%E6%A1%86%E6%9E%B6/"/>
     
-      <category term="Spring" scheme="http://heshangcode.coding.me/tags/Spring/"/>
+      <category term="Spring" scheme="http://heshang.ink/tags/Spring/"/>
     
   </entry>
   
   <entry>
     <title>Spring学习笔记（十二）AOP的XML方式cglib代理-重点掌握</title>
-    <link href="http://heshangcode.coding.me/2018/09/03/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%8D%81%E4%BA%8C%EF%BC%89AOP%E7%9A%84XML%E6%96%B9%E5%BC%8Fcglib%E4%BB%A3%E7%90%86-%E9%87%8D%E7%82%B9%E6%8E%8C%E6%8F%A1/"/>
-    <id>http://heshangcode.coding.me/2018/09/03/Spring学习笔记（十二）AOP的XML方式cglib代理-重点掌握/</id>
+    <link href="http://heshang.ink/2018/09/03/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%8D%81%E4%BA%8C%EF%BC%89AOP%E7%9A%84XML%E6%96%B9%E5%BC%8Fcglib%E4%BB%A3%E7%90%86-%E9%87%8D%E7%82%B9%E6%8E%8C%E6%8F%A1/"/>
+    <id>http://heshang.ink/2018/09/03/Spring学习笔记（十二）AOP的XML方式cglib代理-重点掌握/</id>
     <published>2018-09-03T07:24:09.000Z</published>
     <updated>2018-09-03T07:35:53.361Z</updated>
     
@@ -212,21 +212,21 @@
     
     </summary>
     
-      <category term="Spring学习总结" scheme="http://heshangcode.coding.me/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+      <category term="Spring学习总结" scheme="http://heshang.ink/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="SSM" scheme="http://heshangcode.coding.me/tags/SSM/"/>
+      <category term="SSM" scheme="http://heshang.ink/tags/SSM/"/>
     
-      <category term="框架" scheme="http://heshangcode.coding.me/tags/%E6%A1%86%E6%9E%B6/"/>
+      <category term="框架" scheme="http://heshang.ink/tags/%E6%A1%86%E6%9E%B6/"/>
     
-      <category term="Spring" scheme="http://heshangcode.coding.me/tags/Spring/"/>
+      <category term="Spring" scheme="http://heshang.ink/tags/Spring/"/>
     
   </entry>
   
   <entry>
     <title>Spring学习笔记（十一）AOP的注解方式cglib代理</title>
-    <link href="http://heshangcode.coding.me/2018/09/03/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89AOP%E7%9A%84%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8Fcglib%E4%BB%A3%E7%90%86/"/>
-    <id>http://heshangcode.coding.me/2018/09/03/Spring学习笔记（十一）AOP的注解方式cglib代理/</id>
+    <link href="http://heshang.ink/2018/09/03/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%8D%81%E4%B8%80%EF%BC%89AOP%E7%9A%84%E6%B3%A8%E8%A7%A3%E6%96%B9%E5%BC%8Fcglib%E4%BB%A3%E7%90%86/"/>
+    <id>http://heshang.ink/2018/09/03/Spring学习笔记（十一）AOP的注解方式cglib代理/</id>
     <published>2018-09-03T06:32:16.000Z</published>
     <updated>2018-09-03T07:23:26.851Z</updated>
     
@@ -238,21 +238,21 @@
     
     </summary>
     
-      <category term="Spring学习总结" scheme="http://heshangcode.coding.me/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+      <category term="Spring学习总结" scheme="http://heshang.ink/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="SSM" scheme="http://heshangcode.coding.me/tags/SSM/"/>
+      <category term="SSM" scheme="http://heshang.ink/tags/SSM/"/>
     
-      <category term="框架" scheme="http://heshangcode.coding.me/tags/%E6%A1%86%E6%9E%B6/"/>
+      <category term="框架" scheme="http://heshang.ink/tags/%E6%A1%86%E6%9E%B6/"/>
     
-      <category term="Spring" scheme="http://heshangcode.coding.me/tags/Spring/"/>
+      <category term="Spring" scheme="http://heshang.ink/tags/Spring/"/>
     
   </entry>
   
   <entry>
     <title>Spring学习笔记（十）AOP静态代理和动态代理说明</title>
-    <link href="http://heshangcode.coding.me/2018/09/03/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%8D%81%EF%BC%89AOP%E9%9D%99%E6%80%81%E4%BB%A3%E7%90%86%E5%92%8C%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E8%AF%B4%E6%98%8E/"/>
-    <id>http://heshangcode.coding.me/2018/09/03/Spring学习笔记（十）AOP静态代理和动态代理说明/</id>
+    <link href="http://heshang.ink/2018/09/03/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%8D%81%EF%BC%89AOP%E9%9D%99%E6%80%81%E4%BB%A3%E7%90%86%E5%92%8C%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86%E8%AF%B4%E6%98%8E/"/>
+    <id>http://heshang.ink/2018/09/03/Spring学习笔记（十）AOP静态代理和动态代理说明/</id>
     <published>2018-09-03T05:55:34.000Z</published>
     <updated>2018-09-03T06:29:58.085Z</updated>
     
@@ -264,21 +264,21 @@
     
     </summary>
     
-      <category term="Spring学习总结" scheme="http://heshangcode.coding.me/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+      <category term="Spring学习总结" scheme="http://heshang.ink/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="SSM" scheme="http://heshangcode.coding.me/tags/SSM/"/>
+      <category term="SSM" scheme="http://heshang.ink/tags/SSM/"/>
     
-      <category term="框架" scheme="http://heshangcode.coding.me/tags/%E6%A1%86%E6%9E%B6/"/>
+      <category term="框架" scheme="http://heshang.ink/tags/%E6%A1%86%E6%9E%B6/"/>
     
-      <category term="Spring" scheme="http://heshangcode.coding.me/tags/Spring/"/>
+      <category term="Spring" scheme="http://heshang.ink/tags/Spring/"/>
     
   </entry>
   
   <entry>
     <title>Spring学习笔记（九）模拟实际开发过程的调用过程注解版-官方推荐版</title>
-    <link href="http://heshangcode.coding.me/2018/09/02/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B9%9D%EF%BC%89%E6%A8%A1%E6%8B%9F%E5%AE%9E%E9%99%85%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E7%9A%84%E8%B0%83%E7%94%A8%E8%BF%87%E7%A8%8B%E6%B3%A8%E8%A7%A3%E7%89%88-%E5%AE%98%E6%96%B9%E6%8E%A8%E8%8D%90%E7%89%88/"/>
-    <id>http://heshangcode.coding.me/2018/09/02/Spring学习笔记（九）模拟实际开发过程的调用过程注解版-官方推荐版/</id>
+    <link href="http://heshang.ink/2018/09/02/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B9%9D%EF%BC%89%E6%A8%A1%E6%8B%9F%E5%AE%9E%E9%99%85%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E7%9A%84%E8%B0%83%E7%94%A8%E8%BF%87%E7%A8%8B%E6%B3%A8%E8%A7%A3%E7%89%88-%E5%AE%98%E6%96%B9%E6%8E%A8%E8%8D%90%E7%89%88/"/>
+    <id>http://heshang.ink/2018/09/02/Spring学习笔记（九）模拟实际开发过程的调用过程注解版-官方推荐版/</id>
     <published>2018-09-02T12:50:57.000Z</published>
     <updated>2018-09-03T09:12:14.963Z</updated>
     
@@ -290,21 +290,21 @@
     
     </summary>
     
-      <category term="Spring学习总结" scheme="http://heshangcode.coding.me/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+      <category term="Spring学习总结" scheme="http://heshang.ink/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="SSM" scheme="http://heshangcode.coding.me/tags/SSM/"/>
+      <category term="SSM" scheme="http://heshang.ink/tags/SSM/"/>
     
-      <category term="框架" scheme="http://heshangcode.coding.me/tags/%E6%A1%86%E6%9E%B6/"/>
+      <category term="框架" scheme="http://heshang.ink/tags/%E6%A1%86%E6%9E%B6/"/>
     
-      <category term="Spring" scheme="http://heshangcode.coding.me/tags/Spring/"/>
+      <category term="Spring" scheme="http://heshang.ink/tags/Spring/"/>
     
   </entry>
   
   <entry>
     <title>Spring学习笔记（八）模拟实际开发过程的调用过程注解版-传统方式</title>
-    <link href="http://heshangcode.coding.me/2018/09/02/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%85%AB%EF%BC%89%E6%A8%A1%E6%8B%9F%E5%AE%9E%E9%99%85%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E7%9A%84%E8%B0%83%E7%94%A8%E8%BF%87%E7%A8%8B%E6%B3%A8%E8%A7%A3%E7%89%88-%E4%BC%A0%E7%BB%9F%E6%96%B9%E5%BC%8F/"/>
-    <id>http://heshangcode.coding.me/2018/09/02/Spring学习笔记（八）模拟实际开发过程的调用过程注解版-传统方式/</id>
+    <link href="http://heshang.ink/2018/09/02/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%85%AB%EF%BC%89%E6%A8%A1%E6%8B%9F%E5%AE%9E%E9%99%85%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E7%9A%84%E8%B0%83%E7%94%A8%E8%BF%87%E7%A8%8B%E6%B3%A8%E8%A7%A3%E7%89%88-%E4%BC%A0%E7%BB%9F%E6%96%B9%E5%BC%8F/"/>
+    <id>http://heshang.ink/2018/09/02/Spring学习笔记（八）模拟实际开发过程的调用过程注解版-传统方式/</id>
     <published>2018-09-02T09:42:32.000Z</published>
     <updated>2018-09-02T12:38:13.270Z</updated>
     
@@ -317,21 +317,21 @@
     
     </summary>
     
-      <category term="Spring学习总结" scheme="http://heshangcode.coding.me/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+      <category term="Spring学习总结" scheme="http://heshang.ink/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="SSM" scheme="http://heshangcode.coding.me/tags/SSM/"/>
+      <category term="SSM" scheme="http://heshang.ink/tags/SSM/"/>
     
-      <category term="框架" scheme="http://heshangcode.coding.me/tags/%E6%A1%86%E6%9E%B6/"/>
+      <category term="框架" scheme="http://heshang.ink/tags/%E6%A1%86%E6%9E%B6/"/>
     
-      <category term="Spring" scheme="http://heshangcode.coding.me/tags/Spring/"/>
+      <category term="Spring" scheme="http://heshang.ink/tags/Spring/"/>
     
   </entry>
   
   <entry>
     <title>Spring学习笔记（七）模拟实际开发过程的调用过程XML版-Setter方式注入</title>
-    <link href="http://heshangcode.coding.me/2018/09/02/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%83%EF%BC%89%E6%A8%A1%E6%8B%9F%E5%AE%9E%E9%99%85%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E7%9A%84%E8%B0%83%E7%94%A8%E8%BF%87%E7%A8%8BXML%E7%89%88-Setter%E6%96%B9%E5%BC%8F%E6%B3%A8%E5%85%A5/"/>
-    <id>http://heshangcode.coding.me/2018/09/02/Spring学习笔记（七）模拟实际开发过程的调用过程XML版-Setter方式注入/</id>
+    <link href="http://heshang.ink/2018/09/02/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%83%EF%BC%89%E6%A8%A1%E6%8B%9F%E5%AE%9E%E9%99%85%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E7%9A%84%E8%B0%83%E7%94%A8%E8%BF%87%E7%A8%8BXML%E7%89%88-Setter%E6%96%B9%E5%BC%8F%E6%B3%A8%E5%85%A5/"/>
+    <id>http://heshang.ink/2018/09/02/Spring学习笔记（七）模拟实际开发过程的调用过程XML版-Setter方式注入/</id>
     <published>2018-09-02T07:16:56.000Z</published>
     <updated>2018-09-02T12:37:59.854Z</updated>
     
@@ -343,21 +343,21 @@
     
     </summary>
     
-      <category term="Spring学习总结" scheme="http://heshangcode.coding.me/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+      <category term="Spring学习总结" scheme="http://heshang.ink/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="SSM" scheme="http://heshangcode.coding.me/tags/SSM/"/>
+      <category term="SSM" scheme="http://heshang.ink/tags/SSM/"/>
     
-      <category term="框架" scheme="http://heshangcode.coding.me/tags/%E6%A1%86%E6%9E%B6/"/>
+      <category term="框架" scheme="http://heshang.ink/tags/%E6%A1%86%E6%9E%B6/"/>
     
-      <category term="Spring" scheme="http://heshangcode.coding.me/tags/Spring/"/>
+      <category term="Spring" scheme="http://heshang.ink/tags/Spring/"/>
     
   </entry>
   
   <entry>
     <title>Spring学习笔记（六）模拟实际开发过程的调用过程XML版-构造函数注入</title>
-    <link href="http://heshangcode.coding.me/2018/09/02/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%85%AD%EF%BC%89%E6%A8%A1%E6%8B%9F%E5%AE%9E%E9%99%85%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E7%9A%84%E8%B0%83%E7%94%A8%E8%BF%87%E7%A8%8BXML%E7%89%88-%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E6%B3%A8%E5%85%A5/"/>
-    <id>http://heshangcode.coding.me/2018/09/02/Spring学习笔记（六）模拟实际开发过程的调用过程XML版-构造函数注入/</id>
+    <link href="http://heshang.ink/2018/09/02/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%85%AD%EF%BC%89%E6%A8%A1%E6%8B%9F%E5%AE%9E%E9%99%85%E5%BC%80%E5%8F%91%E8%BF%87%E7%A8%8B%E7%9A%84%E8%B0%83%E7%94%A8%E8%BF%87%E7%A8%8BXML%E7%89%88-%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E6%B3%A8%E5%85%A5/"/>
+    <id>http://heshang.ink/2018/09/02/Spring学习笔记（六）模拟实际开发过程的调用过程XML版-构造函数注入/</id>
     <published>2018-09-02T07:01:35.000Z</published>
     <updated>2018-09-25T01:39:57.494Z</updated>
     
@@ -369,21 +369,21 @@
     
     </summary>
     
-      <category term="Spring学习总结" scheme="http://heshangcode.coding.me/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+      <category term="Spring学习总结" scheme="http://heshang.ink/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="SSM" scheme="http://heshangcode.coding.me/tags/SSM/"/>
+      <category term="SSM" scheme="http://heshang.ink/tags/SSM/"/>
     
-      <category term="框架" scheme="http://heshangcode.coding.me/tags/%E6%A1%86%E6%9E%B6/"/>
+      <category term="框架" scheme="http://heshang.ink/tags/%E6%A1%86%E6%9E%B6/"/>
     
-      <category term="Spring" scheme="http://heshangcode.coding.me/tags/Spring/"/>
+      <category term="Spring" scheme="http://heshang.ink/tags/Spring/"/>
     
   </entry>
   
   <entry>
     <title>Spring学习笔记（五）模拟实际开发的调用过程</title>
-    <link href="http://heshangcode.coding.me/2018/09/02/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%94%EF%BC%89%E6%A8%A1%E6%8B%9F%E5%AE%9E%E9%99%85%E5%BC%80%E5%8F%91%E7%9A%84%E8%B0%83%E7%94%A8%E8%BF%87%E7%A8%8B/"/>
-    <id>http://heshangcode.coding.me/2018/09/02/Spring学习笔记（五）模拟实际开发的调用过程/</id>
+    <link href="http://heshang.ink/2018/09/02/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%94%EF%BC%89%E6%A8%A1%E6%8B%9F%E5%AE%9E%E9%99%85%E5%BC%80%E5%8F%91%E7%9A%84%E8%B0%83%E7%94%A8%E8%BF%87%E7%A8%8B/"/>
+    <id>http://heshang.ink/2018/09/02/Spring学习笔记（五）模拟实际开发的调用过程/</id>
     <published>2018-09-02T06:41:06.000Z</published>
     <updated>2018-09-02T12:37:48.585Z</updated>
     
@@ -395,21 +395,21 @@
     
     </summary>
     
-      <category term="Spring学习总结" scheme="http://heshangcode.coding.me/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+      <category term="Spring学习总结" scheme="http://heshang.ink/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="SSM" scheme="http://heshangcode.coding.me/tags/SSM/"/>
+      <category term="SSM" scheme="http://heshang.ink/tags/SSM/"/>
     
-      <category term="框架" scheme="http://heshangcode.coding.me/tags/%E6%A1%86%E6%9E%B6/"/>
+      <category term="框架" scheme="http://heshang.ink/tags/%E6%A1%86%E6%9E%B6/"/>
     
-      <category term="Spring" scheme="http://heshangcode.coding.me/tags/Spring/"/>
+      <category term="Spring" scheme="http://heshang.ink/tags/Spring/"/>
     
   </entry>
   
   <entry>
     <title>Spring学习笔记（四）Spring的注入方式-Setter方式推荐</title>
-    <link href="http://heshangcode.coding.me/2018/08/23/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89Spring%E7%9A%84%E6%B3%A8%E5%85%A5%E6%96%B9%E5%BC%8F-Setter%E6%96%B9%E5%BC%8F%E6%8E%A8%E8%8D%90/"/>
-    <id>http://heshangcode.coding.me/2018/08/23/Spring学习笔记（四）Spring的注入方式-Setter方式推荐/</id>
+    <link href="http://heshang.ink/2018/08/23/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E5%9B%9B%EF%BC%89Spring%E7%9A%84%E6%B3%A8%E5%85%A5%E6%96%B9%E5%BC%8F-Setter%E6%96%B9%E5%BC%8F%E6%8E%A8%E8%8D%90/"/>
+    <id>http://heshang.ink/2018/08/23/Spring学习笔记（四）Spring的注入方式-Setter方式推荐/</id>
     <published>2018-08-23T04:57:39.000Z</published>
     <updated>2018-08-23T05:57:55.902Z</updated>
     
@@ -421,21 +421,21 @@
     
     </summary>
     
-      <category term="Spring学习总结" scheme="http://heshangcode.coding.me/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+      <category term="Spring学习总结" scheme="http://heshang.ink/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="SSM" scheme="http://heshangcode.coding.me/tags/SSM/"/>
+      <category term="SSM" scheme="http://heshang.ink/tags/SSM/"/>
     
-      <category term="框架" scheme="http://heshangcode.coding.me/tags/%E6%A1%86%E6%9E%B6/"/>
+      <category term="框架" scheme="http://heshang.ink/tags/%E6%A1%86%E6%9E%B6/"/>
     
-      <category term="Spring" scheme="http://heshangcode.coding.me/tags/Spring/"/>
+      <category term="Spring" scheme="http://heshang.ink/tags/Spring/"/>
     
   </entry>
   
   <entry>
     <title>Spring学习笔记（三）Spring的注入方式-构造函数注入</title>
-    <link href="http://heshangcode.coding.me/2018/08/23/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89Spring%E7%9A%84%E6%B3%A8%E5%85%A5%E6%96%B9%E5%BC%8F-%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E6%B3%A8%E5%85%A5/"/>
-    <id>http://heshangcode.coding.me/2018/08/23/Spring学习笔记（三）Spring的注入方式-构造函数注入/</id>
+    <link href="http://heshang.ink/2018/08/23/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%89%EF%BC%89Spring%E7%9A%84%E6%B3%A8%E5%85%A5%E6%96%B9%E5%BC%8F-%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0%E6%B3%A8%E5%85%A5/"/>
+    <id>http://heshang.ink/2018/08/23/Spring学习笔记（三）Spring的注入方式-构造函数注入/</id>
     <published>2018-08-23T04:10:04.000Z</published>
     <updated>2018-09-02T07:33:07.473Z</updated>
     
@@ -447,21 +447,21 @@
     
     </summary>
     
-      <category term="Spring学习总结" scheme="http://heshangcode.coding.me/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+      <category term="Spring学习总结" scheme="http://heshang.ink/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="SSM" scheme="http://heshangcode.coding.me/tags/SSM/"/>
+      <category term="SSM" scheme="http://heshang.ink/tags/SSM/"/>
     
-      <category term="框架" scheme="http://heshangcode.coding.me/tags/%E6%A1%86%E6%9E%B6/"/>
+      <category term="框架" scheme="http://heshang.ink/tags/%E6%A1%86%E6%9E%B6/"/>
     
-      <category term="Spring" scheme="http://heshangcode.coding.me/tags/Spring/"/>
+      <category term="Spring" scheme="http://heshang.ink/tags/Spring/"/>
     
   </entry>
   
   <entry>
     <title>Spring学习笔记（二）Spring的环境搭建</title>
-    <link href="http://heshangcode.coding.me/2018/08/23/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89Spring%E7%9A%84%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
-    <id>http://heshangcode.coding.me/2018/08/23/Spring学习笔记（二）Spring的环境搭建/</id>
+    <link href="http://heshang.ink/2018/08/23/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%BA%8C%EF%BC%89Spring%E7%9A%84%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>http://heshang.ink/2018/08/23/Spring学习笔记（二）Spring的环境搭建/</id>
     <published>2018-08-23T03:39:12.000Z</published>
     <updated>2018-08-23T05:44:42.297Z</updated>
     
@@ -473,21 +473,21 @@
     
     </summary>
     
-      <category term="Spring学习总结" scheme="http://heshangcode.coding.me/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+      <category term="Spring学习总结" scheme="http://heshang.ink/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="SSM" scheme="http://heshangcode.coding.me/tags/SSM/"/>
+      <category term="SSM" scheme="http://heshang.ink/tags/SSM/"/>
     
-      <category term="框架" scheme="http://heshangcode.coding.me/tags/%E6%A1%86%E6%9E%B6/"/>
+      <category term="框架" scheme="http://heshang.ink/tags/%E6%A1%86%E6%9E%B6/"/>
     
-      <category term="Spring" scheme="http://heshangcode.coding.me/tags/Spring/"/>
+      <category term="Spring" scheme="http://heshang.ink/tags/Spring/"/>
     
   </entry>
   
   <entry>
     <title>idea创建maven项目</title>
-    <link href="http://heshangcode.coding.me/2018/08/22/idea%E5%88%9B%E5%BB%BAmaven%E9%A1%B9%E7%9B%AE/"/>
-    <id>http://heshangcode.coding.me/2018/08/22/idea创建maven项目/</id>
+    <link href="http://heshang.ink/2018/08/22/idea%E5%88%9B%E5%BB%BAmaven%E9%A1%B9%E7%9B%AE/"/>
+    <id>http://heshang.ink/2018/08/22/idea创建maven项目/</id>
     <published>2018-08-22T11:31:24.000Z</published>
     <updated>2018-08-23T05:54:45.081Z</updated>
     
@@ -499,23 +499,23 @@
     
     </summary>
     
-      <category term="idea" scheme="http://heshangcode.coding.me/categories/idea/"/>
+      <category term="idea" scheme="http://heshang.ink/categories/idea/"/>
     
     
-      <category term="idea" scheme="http://heshangcode.coding.me/tags/idea/"/>
+      <category term="idea" scheme="http://heshang.ink/tags/idea/"/>
     
-      <category term="maven" scheme="http://heshangcode.coding.me/tags/maven/"/>
+      <category term="maven" scheme="http://heshang.ink/tags/maven/"/>
     
   </entry>
   
   <entry>
     <title>Spring学习笔记（一）Java基础知识复习</title>
-    <link href="http://heshangcode.coding.me/2018/08/22/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%A4%8D%E4%B9%A0/"/>
-    <id>http://heshangcode.coding.me/2018/08/22/Spring学习笔记（一）Java基础知识复习/</id>
+    <link href="http://heshang.ink/2018/08/22/Spring%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%EF%BC%88%E4%B8%80%EF%BC%89Java%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%A4%8D%E4%B9%A0/"/>
+    <id>http://heshang.ink/2018/08/22/Spring学习笔记（一）Java基础知识复习/</id>
     <published>2018-08-22T11:27:38.000Z</published>
     <updated>2018-08-23T05:44:31.666Z</updated>
     
-    <content type="html"><![CDATA[<p>对象的创建方式、获取对象并且进行比较、==和equals的区别、单例模式(饿汉和懒汉)、对象的初始化数据操作、数组的数据初始化操作有几种、各个类型的初始值是什么，User u1 = new User();这句话包含的知识点、无参构造函数和有参构造函数</p><a id="more"></a><p>源码获取<a href="https://github.com/heshangcode/Learn" target="_blank" rel="noopener">github</a></p><p>学习spring的时候，都是用的maven项目学习，idea如何创建maven项目教程，<a href="http://heshangcode.coding.me/2018/08/22/idea%E5%88%9B%E5%BB%BAmaven%E9%A1%B9%E7%9B%AE/">传送门</a></p><p>[TOC]</p><h3 id="1-项目结构"><a href="#1-项目结构" class="headerlink" title="1.项目结构"></a>1.项目结构</h3><p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuitw4f66gj209q0a8tbv.jpg" alt=""></p><h3 id="2-需要的jar包"><a href="#2-需要的jar包" class="headerlink" title="2.需要的jar包"></a>2.需要的jar包</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.11<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">scope</span>&gt;</span>test<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><h3 id="3-对象的创建方式"><a href="#3-对象的创建方式" class="headerlink" title="3.对象的创建方式"></a>3.对象的创建方式</h3><ul><li><p>使用new关键字实例化对象</p></li><li><p>使用Class_forName实例化对象</p><p>User.java</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hs.model;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">private</span> String user_name;</span><br><span class="line">   <span class="keyword">private</span> Integer user_id;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> String <span class="title">getUser_name</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> user_name;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setUser_name</span><span class="params">(String user_name)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">this</span>.user_name = user_name;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> Integer <span class="title">getUser_id</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> user_id;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setUser_id</span><span class="params">(Integer user_id)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">this</span>.user_id = user_id;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>CreateObject.java</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hs.test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.hs.model.User;</span><br><span class="line"><span class="keyword">import</span> org.junit.Test;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 对象的创建方式</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CreateObject</span> </span>&#123;</span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 使用new关键字实例化对象</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="meta">@Test</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test01</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      User u = <span class="keyword">new</span> User();</span><br><span class="line">      System.out.println(u);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 使用Class_forName实例化对象</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@throws</span> ClassNotFoundException</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@throws</span> IllegalAccessException</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@throws</span> InstantiationException</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="meta">@Test</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test02</span><span class="params">()</span> <span class="keyword">throws</span> ClassNotFoundException, IllegalAccessException, InstantiationException </span>&#123;</span><br><span class="line">      User u = (User) Class.forName(<span class="string">"com.hs.model.User"</span>).newInstance();   <span class="comment">//com.hs.model.User为类的全路径，newInstance()实例化对象</span></span><br><span class="line">      System.out.println(u);</span><br><span class="line">      u.setUser_name(<span class="string">"悟空"</span>);</span><br><span class="line">      System.out.println(u.getUser_name());</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><h3 id="4-获取对象并且进行比较"><a href="#4-获取对象并且进行比较" class="headerlink" title="4.获取对象并且进行比较"></a>4.获取对象并且进行比较</h3><ul><li>new 一次，就产生一个新的对象，两个对象都是不一样的，都是新的</li><li>对象每次都可以是一样的、同一个实例</li></ul><p>GetObject.java</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hs.test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.hs.model.User;</span><br><span class="line"><span class="keyword">import</span> org.junit.Test;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 获取对象并且进行比较</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">GetObject</span> </span>&#123;</span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 考查知识点，对象每次都可以是新的</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="meta">@Test</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test01</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      User u1 = <span class="keyword">this</span>.getUser();</span><br><span class="line">      User u2 = <span class="keyword">this</span>.getUser();</span><br><span class="line">      System.out.println(u1);</span><br><span class="line">      System.out.println(u2);</span><br><span class="line">      System.out.println(u1 == u2);   <span class="comment">//结果是false</span></span><br><span class="line">      System.out.println(u1.equals(u2));  <span class="comment">//结果是false</span></span><br><span class="line">      <span class="comment">//百度==和equals比较的是什么？是内存地址，如果对象(都是继承了object(里面有equals方法))里重写equals，又是什么结果，</span></span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> User <span class="title">getUser</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="comment">//new 一次，就产生一个新的对象(内存地址不一样)，两个对象都是不一样的，都是新的</span></span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">new</span> User();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 考查知识点，对象每次都可以是一样的、同一个实例</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="meta">@Test</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test02</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      User u1 = <span class="keyword">this</span>.getUser02();</span><br><span class="line">      User u2 = <span class="keyword">this</span>.getUser02();</span><br><span class="line">      System.out.println(u1);</span><br><span class="line">      System.out.println(u2);</span><br><span class="line">      System.out.println(u1 == u2);   <span class="comment">//结果是true</span></span><br><span class="line">      System.out.println(u1.equals(u2));  <span class="comment">//结果是true</span></span><br><span class="line">      <span class="comment">//百度==和equals比较的是什么？是内存地址，如果对象(都是继承了object(里面有equals方法))里重写equals，又是什么结果，</span></span><br><span class="line">      u1.setUser_name(<span class="string">"悟空"</span>);</span><br><span class="line"></span><br><span class="line">      System.out.println(u2.getUser_name());  <span class="comment">//输出悟空，为什么会这样？设计到一个叫引用传递的</span></span><br><span class="line"></span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">static</span> User u1 = <span class="keyword">new</span> User();    <span class="comment">//设计模式-单例的设计 饿汉(不管你用不用，我都先创建好),加了一个static，表示这是一个共享数据</span></span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> User <span class="title">getUser02</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.u1;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">//懒汉(你用我才创建)---线程不安全</span></span><br><span class="line">   <span class="comment">/*private static User u2;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">   public User getUser002() &#123;</span></span><br><span class="line"><span class="comment">      if (u2 == null) &#123;</span></span><br><span class="line"><span class="comment">         u2 = new User();</span></span><br><span class="line"><span class="comment">      &#125;</span></span><br><span class="line"><span class="comment">      return this.u2;</span></span><br><span class="line"><span class="comment">   &#125;*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="5-和equals的区别"><a href="#5-和equals的区别" class="headerlink" title="5.==和equals的区别"></a>5.==和equals的区别</h3><ol><li><p>==是判断两个变量或实例是不是指向同一个内存空间<br>   equals是判断两个变量或实例所指向的内存空间的值是不是相同 </p></li><li><p>==是指对内存地址进行比较<br>   equals()是对字符串的内容进行比较</p></li><li><p>==指引用是否相同<br>   equals()指的是值是否相同</p></li><li><p>如果对象(都是继承了object(里面有equals方法))里重写equals了，又是不同结果</p></li></ol><h3 id="6-单例模式-设计模式"><a href="#6-单例模式-设计模式" class="headerlink" title="6.单例模式-设计模式"></a>6.单例模式-设计模式</h3><ul><li><p>饿汉:不管你用不用，我都先创建好</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> User u1 = <span class="keyword">new</span> User();    <span class="comment">//加了一个static，表示这是一个共享数据</span></span><br></pre></td></tr></table></figure></li><li><p>懒汉：你用我才创建，线程不安全</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> User u2;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> User <span class="title">getUser002</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">if</span> (u2 == <span class="keyword">null</span>) &#123;</span><br><span class="line">         u2 = <span class="keyword">new</span> User();</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.u2;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure></li></ul><h3 id="7-对象的初始化数据操作"><a href="#7-对象的初始化数据操作" class="headerlink" title="7.对象的初始化数据操作"></a>7.对象的初始化数据操作</h3><ol><li>构造函数—初始化数据</li><li>Setter方法</li><li>如果对象的属性不是private，可以实例化对象.属性=xx赋值</li></ol><p>InitObject.java</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 构造函数—初始化数据</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test01</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   User u1 = <span class="keyword">new</span> User();</span><br><span class="line">   <span class="comment">/*这一句话设计到的知识点：</span></span><br><span class="line"><span class="comment">   new 开辟一块堆内存空间</span></span><br><span class="line"><span class="comment">   User(); 构造函数</span></span><br><span class="line"><span class="comment">         1.创建对象</span></span><br><span class="line"><span class="comment">         2.对数据进行初始化操作</span></span><br><span class="line"><span class="comment">   u1: 在栈内存中定义了一个变量指向了堆内存空间</span></span><br><span class="line"><span class="comment">   * */</span></span><br><span class="line">   <span class="comment">/*构造函数知识点：</span></span><br><span class="line"><span class="comment">   1.默认有一个无参构造函数</span></span><br><span class="line"><span class="comment">   2.若写了一个有参构造函数，覆盖了默认的无参，直接new User()报错</span></span><br><span class="line"><span class="comment">   3.第2点解决办法就是，再写一次无参构造函数</span></span><br><span class="line"><span class="comment">   4.每个构造函数默认一个super(),不写也有，并且得在首行</span></span><br><span class="line"><span class="comment">   * */</span></span><br><span class="line">   System.out.println(u1.getUser_name());  <span class="comment">//初始化的数据为空</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * setter方法初始化数据，其实如果属性不private，可以直接对象的变量.属性赋值</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test02</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   User u1 = <span class="keyword">new</span> User();</span><br><span class="line">   u1.setUser_id(<span class="number">200</span>);</span><br><span class="line">   u1.setUser_name(<span class="string">"八戒"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="8-数组的初始化操作有几种"><a href="#8-数组的初始化操作有几种" class="headerlink" title="8.数组的初始化操作有几种"></a>8.数组的初始化操作有几种</h3><ol><li>动态初始化</li><li>静态初始化</li></ol><p>InitObject.java</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Test</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test03</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   <span class="comment">//动态初始化</span></span><br><span class="line">   <span class="keyword">int</span>[] arr = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>];</span><br><span class="line">   <span class="comment">//char[] arr = new char[3];</span></span><br><span class="line">   System.out.println(arr[<span class="number">2</span>]);</span><br><span class="line">   <span class="comment">//静态初始化</span></span><br><span class="line">   <span class="keyword">boolean</span>[] arr2 = &#123;<span class="keyword">false</span>, <span class="keyword">true</span>, <span class="keyword">true</span>&#125;;   <span class="comment">//下面的那种简写</span></span><br><span class="line">   <span class="keyword">boolean</span>[] arr3 = <span class="keyword">new</span> <span class="keyword">boolean</span>[]&#123;<span class="keyword">false</span>, <span class="keyword">true</span>, <span class="keyword">true</span>&#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="9-数组各个类型的初始值-默认值"><a href="#9-数组各个类型的初始值-默认值" class="headerlink" title="9.数组各个类型的初始值(默认值)"></a>9.数组各个类型的初始值(默认值)</h3><table><thead><tr><th style="text-align:center">类型</th><th style="text-align:center">默认值</th></tr></thead><tbody><tr><td style="text-align:center">int</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">short</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">byte</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">float</td><td style="text-align:center">0.0f</td></tr><tr><td style="text-align:center">double</td><td style="text-align:center">0.0d</td></tr><tr><td style="text-align:center">long</td><td style="text-align:center">0L</td></tr><tr><td style="text-align:center">boolean</td><td style="text-align:center">false</td></tr><tr><td style="text-align:center">char</td><td style="text-align:center">‘/uoooo’(就是一个空白的)</td></tr><tr><td style="text-align:center">String</td><td style="text-align:center">null</td></tr></tbody></table><p>10.User u1 = new User();这句话包含的知识点</p><ol><li>new 开辟一块堆内存空间</li><li>User(); 构造函数<pre><code>1.创建对象2.对数据进行初始化操作</code></pre></li><li>u1: 在栈内存中定义了一个变量指向了堆内存空间</li></ol><h3 id="11-无参构造函数和有参构造函数"><a href="#11-无参构造函数和有参构造函数" class="headerlink" title="11.无参构造函数和有参构造函数"></a>11.无参构造函数和有参构造函数</h3><ol><li>默认有一个无参构造函数</li><li>若写了一个有参构造函数，覆盖了默认的无参，直接new User()报错</li><li>第2点解决办法就是，再写一次无参构造函数</li><li>每个构造函数默认一个super(),不写也有，并且得在首行</li></ol>]]></content>
+    <content type="html"><![CDATA[<p>对象的创建方式、获取对象并且进行比较、==和equals的区别、单例模式(饿汉和懒汉)、对象的初始化数据操作、数组的数据初始化操作有几种、各个类型的初始值是什么，User u1 = new User();这句话包含的知识点、无参构造函数和有参构造函数</p><a id="more"></a><p>源码获取<a href="https://github.com/heshangcode/Learn" target="_blank" rel="noopener">github</a></p><p>学习spring的时候，都是用的maven项目学习，idea如何创建maven项目教程，<a href="http://heshangcode.coding.me/2018/08/22/idea%E5%88%9B%E5%BB%BAmaven%E9%A1%B9%E7%9B%AE/" target="_blank" rel="noopener">传送门</a></p><p>[TOC]</p><h3 id="1-项目结构"><a href="#1-项目结构" class="headerlink" title="1.项目结构"></a>1.项目结构</h3><p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuitw4f66gj209q0a8tbv.jpg" alt=""></p><h3 id="2-需要的jar包"><a href="#2-需要的jar包" class="headerlink" title="2.需要的jar包"></a>2.需要的jar包</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>junit<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.11<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">scope</span>&gt;</span>test<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><h3 id="3-对象的创建方式"><a href="#3-对象的创建方式" class="headerlink" title="3.对象的创建方式"></a>3.对象的创建方式</h3><ul><li><p>使用new关键字实例化对象</p></li><li><p>使用Class_forName实例化对象</p><p>User.java</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hs.model;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">User</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">private</span> String user_name;</span><br><span class="line">   <span class="keyword">private</span> Integer user_id;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> String <span class="title">getUser_name</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> user_name;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setUser_name</span><span class="params">(String user_name)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">this</span>.user_name = user_name;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> Integer <span class="title">getUser_id</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> user_id;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setUser_id</span><span class="params">(Integer user_id)</span> </span>&#123;</span><br><span class="line">      <span class="keyword">this</span>.user_id = user_id;</span><br><span class="line">   &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>CreateObject.java</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hs.test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.hs.model.User;</span><br><span class="line"><span class="keyword">import</span> org.junit.Test;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 对象的创建方式</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">CreateObject</span> </span>&#123;</span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 使用new关键字实例化对象</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="meta">@Test</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test01</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      User u = <span class="keyword">new</span> User();</span><br><span class="line">      System.out.println(u);</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 使用Class_forName实例化对象</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@throws</span> ClassNotFoundException</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@throws</span> IllegalAccessException</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@throws</span> InstantiationException</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="meta">@Test</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test02</span><span class="params">()</span> <span class="keyword">throws</span> ClassNotFoundException, IllegalAccessException, InstantiationException </span>&#123;</span><br><span class="line">      User u = (User) Class.forName(<span class="string">"com.hs.model.User"</span>).newInstance();   <span class="comment">//com.hs.model.User为类的全路径，newInstance()实例化对象</span></span><br><span class="line">      System.out.println(u);</span><br><span class="line">      u.setUser_name(<span class="string">"悟空"</span>);</span><br><span class="line">      System.out.println(u.getUser_name());</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><h3 id="4-获取对象并且进行比较"><a href="#4-获取对象并且进行比较" class="headerlink" title="4.获取对象并且进行比较"></a>4.获取对象并且进行比较</h3><ul><li>new 一次，就产生一个新的对象，两个对象都是不一样的，都是新的</li><li>对象每次都可以是一样的、同一个实例</li></ul><p>GetObject.java</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hs.test;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.hs.model.User;</span><br><span class="line"><span class="keyword">import</span> org.junit.Test;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 获取对象并且进行比较</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">GetObject</span> </span>&#123;</span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 考查知识点，对象每次都可以是新的</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="meta">@Test</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test01</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      User u1 = <span class="keyword">this</span>.getUser();</span><br><span class="line">      User u2 = <span class="keyword">this</span>.getUser();</span><br><span class="line">      System.out.println(u1);</span><br><span class="line">      System.out.println(u2);</span><br><span class="line">      System.out.println(u1 == u2);   <span class="comment">//结果是false</span></span><br><span class="line">      System.out.println(u1.equals(u2));  <span class="comment">//结果是false</span></span><br><span class="line">      <span class="comment">//百度==和equals比较的是什么？是内存地址，如果对象(都是继承了object(里面有equals方法))里重写equals，又是什么结果，</span></span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> User <span class="title">getUser</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="comment">//new 一次，就产生一个新的对象(内存地址不一样)，两个对象都是不一样的，都是新的</span></span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">new</span> User();</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">/**</span></span><br><span class="line"><span class="comment">    * 考查知识点，对象每次都可以是一样的、同一个实例</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="meta">@Test</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test02</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      User u1 = <span class="keyword">this</span>.getUser02();</span><br><span class="line">      User u2 = <span class="keyword">this</span>.getUser02();</span><br><span class="line">      System.out.println(u1);</span><br><span class="line">      System.out.println(u2);</span><br><span class="line">      System.out.println(u1 == u2);   <span class="comment">//结果是true</span></span><br><span class="line">      System.out.println(u1.equals(u2));  <span class="comment">//结果是true</span></span><br><span class="line">      <span class="comment">//百度==和equals比较的是什么？是内存地址，如果对象(都是继承了object(里面有equals方法))里重写equals，又是什么结果，</span></span><br><span class="line">      u1.setUser_name(<span class="string">"悟空"</span>);</span><br><span class="line"></span><br><span class="line">      System.out.println(u2.getUser_name());  <span class="comment">//输出悟空，为什么会这样？设计到一个叫引用传递的</span></span><br><span class="line"></span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="keyword">private</span> <span class="keyword">static</span> User u1 = <span class="keyword">new</span> User();    <span class="comment">//设计模式-单例的设计 饿汉(不管你用不用，我都先创建好),加了一个static，表示这是一个共享数据</span></span><br><span class="line"></span><br><span class="line">   <span class="function"><span class="keyword">public</span> User <span class="title">getUser02</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.u1;</span><br><span class="line">   &#125;</span><br><span class="line"></span><br><span class="line">   <span class="comment">//懒汉(你用我才创建)---线程不安全</span></span><br><span class="line">   <span class="comment">/*private static User u2;</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">   public User getUser002() &#123;</span></span><br><span class="line"><span class="comment">      if (u2 == null) &#123;</span></span><br><span class="line"><span class="comment">         u2 = new User();</span></span><br><span class="line"><span class="comment">      &#125;</span></span><br><span class="line"><span class="comment">      return this.u2;</span></span><br><span class="line"><span class="comment">   &#125;*/</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="5-和equals的区别"><a href="#5-和equals的区别" class="headerlink" title="5.==和equals的区别"></a>5.==和equals的区别</h3><ol><li><p>==是判断两个变量或实例是不是指向同一个内存空间<br>   equals是判断两个变量或实例所指向的内存空间的值是不是相同 </p></li><li><p>==是指对内存地址进行比较<br>   equals()是对字符串的内容进行比较</p></li><li><p>==指引用是否相同<br>   equals()指的是值是否相同</p></li><li><p>如果对象(都是继承了object(里面有equals方法))里重写equals了，又是不同结果</p></li></ol><h3 id="6-单例模式-设计模式"><a href="#6-单例模式-设计模式" class="headerlink" title="6.单例模式-设计模式"></a>6.单例模式-设计模式</h3><ul><li><p>饿汉:不管你用不用，我都先创建好</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> User u1 = <span class="keyword">new</span> User();    <span class="comment">//加了一个static，表示这是一个共享数据</span></span><br></pre></td></tr></table></figure></li><li><p>懒汉：你用我才创建，线程不安全</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> User u2;</span><br><span class="line">   <span class="function"><span class="keyword">public</span> User <span class="title">getUser002</span><span class="params">()</span> </span>&#123;</span><br><span class="line">      <span class="keyword">if</span> (u2 == <span class="keyword">null</span>) &#123;</span><br><span class="line">         u2 = <span class="keyword">new</span> User();</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">return</span> <span class="keyword">this</span>.u2;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure></li></ul><h3 id="7-对象的初始化数据操作"><a href="#7-对象的初始化数据操作" class="headerlink" title="7.对象的初始化数据操作"></a>7.对象的初始化数据操作</h3><ol><li>构造函数—初始化数据</li><li>Setter方法</li><li>如果对象的属性不是private，可以实例化对象.属性=xx赋值</li></ol><p>InitObject.java</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 构造函数—初始化数据</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test01</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   User u1 = <span class="keyword">new</span> User();</span><br><span class="line">   <span class="comment">/*这一句话设计到的知识点：</span></span><br><span class="line"><span class="comment">   new 开辟一块堆内存空间</span></span><br><span class="line"><span class="comment">   User(); 构造函数</span></span><br><span class="line"><span class="comment">         1.创建对象</span></span><br><span class="line"><span class="comment">         2.对数据进行初始化操作</span></span><br><span class="line"><span class="comment">   u1: 在栈内存中定义了一个变量指向了堆内存空间</span></span><br><span class="line"><span class="comment">   * */</span></span><br><span class="line">   <span class="comment">/*构造函数知识点：</span></span><br><span class="line"><span class="comment">   1.默认有一个无参构造函数</span></span><br><span class="line"><span class="comment">   2.若写了一个有参构造函数，覆盖了默认的无参，直接new User()报错</span></span><br><span class="line"><span class="comment">   3.第2点解决办法就是，再写一次无参构造函数</span></span><br><span class="line"><span class="comment">   4.每个构造函数默认一个super(),不写也有，并且得在首行</span></span><br><span class="line"><span class="comment">   * */</span></span><br><span class="line">   System.out.println(u1.getUser_name());  <span class="comment">//初始化的数据为空</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * setter方法初始化数据，其实如果属性不private，可以直接对象的变量.属性赋值</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test02</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   User u1 = <span class="keyword">new</span> User();</span><br><span class="line">   u1.setUser_id(<span class="number">200</span>);</span><br><span class="line">   u1.setUser_name(<span class="string">"八戒"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="8-数组的初始化操作有几种"><a href="#8-数组的初始化操作有几种" class="headerlink" title="8.数组的初始化操作有几种"></a>8.数组的初始化操作有几种</h3><ol><li>动态初始化</li><li>静态初始化</li></ol><p>InitObject.java</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Test</span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">test03</span><span class="params">()</span> </span>&#123;</span><br><span class="line">   <span class="comment">//动态初始化</span></span><br><span class="line">   <span class="keyword">int</span>[] arr = <span class="keyword">new</span> <span class="keyword">int</span>[<span class="number">3</span>];</span><br><span class="line">   <span class="comment">//char[] arr = new char[3];</span></span><br><span class="line">   System.out.println(arr[<span class="number">2</span>]);</span><br><span class="line">   <span class="comment">//静态初始化</span></span><br><span class="line">   <span class="keyword">boolean</span>[] arr2 = &#123;<span class="keyword">false</span>, <span class="keyword">true</span>, <span class="keyword">true</span>&#125;;   <span class="comment">//下面的那种简写</span></span><br><span class="line">   <span class="keyword">boolean</span>[] arr3 = <span class="keyword">new</span> <span class="keyword">boolean</span>[]&#123;<span class="keyword">false</span>, <span class="keyword">true</span>, <span class="keyword">true</span>&#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="9-数组各个类型的初始值-默认值"><a href="#9-数组各个类型的初始值-默认值" class="headerlink" title="9.数组各个类型的初始值(默认值)"></a>9.数组各个类型的初始值(默认值)</h3><table><thead><tr><th style="text-align:center">类型</th><th style="text-align:center">默认值</th></tr></thead><tbody><tr><td style="text-align:center">int</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">short</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">byte</td><td style="text-align:center">0</td></tr><tr><td style="text-align:center">float</td><td style="text-align:center">0.0f</td></tr><tr><td style="text-align:center">double</td><td style="text-align:center">0.0d</td></tr><tr><td style="text-align:center">long</td><td style="text-align:center">0L</td></tr><tr><td style="text-align:center">boolean</td><td style="text-align:center">false</td></tr><tr><td style="text-align:center">char</td><td style="text-align:center">‘/uoooo’(就是一个空白的)</td></tr><tr><td style="text-align:center">String</td><td style="text-align:center">null</td></tr></tbody></table><p>10.User u1 = new User();这句话包含的知识点</p><ol><li>new 开辟一块堆内存空间</li><li>User(); 构造函数<pre><code>1.创建对象2.对数据进行初始化操作</code></pre></li><li>u1: 在栈内存中定义了一个变量指向了堆内存空间</li></ol><h3 id="11-无参构造函数和有参构造函数"><a href="#11-无参构造函数和有参构造函数" class="headerlink" title="11.无参构造函数和有参构造函数"></a>11.无参构造函数和有参构造函数</h3><ol><li>默认有一个无参构造函数</li><li>若写了一个有参构造函数，覆盖了默认的无参，直接new User()报错</li><li>第2点解决办法就是，再写一次无参构造函数</li><li>每个构造函数默认一个super(),不写也有，并且得在首行</li></ol>]]></content>
     
     <summary type="html">
     
@@ -523,14 +523,14 @@
     
     </summary>
     
-      <category term="Spring学习总结" scheme="http://heshangcode.coding.me/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
+      <category term="Spring学习总结" scheme="http://heshang.ink/categories/Spring%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     
     
-      <category term="SSM" scheme="http://heshangcode.coding.me/tags/SSM/"/>
+      <category term="SSM" scheme="http://heshang.ink/tags/SSM/"/>
     
-      <category term="框架" scheme="http://heshangcode.coding.me/tags/%E6%A1%86%E6%9E%B6/"/>
+      <category term="框架" scheme="http://heshang.ink/tags/%E6%A1%86%E6%9E%B6/"/>
     
-      <category term="Spring" scheme="http://heshangcode.coding.me/tags/Spring/"/>
+      <category term="Spring" scheme="http://heshang.ink/tags/Spring/"/>
     
   </entry>
   
