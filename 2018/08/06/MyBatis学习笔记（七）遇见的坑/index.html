@@ -160,19 +160,19 @@
 <meta property="og:site_name" content="heshang">
 <meta property="og:description" content="在学习过程中，遇见数据库中中文乱码，mybatis常见的异常和如何调试，idea不知道如何创建xml文件，idea中project和module的关系，如何把一个module复制成另外一个module，每次一个新的mybatis项目，有很多地方记得要修改">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fu02kuo6fhj20oh05dmxd.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fu02v37wnkg20s40lzhb1.gif">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fu037u28t7j20o803stb8.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fu03fh0ab9g20uu0im1cv.gif">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fu03qztqizj208408nabo.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/05/26/5ce9fd95cd7ac59687.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/05/26/5ce9fdaeeeeec74530.gif">
+<meta property="og:image" content="https://i.loli.net/2019/05/26/5ce9fe2a26fe894513.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/05/26/5ce9fe301ed8d90784.gif">
+<meta property="og:image" content="https://i.loli.net/2019/05/26/5ce9fe294d49c44408.jpg">
 <meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fu03nbsu3oj20fg03rmx5.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fu03tbtcf7j206z00pa9w.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fu03vn5pjcg20k10maqhb.gif">
-<meta property="og:updated_time" content="2018-08-23T05:55:52.693Z">
+<meta property="og:image" content="https://i.loli.net/2019/05/26/5ce9fde2ea8fd14930.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/05/26/5ce9fe2c20a2780694.gif">
+<meta property="og:updated_time" content="2019-05-26T02:48:41.447Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="MyBatis学习笔记（七）遇见的坑">
 <meta name="twitter:description" content="在学习过程中，遇见数据库中中文乱码，mybatis常见的异常和如何调试，idea不知道如何创建xml文件，idea中project和module的关系，如何把一个module复制成另外一个module，每次一个新的mybatis项目，有很多地方记得要修改">
-<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fu02kuo6fhj20oh05dmxd.jpg">
+<meta name="twitter:image" content="https://i.loli.net/2019/05/26/5ce9fd95cd7ac59687.jpg">
 
 
 
@@ -442,7 +442,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-08-23 13:55:52" itemprop="dateModified" datetime="2018-08-23T13:55:52+08:00">2018-08-23</time>
+                <time title="修改时间：2019-05-26 10:48:41" itemprop="dateModified" datetime="2019-05-26T10:48:41+08:00">2019-05-26</time>
               
             
           </span>
@@ -540,7 +540,7 @@
 <ol>
 <li>找到如下文件，如果没有找到，用everything搜索</li>
 </ol>
-<p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fu02kuo6fhj20oh05dmxd.jpg" alt=""></p>
+<p><img src="https://i.loli.net/2019/05/26/5ce9fd95cd7ac59687.jpg" alt=""></p>
 <ol start="2">
 <li><p>在最后添加下面代码</p>
 <p>若要设置成utf-8，把utf8mb4修改成utf-8即可 </p>
@@ -549,7 +549,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">[client] </span><br><span class="line">default-character-set = utf8mb4 </span><br><span class="line">[mysql] </span><br><span class="line">default-character-set = utf8mb4 </span><br><span class="line">[mysqld] </span><br><span class="line">character-set-client-handshake = FALSE </span><br><span class="line">character-set-server = utf8mb4 </span><br><span class="line">collation-server = utf8mb4_unicode_ci </span><br><span class="line">init_connect=&apos;SET NAMES utf8mb4&apos;</span><br></pre></td></tr></table></figure>
 <ol start="3">
 <li><p>保存文件，重启mysql服务</p>
-<p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fu02v37wnkg20s40lzhb1.gif" alt=""></p>
+<p><img src="https://i.loli.net/2019/05/26/5ce9fdaeeeeec74530.gif" alt=""></p>
 </li>
 </ol>
 </li>
@@ -570,18 +570,18 @@
 <li><p>如何调试？</p>
 <ul>
 <li><p>把自己的，，，这一行代码注释掉，然后再运行看控制台，错误从下往上看，Caused byxx</p>
-<p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fu037u28t7j20o803stb8.jpg" alt=""></p>
+<p><img src="https://i.loli.net/2019/05/26/5ce9fe2a26fe894513.jpg" alt=""></p>
 </li>
 </ul>
 </li>
 </ol>
-<h3 id="3-idea如何创建xml文件"><a href="#3-idea如何创建xml文件" class="headerlink" title="3.idea如何创建xml文件"></a>3.idea如何创建xml文件</h3><p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fu03fh0ab9g20uu0im1cv.gif" alt=""></p>
+<h3 id="3-idea如何创建xml文件"><a href="#3-idea如何创建xml文件" class="headerlink" title="3.idea如何创建xml文件"></a>3.idea如何创建xml文件</h3><p><img src="https://i.loli.net/2019/05/26/5ce9fe301ed8d90784.gif" alt=""></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="4-idea中project和module的关系"><a href="#4-idea中project和module的关系" class="headerlink" title="4.idea中project和module的关系"></a>4.idea中project和module的关系</h3><p>之前刚用idea，以为一个project，就是一个项目，结果并不是</p>
-<p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fu03qztqizj208408nabo.jpg" alt=""></p>
+<p><img src="https://i.loli.net/2019/05/26/5ce9fe294d49c44408.jpg" alt=""></p>
 <p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fu03nbsu3oj20fg03rmx5.jpg" alt=""></p>
-<h3 id="5-如何把一个module复制成另外一个module"><a href="#5-如何把一个module复制成另外一个module" class="headerlink" title="5.如何把一个module复制成另外一个module"></a>5.如何把一个module复制成另外一个module</h3><p>直接像eclipse那样复制一个module，图标只会这样：<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fu03tbtcf7j206z00pa9w.jpg" alt=""></p>
-<p>这不是一个module，要让他变成module，如下操作：<img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fu03vn5pjcg20k10maqhb.gif" alt=""></p>
+<h3 id="5-如何把一个module复制成另外一个module"><a href="#5-如何把一个module复制成另外一个module" class="headerlink" title="5.如何把一个module复制成另外一个module"></a>5.如何把一个module复制成另外一个module</h3><p>直接像eclipse那样复制一个module，图标只会这样：<img src="https://i.loli.net/2019/05/26/5ce9fde2ea8fd14930.jpg" alt=""></p>
+<p>这不是一个module，要让他变成module，如下操作：<img src="https://i.loli.net/2019/05/26/5ce9fe2c20a2780694.gif" alt=""></p>
 <h3 id="6-一个新的mybatis项目"><a href="#6-一个新的mybatis项目" class="headerlink" title="6.一个新的mybatis项目"></a>6.一个新的mybatis项目</h3><p>重点一些地方需要修改或者添加</p>
 <ol>
 <li>核心配置文件的映射文件里</li>
@@ -678,7 +678,7 @@
   <p><span>本文标题:</span><a href="/2018/08/06/MyBatis学习笔记（七）遇见的坑/">MyBatis学习笔记（七）遇见的坑</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 和尚 的个人博客">和尚</a></p>
   <!-- <p><span>发布时间:</span>2018年08月06日 - 16:08</p>
-  <p><span>最后更新:</span>2018年08月23日 - 13:08</p> -->
+  <p><span>最后更新:</span>2019年05月26日 - 10:05</p> -->
   <p><span>本文链接:</span><a href="/2018/08/06/MyBatis学习笔记（七）遇见的坑/" title="MyBatis学习笔记（七）遇见的坑">https://heshang.ink/2018/08/06/MyBatis学习笔记（七）遇见的坑/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://heshang.ink/2018/08/06/MyBatis学习笔记（七）遇见的坑/"  aria-label="复制成功！"></i></span>
   </p>

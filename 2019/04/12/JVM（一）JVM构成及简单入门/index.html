@@ -160,14 +160,14 @@
 <meta property="og:site_name" content="heshang">
 <meta property="og:description" content="为什么要使用JVM、JVM构成（方法区、堆内存、线程独有的（线程栈、本地方法栈、PC计数器））">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuctukx2o3j20hz0a7aa6.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fucur3gqjnj20g00d0jsi.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fucxj0l1wtj20na06vwef.jpg">
-<meta property="og:updated_time" content="2019-04-12T11:13:37.176Z">
+<meta property="og:image" content="d:/blog/Heshang/source/_posts/assets/c31cbfc9ly1fuctukx2o3j20hz0a7aa6.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/05/26/5ce9fc592eab359799.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/05/26/5ce9fc576883680330.jpg">
+<meta property="og:updated_time" content="2019-05-26T02:39:41.989Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JVM（一）JVM构成及简单入门">
 <meta name="twitter:description" content="为什么要使用JVM、JVM构成（方法区、堆内存、线程独有的（线程栈、本地方法栈、PC计数器））">
-<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuctukx2o3j20hz0a7aa6.jpg">
+<meta name="twitter:image" content="d:/blog/Heshang/source/_posts/assets/c31cbfc9ly1fuctukx2o3j20hz0a7aa6.jpg">
 
 
 
@@ -420,12 +420,24 @@
                 
               
 
-              <time title="创建时间：2019-04-12 19:07:41 / 修改时间：19:13:37" itemprop="dateCreated datePublished" datetime="2019-04-12T19:07:41+08:00">2019-04-12</time>
+              <time title="创建时间：2019-04-12 19:07:41" itemprop="dateCreated datePublished" datetime="2019-04-12T19:07:41+08:00">2019-04-12</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-26 10:39:41" itemprop="dateModified" datetime="2019-05-26T10:39:41+08:00">2019-05-26</time>
               
             
           </span>
@@ -515,7 +527,7 @@
         <p>为什么要使用JVM、JVM构成（方法区、堆内存、线程独有的（线程栈、本地方法栈、PC计数器））</p>
 <a id="more"></a>
 <h2 id="从HelloWord角度理解JVM"><a href="#从HelloWord角度理解JVM" class="headerlink" title="从HelloWord角度理解JVM"></a>从HelloWord角度理解JVM</h2><h3 id="1-为什么要使用虚拟机-JVM"><a href="#1-为什么要使用虚拟机-JVM" class="headerlink" title="1.为什么要使用虚拟机(JVM)"></a>1.为什么要使用虚拟机(JVM)</h3><p>虚拟除了一台拥有和真实计算机相同能力的机器，只不过他里面的任何硬件都是虚拟出来的，通过虚拟机来保证了真实机器的安全，JVM同时也是java跨平台运行的基础。</p>
-<h3 id="2-JVM构成"><a href="#2-JVM构成" class="headerlink" title="2.JVM构成"></a>2.JVM构成</h3><p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuctukx2o3j20hz0a7aa6.jpg" alt=""></p>
+<h3 id="2-JVM构成"><a href="#2-JVM构成" class="headerlink" title="2.JVM构成"></a>2.JVM构成</h3><p><img src="D:\blog\Heshang\source\_posts\assets\c31cbfc9ly1fuctukx2o3j20hz0a7aa6.jpg" alt=""></p>
 <ol>
 <li>方法区里会有常量池</li>
 <li>堆内存：多线程共享，会发生并发</li>
@@ -527,7 +539,7 @@
 </ul>
 </li>
 </ol>
-<h3 id="3-字节码在类加载器的过程"><a href="#3-字节码在类加载器的过程" class="headerlink" title="3.字节码在类加载器的过程"></a>3.字节码在类加载器的过程</h3><p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fucur3gqjnj20g00d0jsi.jpg" alt=""></p>
+<h3 id="3-字节码在类加载器的过程"><a href="#3-字节码在类加载器的过程" class="headerlink" title="3.字节码在类加载器的过程"></a>3.字节码在类加载器的过程</h3><p><img src="https://i.loli.net/2019/05/26/5ce9fc592eab359799.jpg" alt=""></p>
 <ol>
 <li>加载</li>
 <li>验证：<ul>
@@ -552,7 +564,7 @@
 </ol>
 <h3 id="5-反编译分析hello-Word字节码"><a href="#5-反编译分析hello-Word字节码" class="headerlink" title="5.反编译分析hello Word字节码"></a>5.反编译分析hello Word字节码</h3><p>cmd指令 javap -c xxx</p>
 <p>将指定字节码反编译为字节码指令输出</p>
-<p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fucxj0l1wtj20na06vwef.jpg" alt=""></p>
+<p><img src="https://i.loli.net/2019/05/26/5ce9fc576883680330.jpg" alt=""></p>
 <p>分析下面的指令：</p>
 <ol>
 <li>0：getstatic    #2    字面意思，获取静态，就是在方法区从System这个类中取2号位常量池Field中的out对象的引用压栈到堆栈中</li>
