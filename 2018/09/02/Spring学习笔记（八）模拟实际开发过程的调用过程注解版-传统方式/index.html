@@ -160,12 +160,12 @@
 <meta property="og:site_name" content="heshang">
 <meta property="og:description" content="传统的@Component和@Resource(等价于XML版setter注入)使用说明 @Component是个泛化概念，可以用在任何层次">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuvglsd11kj20ar0gzjxc.jpg">
-<meta property="og:updated_time" content="2018-09-02T12:38:13.270Z">
+<meta property="og:image" content="https://i.loli.net/2019/05/26/5cea99b0028ae72335.jpg">
+<meta property="og:updated_time" content="2019-05-26T13:50:42.125Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Spring学习笔记（八）模拟实际开发过程的调用过程注解版-传统方式">
 <meta name="twitter:description" content="传统的@Component和@Resource(等价于XML版setter注入)使用说明 @Component是个泛化概念，可以用在任何层次">
-<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuvglsd11kj20ar0gzjxc.jpg">
+<meta name="twitter:image" content="https://i.loli.net/2019/05/26/5cea99b0028ae72335.jpg">
 
 
 
@@ -418,12 +418,24 @@
                 
               
 
-              <time title="创建时间：2018-09-02 17:42:32 / 修改时间：20:38:13" itemprop="dateCreated datePublished" datetime="2018-09-02T17:42:32+08:00">2018-09-02</time>
+              <time title="创建时间：2018-09-02 17:42:32" itemprop="dateCreated datePublished" datetime="2018-09-02T17:42:32+08:00">2018-09-02</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-05-26 21:50:42" itemprop="dateModified" datetime="2019-05-26T21:50:42+08:00">2019-05-26</time>
               
             
           </span>
@@ -515,7 +527,7 @@
 <a id="more"></a>
 <p>源码获取<a href="https://github.com/heshangcode/Learn" target="_blank" rel="noopener">github</a></p>
 <p>[TOC]</p>
-<h3 id="1-项目结构-jar同上"><a href="#1-项目结构-jar同上" class="headerlink" title="1.项目结构(jar同上)"></a>1.项目结构(jar同上)</h3><p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fuvglsd11kj20ar0gzjxc.jpg" alt=""></p>
+<h3 id="1-项目结构-jar同上"><a href="#1-项目结构-jar同上" class="headerlink" title="1.项目结构(jar同上)"></a>1.项目结构(jar同上)</h3><p><img src="https://i.loli.net/2019/05/26/5cea99b0028ae72335.jpg" alt=""></p>
 <h3 id="2-核心配置文件beans-xml"><a href="#2-核心配置文件beans-xml" class="headerlink" title="2.核心配置文件beans.xml"></a>2.核心配置文件beans.xml</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</span><br><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">"http://www.springframework.org/schema/beans"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:xsi</span>=<span class="string">"http://www.w3.org/2001/XMLSchema-instance"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:mvc</span>=<span class="string">"http://www.springframework.org/schema/mvc"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:context</span>=<span class="string">"http://www.springframework.org/schema/context"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:p</span>=<span class="string">"http://www.springframework.org/schema/p"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:util</span>=<span class="string">"http://www.springframework.org/schema/util"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:aop</span>=<span class="string">"http://www.springframework.org/schema/aop"</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xsi:schemaLocation</span>=<span class="string">"http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd</span></span></span><br><span class="line"><span class="tag"><span class="string">      http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd</span></span></span><br><span class="line"><span class="tag"><span class="string">      http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd</span></span></span><br><span class="line"><span class="tag"><span class="string">      http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd</span></span></span><br><span class="line"><span class="tag"><span class="string">      http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd"</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!--1.启动Spring注解--&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">context:annotation-config</span>&gt;</span><span class="tag">&lt;/<span class="name">context:annotation-config</span>&gt;</span></span><br><span class="line">   <span class="comment">&lt;!--2.扫描--&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">context:component-scan</span> <span class="attr">base-package</span>=<span class="string">"com.hs"</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <h3 id="3-dao层"><a href="#3-dao层" class="headerlink" title="3.dao层"></a>3.dao层</h3><p>userDao.java</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.hs.dao;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">interface</span> <span class="title">UserDao</span> </span>&#123;</span><br><span class="line">   <span class="function"><span class="keyword">void</span> <span class="title">add</span><span class="params">()</span></span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -624,7 +636,7 @@
   <p><span>本文标题:</span><a href="/2018/09/02/Spring学习笔记（八）模拟实际开发过程的调用过程注解版-传统方式/">Spring学习笔记（八）模拟实际开发过程的调用过程注解版-传统方式</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 和尚 的个人博客">和尚</a></p>
   <!-- <p><span>发布时间:</span>2018年09月02日 - 17:09</p>
-  <p><span>最后更新:</span>2018年09月02日 - 20:09</p> -->
+  <p><span>最后更新:</span>2019年05月26日 - 21:05</p> -->
   <p><span>本文链接:</span><a href="/2018/09/02/Spring学习笔记（八）模拟实际开发过程的调用过程注解版-传统方式/" title="Spring学习笔记（八）模拟实际开发过程的调用过程注解版-传统方式">https://heshang.ink/2018/09/02/Spring学习笔记（八）模拟实际开发过程的调用过程注解版-传统方式/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://heshang.ink/2018/09/02/Spring学习笔记（八）模拟实际开发过程的调用过程注解版-传统方式/"  aria-label="复制成功！"></i></span>
   </p>

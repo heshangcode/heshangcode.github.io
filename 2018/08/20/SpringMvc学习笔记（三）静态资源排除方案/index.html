@@ -160,13 +160,13 @@
 <meta property="og:site_name" content="heshang">
 <meta property="og:description" content="对于静态资源(图片，css，js)这些请求，让他们不经过DispatcherServlet(这个再去找相应的控制器)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fug7ibx0iqj20cq0ej0tk.jpg">
-<meta property="og:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fug7o2e0bfj21dc06uafd.jpg">
-<meta property="og:updated_time" content="2018-08-23T05:57:00.984Z">
+<meta property="og:image" content="https://i.loli.net/2019/05/26/5cea9451f131172246.jpg">
+<meta property="og:image" content="https://i.loli.net/2019/05/26/5cea94924aa7a16220.jpg">
+<meta property="og:updated_time" content="2019-05-26T13:29:00.647Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SpringMvc学习笔记（三）静态资源排除方案">
 <meta name="twitter:description" content="对于静态资源(图片，css，js)这些请求，让他们不经过DispatcherServlet(这个再去找相应的控制器)">
-<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/c31cbfc9ly1fug7ibx0iqj20cq0ej0tk.jpg">
+<meta name="twitter:image" content="https://i.loli.net/2019/05/26/5cea9451f131172246.jpg">
 
 
 
@@ -436,7 +436,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2018-08-23 13:57:00" itemprop="dateModified" datetime="2018-08-23T13:57:00+08:00">2018-08-23</time>
+                <time title="修改时间：2019-05-26 21:29:00" itemprop="dateModified" datetime="2019-05-26T21:29:00+08:00">2019-05-26</time>
               
             
           </span>
@@ -526,11 +526,12 @@
         <p>对于静态资源(图片，css，js)这些请求，让他们不经过DispatcherServlet(这个再去找相应的控制器)</p>
 <a id="more"></a>
 <p>源码获取<a href="https://github.com/heshangcode/Learn" target="_blank" rel="noopener">github</a></p>
-<h3 id="1-项目结构"><a href="#1-项目结构" class="headerlink" title="1.项目结构"></a>1.项目结构</h3><p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fug7ibx0iqj20cq0ej0tk.jpg" alt="">那哥test.jpg,随意自己找一张图片</p>
+<h3 id="1-项目结构"><a href="#1-项目结构" class="headerlink" title="1.项目结构"></a>1.项目结构</h3><p><img src="https://i.loli.net/2019/05/26/5cea9451f131172246.jpg" alt=""></p>
+<p>那个test.jpg,随意自己找一张图片</p>
 <h3 id="2-解决方式一：推荐方式"><a href="#2-解决方式一：推荐方式" class="headerlink" title="2.解决方式一：推荐方式"></a>2.解决方式一：推荐方式</h3><p>demo01.jsp</p>
 <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">%@</span> <span class="attr">page</span> <span class="attr">contentType</span>=<span class="string">"text/html;charset=UTF-8"</span> <span class="attr">language</span>=<span class="string">"java"</span> %&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>显示图片<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"test.jpg"</span> <span class="attr">alt</span>=<span class="string">""</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>此时为了访问同路径下的test.jsp图片，但是如果直接访问，图片不会出来，那是因为请求会经过DispatcherServlet处理，找到一个控制器，现在为了让静态资源不经过DispatcherServlet。这样就能显示出来</p>
-<p><img src="https://ws1.sinaimg.cn/large/c31cbfc9ly1fug7o2e0bfj21dc06uafd.jpg" alt=""></p>
+<p><img src="https://i.loli.net/2019/05/26/5cea94924aa7a16220.jpg" alt=""></p>
 <p>在web.xml中加入</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--4.静态资源(图片、js、css之类的)(让这些资源不经过DispatcherServlet处理)的</span><br><span class="line">处理方式一  推荐方式--&gt;</span><br><span class="line">&lt;mvc:default-servlet-handler default-servlet-name=&quot;default&quot;/&gt;</span><br></pre></td></tr></table></figure>
 <h3 id="3-解决方式二：映射方式"><a href="#3-解决方式二：映射方式" class="headerlink" title="3.解决方式二：映射方式"></a>3.解决方式二：映射方式</h3><p>demo01.jsp</p>
@@ -625,7 +626,7 @@
   <p><span>本文标题:</span><a href="/2018/08/20/SpringMvc学习笔记（三）静态资源排除方案/">SpringMvc学习笔记（三）静态资源排除方案</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 和尚 的个人博客">和尚</a></p>
   <!-- <p><span>发布时间:</span>2018年08月20日 - 15:08</p>
-  <p><span>最后更新:</span>2018年08月23日 - 13:08</p> -->
+  <p><span>最后更新:</span>2019年05月26日 - 21:05</p> -->
   <p><span>本文链接:</span><a href="/2018/08/20/SpringMvc学习笔记（三）静态资源排除方案/" title="SpringMvc学习笔记（三）静态资源排除方案">https://heshang.ink/2018/08/20/SpringMvc学习笔记（三）静态资源排除方案/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://heshang.ink/2018/08/20/SpringMvc学习笔记（三）静态资源排除方案/"  aria-label="复制成功！"></i></span>
   </p>
