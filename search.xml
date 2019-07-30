@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[LeetCode3无重复字符的最长子串]]></title>
+    <url>%2F2019%2F07%2F30%2FLeetCode3%E6%97%A0%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E7%9A%84%E6%9C%80%E9%95%BF%E5%AD%90%E4%B8%B2%2F</url>
+    <content type="text"><![CDATA[LeetCode上 第三题，采用滑动窗口 源码仓库：https://github.com/heshangcode/LeetCodeAndJianZhiOffer 欢迎Star，issues，commits，学习和交流 题：https://leetcode-cn.com/problems/longest-substring-without-repeating-characters 给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。 示例 1: 输入: “abcabcbb”输出: 3解释: 因为无重复字符的最长子串是 “abc”，所以其长度为 3。示例 2: 输入: “bbbbb”输出: 1解释: 因为无重复字符的最长子串是 “b”，所以其长度为 1。示例 3: 输入: “pwwkew”输出: 3解释: 因为无重复字符的最长子串是 “wke”，所以其长度为 3。 请注意，你的答案必须是 子串 的长度，”pwke” 是一个子序列，不是子串。 思路：滑动窗口，用freq[256]存放这个字符出现的次数123456789101112131415161718192021222324public int lengthOfLongestSubstring1(String s) &#123; if (s.length() == 0) &#123; return 0; &#125; int l = 0, r = -1; //滑动窗口为s[l...r] int res = 0; int[] freq = new int[256]; // 整个循环从 l == 0; r == -1 这个空窗口开始 // 到l == s.size(); r == s.size()-1 这个空窗口截止 // 在每次循环里逐渐改变窗口, 维护freq, 并记录当前窗口中是否找到了一个新的最优值 while (l &lt; s.length()) &#123; //判断s.charAt(r + 1)是否出现过 if (r + 1 &lt; s.length() &amp;&amp; freq[s.charAt(r + 1)] == 0) &#123; r++; freq[s.charAt(r)]++; &#125; else &#123; //出现过了，把左边出现的值取消一次，然后左边进行右移 freq[s.charAt(l)]--; l++; &#125; res = Math.max(res, r - l + 1); &#125; return res; &#125;]]></content>
+      <categories>
+        <category>LeetCode</category>
+      </categories>
+      <tags>
+        <tag>滑动窗口</tag>
+        <tag>字符串</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Ubuntu安装和配置MySQL]]></title>
     <url>%2F2019%2F07%2F22%2FUbuntu%E5%AE%89%E8%A3%85%E5%92%8C%E9%85%8D%E7%BD%AEMySQL%2F</url>
     <content type="text"><![CDATA[Ubuntu下如何安装MySQL，启动、停止、重启MySQL服务，修改MySQL编码uft8，如何完全卸载MySQL 一、MySQL版本5.x: 5.0-5.1:早期产品的延续，升级维护 5.4 - 5.x : MySQL整合了三方公司的新存储引擎 二、安装12345678910安装mysql服务sudo apt-get install mysql-server安装客户端sudo apt install mysql-client安装依赖sudo apt install libmysqlclient-dev检查状态sudo netstat -tap | grep mysql检查版本mysqladmin --version 三、手动操作MySQL服务123456789101112131415验证：mysqladmin --version启动mysql：方式一：sudo /etc/init.d/mysql start 方式二：sudo start mysql方式三：停止mysql：方式一：sudo /etc/init.d/mysql stop 方式二：sudo stop mysql方式san：sudo service mysql stop重启mysql：方式一：sudo/etc/init.d/mysql restart方式二：sudo restart mysql方式三：sudo service mysql restart 四、配置编码utf81234567mysql5.7 配置文件在 /etc/mysql/mysql.conf.d/mysqld.cnfsudo nano /etc/mysql/mysql.conf.d/mysqld.cnf[mysqld]下加入 character_set_server=utf8重启mysql sudo restart mysql也可以直接找到那个文件，直接打开文件 五、进入MySQL1mysql -u root -p 六、查看编码1show variables like &apos;%char%&apos; ; 七、完全卸载MySQL 借鉴于 https://blog.csdn.net/w3045872817/article/details/77334886 首先用dpkg –list|grep mysql查看自己的mysql有哪些依赖 先卸载sudo apt-get remove mysql-common 然后：sudo apt-get autoremove –purge mysql-server-5.0 再用dpkg –list|grep mysql查看，还剩什么就卸载什么 最后清楚残留数据：dpkg -l |grep ^rc|awk ‘{print $2}’ |sudo xargs dpkg -P 然后重启Ubuntu就行了]]></content>
